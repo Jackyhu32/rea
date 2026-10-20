@@ -50,6 +50,14 @@ the Apache-licensed apksig library.
 - Apktool decoded resources, the binary manifest, and all 8 DEX files into smali. JADX produced source output but exited with 85 method-generation errors; observed examples affect generated `com.miui.carlink.R.*` constructors. Decompiled source is partial analysis evidence, not a compilable source tree.
 - No Android Auto session, registered Android Auto projection service, head-unit session, video channel, or Android Auto input path was verified.
 
+## Android Auto Integration Assessment
+
+- Google's [Android for Cars media guide](https://developer.android.com/media/implement/surfaces/cars) describes Android Auto as connecting to phone-app services that provide a driver-optimized interface. For media, the documented integration uses `MediaLibraryService` / `MediaLibrarySession` and declares `com.google.android.gms.car.application` metadata pointing to an automotive-app descriptor.
+- The decoded manifest through its closing tag declares CarWith's USB `AOAActivity`, CarLife services, and an ICCOA share receiver, but no `com.google.android.gms.car.application` metadata or automotive-app descriptor reference. The inspected `AOAActivity` branches on Baidu and Carbit accessories, then routes other accessories into CarLink. This is static evidence from the manifest and that activity, not proof that every dynamic or native path was exhaustively understood.
+- Google's [car app quality categories](https://developer.android.com/docs/quality-guidelines/car-app-quality#app-categories) enumerate Android Auto categories such as media, messaging, navigation, point of interest, IoT, and weather; they do not define a general-purpose full-phone-screen projection category.
+- Android's [MediaProjection API](https://developer.android.com/guide/topics/large-screens/media-projection) can capture a display or app window with user consent for each session on Android 14 and later. CarWith's manifest declarations alone do not establish a usable capture grant, and MediaProjection does not provide an Android Auto transport or receiver API.
+- Therefore, the official Android Auto app path does not provide a supported route to turn this APK into unrestricted phone-screen mirroring. A category-compliant Android Auto app would be a different product, not a CarWith projection port. Continuing full-screen projection would require a separately authorized projection integration and connected test equipment; this investigation will not bypass Android Auto or platform safeguards.
+
 ## Rebuild Verification
 
 - Apktool 3.0.3 decoded the original APK successfully and rebuilt an unsigned copy without behavior changes at `/tmp/carwith-aa-work/rebuilt/unaligned-unsigned.apk`.
