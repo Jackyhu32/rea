@@ -167,10 +167,36 @@ No performance or real-device result is claimed by this design document.
   session.
 - Java, `jarsigner`, and OpenSSL are available, but they do not substitute for
   APK manifest/DEX decoding or Android APK signature-scheme verification.
-- No phone, Android Auto version, or head-unit model has been connected or
-  identified.
+- The user reports a REDMI K100 PRO MAX running Android 17 and HyperOS 4, but
+  no phone or Android Auto head unit is connected for validation; the head-unit
+  model and Android Auto version remain unknown.
 
 The next approved work after spec review is to establish the Android analysis
 tool path without changing REA configuration, inspect the APK, and update this
 design if the actual manifest, signer, or code structure contradicts its
 assumptions.
+
+## Approved Local Feasibility Run
+
+The user approved proceeding with all work that can be verified in the current
+workspace, stopping at any step that requires unavailable device access or
+authorization.
+
+1. Install analysis utilities into an isolated, non-repository directory from
+   their official distribution sources; record source, version, and available
+   checksums. Do not change REA configuration.
+2. Preserve the supplied APK and confirm its SHA-256 before and after analysis.
+   Inspect package identity, signing certificates/signature validity,
+   manifest, permissions, components, DEX inventory, resources, and native
+   libraries, recording tool versions and results.
+3. If decoding permits, rebuild an unchanged copy in a separate output
+   directory and independently validate its structure and APK signature. Do
+   not install either the original or rebuilt APK on the supplied phone.
+4. Stop before behavior changes if APK inspection or unchanged repackaging
+   fails, or if required platform-signature privileges cannot be preserved.
+   Report evidence, unknowns, and the next decision rather than claiming
+   Android Auto compatibility.
+5. Any later projection prototype requires a separate feasibility decision and
+   connected test equipment. Validate only while parked; do not disable driving
+   restrictions or bypass protected-content controls. Wired and wireless
+   support require separate device evidence.
