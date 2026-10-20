@@ -12,19 +12,22 @@ Carlink rather than an Android Auto projection source.
 
 ## Environment and Tool Provenance
 
-| Tool | Version | Source and integrity |
-| --- | --- | --- |
-| Java | Eclipse Temurin 25.0.4.1 LTS | Preinstalled in the workspace |
-| Apktool | 3.0.3 | [Official GitHub release](https://github.com/iBotPeaches/Apktool/releases/tag/v3.0.3); downloaded JAR SHA-256 `dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423`, matching the GitHub release API digest |
-| JADX | 1.5.6 | [Official GitHub release](https://github.com/skylot/jadx/releases/tag/v1.5.6); downloaded ZIP SHA-256 `545ea2be9c242511bc145755cf4bda2485ade42966e096f8b4d3da2a230e8974`, matching the GitHub release API digest |
-| apksig | 9.4.1 | [Google Maven artifact](https://dl.google.com/dl/android/maven2/com/android/tools/build/apksig/9.4.1/apksig-9.4.1.jar); SHA-256 `7ae2e5980c77d853e3513074ee7c822bbdcdcde1668889d17faa7fe8bc8aa821`, matching the published sidecar; POM specifies Apache License 2.0 |
-| Android command-line tools | 20.0 | Downloaded from the [official Android Studio tools page](https://developer.android.com/studio) and extracted under `/tmp`; the page's 40-hex checksum matched SHA-1 `48833c34b761c10cb20bcd16582129395d121b27` (the page labels the column SHA-256 despite its 40-character value). SDK build-tools were not installed and no SDK license was accepted. |
+| Tool                       | Version                      | Source and integrity                                                                                                                                                                                                                                                                                                                                    |
+| -------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Java                       | Eclipse Temurin 25.0.4.1 LTS | Preinstalled in the workspace                                                                                                                                                                                                                                                                                                                           |
+| Apktool                    | 3.0.3                        | [Official GitHub release](https://github.com/iBotPeaches/Apktool/releases/tag/v3.0.3); downloaded JAR SHA-256 `dbf930b076c6b9be08d57c449cacefc3bdd6b71ebd59b3066fc0e1f5b14f9423`, matching the GitHub release API digest                                                                                                                                |
+| JADX                       | 1.5.6                        | [Official GitHub release](https://github.com/skylot/jadx/releases/tag/v1.5.6); downloaded ZIP SHA-256 `545ea2be9c242511bc145755cf4bda2485ade42966e096f8b4d3da2a230e8974`, matching the GitHub release API digest                                                                                                                                        |
+| apksig                     | 9.4.1                        | [Google Maven artifact](https://dl.google.com/dl/android/maven2/com/android/tools/build/apksig/9.4.1/apksig-9.4.1.jar); SHA-256 `7ae2e5980c77d853e3513074ee7c822bbdcdcde1668889d17faa7fe8bc8aa821`, matching the published sidecar; POM specifies Apache License 2.0                                                                                    |
+| Android command-line tools | 20.0                         | Downloaded from the [official Android Studio tools page](https://developer.android.com/studio) and extracted under `/tmp`; the page's 40-hex checksum matched SHA-1 `48833c34b761c10cb20bcd16582129395d121b27` (the page labels the column SHA-256 despite its 40-character value). SDK build-tools were not installed and no SDK license was accepted. |
 
 Downloaded tools, decoded trees, rebuilt APKs, and a temporary PKCS#12 test
-keystore are isolated under `/tmp/carwith-aa-tools/` and
-`/tmp/carwith-aa-work/`. The SDK build-tools `apksigner`, `zipalign`, and
-`aapt2` were not installed; resource rebuilding used Apktool's bundled aapt2,
-and signature validation/signing used the Apache-licensed apksig library.
+keystore are under `/tmp/carwith-aa-tools/` and `/tmp/carwith-aa-work/`.
+Apktool also logged use of `/root/.local/share/apktool/framework/1.apk`;
+therefore not every analysis input was confined to `/tmp`. The cache's
+provenance and whether this run changed it were not verified. The SDK
+build-tools `apksigner`, `zipalign`, and `aapt2` were not installed; resource
+rebuilding used Apktool's bundled aapt2, and signature validation/signing used
+the Apache-licensed apksig library.
 
 ## Supplied Artifact
 

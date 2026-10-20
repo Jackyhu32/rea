@@ -4,7 +4,7 @@
 
 **Goal:** Produce a reproducible, evidence-backed local feasibility result for the supplied CarWith APK without changing or installing the original artifact.
 
-**Architecture:** Install APK analysis and Android build tools in a dedicated directory outside the repository, then inspect the immutable APK and attempt an unchanged decode/rebuild in separate scratch directories. Save versions, checksums, signer/manifest/DEX findings, rebuild outcome, and remaining device-dependent questions in a concise report; stop before behavior patches if a gate fails.
+**Architecture:** Place APK analysis tools and working artifacts outside the repository, then inspect the immutable APK and attempt an unchanged decode/rebuild in separate scratch directories. Record any shared tool cache use as an exception to isolation. Save versions, checksums, signer/manifest/DEX findings, rebuild outcome, and remaining device-dependent questions in a concise report; stop before behavior patches if a gate fails.
 
 **Tech Stack:** Java already present; official JADX and Apktool distributions; Android SDK build-tools (`aapt2`, `zipalign`, `apksigner`); `curl`, `unzip`, and `sha256sum`.
 
@@ -13,6 +13,7 @@
 ### Task 1: Establish isolated tool environment
 
 **Files:**
+
 - Create outside repository: `/tmp/carwith-aa-tools/`
 - Create outside repository: `/tmp/carwith-aa-work/`
 - Create report: `docs/superpowers/reports/carwith-aa-apk-feasibility.md`
@@ -45,6 +46,7 @@ Expected: the report identifies the exact tool builds used, not merely executabl
 ### Task 2: Inspect the immutable APK
 
 **Files:**
+
 - Input, read-only: `com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk`
 - Output: `/tmp/carwith-aa-work/`
 - Modify: `docs/superpowers/reports/carwith-aa-apk-feasibility.md`
@@ -80,6 +82,7 @@ Expected: digest still equals the pinned design value; otherwise stop and invest
 ### Task 3: Test unchanged rebuild feasibility
 
 **Files:**
+
 - Input, read-only: original APK and decoded scratch tree
 - Output: `/tmp/carwith-aa-work/rebuilt/`
 - Modify: `docs/superpowers/reports/carwith-aa-apk-feasibility.md`
@@ -105,6 +108,7 @@ Expected: record whether structure and signature checks pass. A passing local si
 ### Task 4: Finalize evidence and decision
 
 **Files:**
+
 - Modify: `docs/superpowers/reports/carwith-aa-apk-feasibility.md`
 - Read-only verification: original APK and temporary outputs
 
@@ -123,7 +127,7 @@ git status --short
 sha256sum com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk
 ```
 
-Expected: the original APK digest is unchanged and only the intended report/plan files appear as repository changes; all downloaded tools, decoded files, rebuilt APKs, and keystore material remain under `/tmp`.
+Expected: the original APK digest is unchanged and only intended report/plan files plus any pre-existing user data appear as repository changes. Downloaded tools, decoded files, rebuilt APKs, and keystore material are under `/tmp`; Apktool also logged use of `/root/.local/share/apktool/framework/1.apk`, whose provenance and whether this run changed it were not verified.
 
 ### Execution result
 
