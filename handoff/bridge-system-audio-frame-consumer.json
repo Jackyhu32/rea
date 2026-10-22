@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_94a7d67d23b82969589d46aa36cd90dabe7cf6653e6cb0705ad7cb32e11472f1",
+  "subject": {
+    "name": "CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "digest": {
+      "sha256": "ec213a90b9900d2d54b379ca8abf9c39b1556b86afec3e82a259c2bf9cee5bed"
+    },
+    "local_path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "class_name": "defpackage.bf0",
+    "method_name": "b"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-3Q4kJd/target.apk",
+      "class_count": 3016,
+      "resource_count": 110,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"25.0.4.1\",\"max_heap_bytes\":1073741824,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-3Q4kJd/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-3Q4kJd/target.apk\",\"class_count\":3016,\"raw_class_count\":3016,\"resource_count\":110,\"load_duration_ms\":1213,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "defpackage.bf0" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"e\",\"def_pos\":0,\"type\":\"cg\"},{\"name\":\"f\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicReference\"},{\"name\":\"g\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicReference\"},{\"name\":\"h\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicBoolean\"},{\"name\":\"i\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"j\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"k\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"l\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"m\",\"def_pos\":0,\"type\":\"e11\"},{\"name\":\"n\",\"def_pos\":0,\"type\":\"iu\"},{\"name\":\"o\",\"def_pos\":0,\"type\":\"java.util.LinkedHashMap\"},{\"name\":\"p\",\"def_pos\":0,\"type\":\"java.util.LinkedHashMap\"},{\"name\":\"q\",\"def_pos\":0,\"type\":\"xl\"}],\"field_count\":13,\"full_name\":\"defpackage.bf0\",\"name\":\"bf0\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":9,\"methods\":[{\"dex_descriptor\":\"(Lcg;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(cg): void\"},{\"dex_descriptor\":\"(Lg21;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(g21, ku): java.lang.Object\"},{\"dex_descriptor\":\"(Lml;Lt91;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(ml, t91, ku): java.lang.Object\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"close\",\"def_pos\":0,\"signature\":\"close(): void\"},{\"dex_descriptor\":\"(Lxl;)V\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(xl): void\"},{\"dex_descriptor\":\"()Ljava/util/Set;\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(): java.util.Set\"},{\"dex_descriptor\":\"([BLt91;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(byte[], t91, ku): java.lang.Object\"},{\"dex_descriptor\":\"()Lve0;\",\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(): ve0\"},{\"dex_descriptor\":\"([BILt91;)V\",\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(byte[], int, t91): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "defpackage.bf0",
+          "method_name": "b",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"b\",\"overload_count\":1,\"body\":\"    /* JADX WARN: Code duplicated, block: B:7:0x0013  */\\n    public final Object b(ml mlVar, t91 t91Var, ku kuVar) {\\n        ze0 ze0Var;\\n        ml mlVar2;\\n        if (kuVar instanceof ze0) {\\n            ze0Var \\u003d (ze0) kuVar;\\n            int i \\u003d ze0Var.l;\\n            if ((i \\u0026 Integer.MIN_VALUE) !\\u003d 0) {\\n                ze0Var.l \\u003d i - Integer.MIN_VALUE;\\n            } else {\\n                ze0Var \\u003d new ze0(this, kuVar);\\n            }\\n        } else {\\n            ze0Var \\u003d new ze0(this, kuVar);\\n        }\\n        Object obj \\u003d ze0Var.j;\\n        int i2 \\u003d ze0Var.l;\\n        e11 e11Var \\u003d this.m;\\n        if (i2 \\u003d\\u003d 0) {\\n            nd1.y(obj);\\n            ze0Var.h \\u003d mlVar;\\n            ze0Var.i \\u003d t91Var;\\n            ze0Var.l \\u003d 1;\\n            Object objD \\u003d e11Var.d(ze0Var);\\n            pv pvVar \\u003d pv.e;\\n            if (objD \\u003d\\u003d pvVar) {\\n                return pvVar;\\n            }\\n        } else {\\n            if (i2 !\\u003d 1) {\\n                a.r(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\n                return null;\\n            }\\n            t91Var \\u003d ze0Var.i;\\n            mlVar \\u003d ze0Var.h;\\n            nd1.y(obj);\\n        }\\n        try {\\n            if (this.h.get() || !mlVar.c()) {\\n                throw new IllegalStateException(ql1.a.a(41668, 41609, 41645, 41639, 41654, 41643, 41652, 41644, 41643, 41642, 41633, 41700, 41654, 41633, 41639, 41633, 41645, 41650, 41633, 41654, 41700, 41642, 41643, 41648, 41700, 41654, 41633, 41637, 41632, 41661).toString());\\n            }\\n            y71 y71Var \\u003d (y71) this.g.getAndSet(new y71(mlVar, t91Var));\\n            if (y71Var !\\u003d null \\u0026\\u0026 (mlVar2 \\u003d (ml) y71Var.e) !\\u003d null) {\\n                z2.y(mlVar2);\\n            }\\n            cg cgVar \\u003d this.e;\\n            ql1 ql1Var \\u003d ql1.a;\\n            cgVar.i(ql1Var.a(6805, 6870, 6900, 6887, 6850, 6908, 6881, 6909, 6837, 6904, 6908, 6902, 6887, 6906, 6885, 6909, 6906, 6907, 6896, 6837, 6887, 6896, 6902, 6896, 6908, 6883, 6896, 6887, 6837, 6902, 6906, 6907, 6899, 6908, 6898, 6880, 6887, 6896, 6897, 6837, 6899, 6906, 6887, 6904, 6900, 6881, 6824) + t91Var.a + ql1Var.a(53972, 54011) + t91Var.b);\\n            e11Var.f(null);\\n            return t52.a;\\n        } catch (Throwable th) {\\n            e11Var.f(null);\\n            throw th;\\n        }\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"defpackage.bf0\",\"full_name\":\"bf0.b\",\"mode\":\"java\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 1024
+    },
+    "class_name": "defpackage.bf0",
+    "method": {
+      "name": "b",
+      "reported_signature": "b(ml, t91, ku): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "(Lml;Lt91;Lku;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:7:0x0013  */\n    public final Object b(ml mlVar, t91 t91Var, ku kuVar) {\n        ze0 ze0Var;\n        ml mlVar2;\n        if (kuVar instanceof ze0) {\n            ze0Var = (ze0) kuVar;\n            int i = ze0Var.l;\n            if ((i & Integer.MIN_VALUE) != 0) {\n                ze0Var.l = i - Integer.MIN_VALUE;\n            } else {\n                ze0Var = new ze0(this, kuVar);\n            }\n        } else {\n            ze0Var = new ze0(this, kuVar);\n        }\n        Object obj = ze0Var.j;\n        int i2 = ze0Var.l;\n        e11 e11Var = this.m;\n        if (i2 == 0) {\n            nd1.y(obj);\n            ze0Var.h = mlVar;\n            ze0Var.i = t91Var;\n            ze0Var.l = 1;\n            Object objD = e11Var.d(ze0Var);\n            pv pvVar = pv.e;\n            if (objD == pvVar) {\n                return pvVar;\n            }\n        } else {\n            if (i2 != 1) {\n                a.r(\"call to 'resume' before 'invoke' with coroutine\");\n                return null;\n            }\n            t91Var = ze0Var.i;\n            mlVar = ze0Var.h;\n            nd1.y(obj);\n        }\n        try {\n            if (this.h.get() || !mlVar.c()) {\n                throw new IllegalStateException(ql1.a.a(41668, 41609, 41645, 41639, 41654, 41643, 41652, 41644, 41643, 41642, 41633, 41700, 41654, 41633, 41639, 41633, 41645, 41650, 41633, 41654, 41700, 41642, 41643, 41648, 41700, 41654, 41633, 41637, 41632, 41661).toString());\n            }\n            y71 y71Var = (y71) this.g.getAndSet(new y71(mlVar, t91Var));\n            if (y71Var != null && (mlVar2 = (ml) y71Var.e) != null) {\n                z2.y(mlVar2);\n            }\n            cg cgVar = this.e;\n            ql1 ql1Var = ql1.a;\n            cgVar.i(ql1Var.a(6805, 6870, 6900, 6887, 6850, 6908, 6881, 6909, 6837, 6904, 6908, 6902, 6887, 6906, 6885, 6909, 6906, 6907, 6896, 6837, 6887, 6896, 6902, 6896, 6908, 6883, 6896, 6887, 6837, 6902, 6906, 6907, 6899, 6908, 6898, 6880, 6887, 6896, 6897, 6837, 6899, 6906, 6887, 6904, 6900, 6881, 6824) + t91Var.a + ql1Var.a(53972, 54011) + t91Var.b);\n            e11Var.f(null);\n            return t52.a;\n        } catch (Throwable th) {\n            e11Var.f(null);\n            throw th;\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_f958dbaa7c9c5c433789a646327ad8fb0ed4dd4ec45ff7b4c8c970222eefa3c5",
+  "subject": {
+    "name": "CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "digest": {
+      "sha256": "ec213a90b9900d2d54b379ca8abf9c39b1556b86afec3e82a259c2bf9cee5bed"
+    },
+    "local_path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "class_name": "defpackage.bf0",
+    "method_name": "<init>"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-MV5pjs/target.apk",
+      "class_count": 3016,
+      "resource_count": 110,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"25.0.4.1\",\"max_heap_bytes\":1073741824,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-MV5pjs/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-MV5pjs/target.apk\",\"class_count\":3016,\"raw_class_count\":3016,\"resource_count\":110,\"load_duration_ms\":1542,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "defpackage.bf0" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"e\",\"def_pos\":0,\"type\":\"cg\"},{\"name\":\"f\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicReference\"},{\"name\":\"g\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicReference\"},{\"name\":\"h\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicBoolean\"},{\"name\":\"i\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"j\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"k\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"l\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"m\",\"def_pos\":0,\"type\":\"e11\"},{\"name\":\"n\",\"def_pos\":0,\"type\":\"iu\"},{\"name\":\"o\",\"def_pos\":0,\"type\":\"java.util.LinkedHashMap\"},{\"name\":\"p\",\"def_pos\":0,\"type\":\"java.util.LinkedHashMap\"},{\"name\":\"q\",\"def_pos\":0,\"type\":\"xl\"}],\"field_count\":13,\"full_name\":\"defpackage.bf0\",\"name\":\"bf0\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":9,\"methods\":[{\"dex_descriptor\":\"(Lcg;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(cg): void\"},{\"dex_descriptor\":\"(Lg21;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(g21, ku): java.lang.Object\"},{\"dex_descriptor\":\"(Lml;Lt91;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(ml, t91, ku): java.lang.Object\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"close\",\"def_pos\":0,\"signature\":\"close(): void\"},{\"dex_descriptor\":\"(Lxl;)V\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(xl): void\"},{\"dex_descriptor\":\"()Ljava/util/Set;\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(): java.util.Set\"},{\"dex_descriptor\":\"([BLt91;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(byte[], t91, ku): java.lang.Object\"},{\"dex_descriptor\":\"()Lve0;\",\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(): ve0\"},{\"dex_descriptor\":\"([BILt91;)V\",\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(byte[], int, t91): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "defpackage.bf0",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"\\u003cinit\\u003e\",\"overload_count\":1,\"body\":\"    public bf0(cg cgVar) {\\n        this.e \\u003d cgVar;\\n        fw1 fw1VarE \\u003d mc1.e();\\n        lx lxVar \\u003d u00.a;\\n        this.n \\u003d nh.c(og.T(fw1VarE, cx.g));\\n        wj0 wj0Var \\u003d new wj0(1, 3, 1);\\n        int iR \\u003d hw0.R(jo.Z(wj0Var));\\n        LinkedHashMap linkedHashMap \\u003d new LinkedHashMap(iR \\u003c 16 ? 16 : iR);\\n        Iterator it \\u003d wj0Var.iterator();\\n        while (true) {\\n            vj0 vj0Var \\u003d (vj0) it;\\n            if (!vj0Var.g) {\\n                break;\\n            }\\n            Object next \\u003d vj0Var.next();\\n            ((Number) next).intValue();\\n            linkedHashMap.put(next, nh.a(8, 6, null));\\n        }\\n        this.o \\u003d linkedHashMap;\\n        wj0 wj0Var2 \\u003d new wj0(1, 3, 1);\\n        int iR2 \\u003d hw0.R(jo.Z(wj0Var2));\\n        LinkedHashMap linkedHashMap2 \\u003d new LinkedHashMap(iR2 \\u003e\\u003d 16 ? iR2 : 16);\\n        Iterator it2 \\u003d wj0Var2.iterator();\\n        while (true) {\\n            vj0 vj0Var2 \\u003d (vj0) it2;\\n            if (!vj0Var2.g) {\\n                break;\\n            }\\n            Object next2 \\u003d vj0Var2.next();\\n            ((Number) next2).intValue();\\n            linkedHashMap2.put(next2, new AtomicBoolean(true));\\n        }\\n        this.p \\u003d linkedHashMap2;\\n        for (Map.Entry entry : this.o.entrySet()) {\\n            vg.W(this.n, null, new ue0((km) entry.getValue(), this, ((Number) entry.getKey()).intValue(), null), 3);\\n        }\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"defpackage.bf0\",\"full_name\":\"bf0.\\u003cinit\\u003e\",\"mode\":\"java\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 1024
+    },
+    "class_name": "defpackage.bf0",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(cg): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "(Lcg;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public bf0(cg cgVar) {\n        this.e = cgVar;\n        fw1 fw1VarE = mc1.e();\n        lx lxVar = u00.a;\n        this.n = nh.c(og.T(fw1VarE, cx.g));\n        wj0 wj0Var = new wj0(1, 3, 1);\n        int iR = hw0.R(jo.Z(wj0Var));\n        LinkedHashMap linkedHashMap = new LinkedHashMap(iR < 16 ? 16 : iR);\n        Iterator it = wj0Var.iterator();\n        while (true) {\n            vj0 vj0Var = (vj0) it;\n            if (!vj0Var.g) {\n                break;\n            }\n            Object next = vj0Var.next();\n            ((Number) next).intValue();\n            linkedHashMap.put(next, nh.a(8, 6, null));\n        }\n        this.o = linkedHashMap;\n        wj0 wj0Var2 = new wj0(1, 3, 1);\n        int iR2 = hw0.R(jo.Z(wj0Var2));\n        LinkedHashMap linkedHashMap2 = new LinkedHashMap(iR2 >= 16 ? iR2 : 16);\n        Iterator it2 = wj0Var2.iterator();\n        while (true) {\n            vj0 vj0Var2 = (vj0) it2;\n            if (!vj0Var2.g) {\n                break;\n            }\n            Object next2 = vj0Var2.next();\n            ((Number) next2).intValue();\n            linkedHashMap2.put(next2, new AtomicBoolean(true));\n        }\n        this.p = linkedHashMap2;\n        for (Map.Entry entry : this.o.entrySet()) {\n            vg.W(this.n, null, new ue0((km) entry.getValue(), this, ((Number) entry.getKey()).intValue(), null), 3);\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

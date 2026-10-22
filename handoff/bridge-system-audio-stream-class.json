@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_7a9dc3f26f52c51ab434ade41e8632c882cf02021f734ef54cacb4c3be513e08",
+  "subject": {
+    "name": "CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "digest": {
+      "sha256": "ec213a90b9900d2d54b379ca8abf9c39b1556b86afec3e82a259c2bf9cee5bed"
+    },
+    "local_path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "class_name": "defpackage.ve0"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-HKYTAE/target.apk",
+      "class_count": 3016,
+      "resource_count": 110,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.4.1\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":1073741824}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-HKYTAE/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-HKYTAE/target.apk\",\"class_count\":3016,\"raw_class_count\":3016,\"resource_count\":110,\"load_duration_ms\":1364,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "defpackage.ve0" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":4,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"ve0\",\"full_name\":\"defpackage.ve0\",\"field_count\":3,\"fields\":[{\"def_pos\":0,\"name\":\"a\",\"type\":\"g21\"},{\"def_pos\":0,\"name\":\"b\",\"type\":\"java.util.Map\"},{\"def_pos\":0,\"name\":\"c\",\"type\":\"t91\"}],\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lg21;Ljava/util/Map;Lt91;)V\",\"signature\":\"\\u003cinit\\u003e(g21, java.util.Map, t91): void\"},{\"def_pos\":0,\"name\":\"equals\",\"is_constructor\":false,\"dex_descriptor\":\"(Ljava/lang/Object;)Z\",\"signature\":\"equals(java.lang.Object): boolean\"},{\"def_pos\":0,\"name\":\"hashCode\",\"is_constructor\":false,\"dex_descriptor\":\"()I\",\"signature\":\"hashCode(): int\"},{\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/lang/String;\",\"signature\":\"toString(): java.lang.String\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 1024
+    },
+    "class_name": "defpackage.ve0",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(g21, java.util.Map, t91): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(Lg21;Ljava/util/Map;Lt91;)V"
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      }
+    ],
+    "fields": [
+      { "name": "a", "reported_type": "g21" },
+      { "name": "b", "reported_type": "java.util.Map" },
+      { "name": "c", "reported_type": "t91" }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

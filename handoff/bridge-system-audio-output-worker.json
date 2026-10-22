@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_d120db7b6385d389afc8ac08aa3d4b6c1a2fb507d96ae7b55781cd829bf46004",
+  "subject": {
+    "name": "CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "digest": {
+      "sha256": "ec213a90b9900d2d54b379ca8abf9c39b1556b86afec3e82a259c2bf9cee5bed"
+    },
+    "local_path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "class_name": "defpackage.bf0",
+    "method_name": "i"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-DIa3QS/target.apk",
+      "class_count": 3016,
+      "resource_count": 110,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.4.1\",\"max_heap_bytes\":1073741824,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-DIa3QS/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-DIa3QS/target.apk\",\"class_count\":3016,\"raw_class_count\":3016,\"resource_count\":110,\"load_duration_ms\":1489,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "defpackage.bf0" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":9,\"methods\":[{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(cg): void\",\"dex_descriptor\":\"(Lcg;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"a(g21, ku): java.lang.Object\",\"dex_descriptor\":\"(Lg21;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(ml, t91, ku): java.lang.Object\",\"dex_descriptor\":\"(Lml;Lt91;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"close(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"close\"},{\"def_pos\":0,\"signature\":\"d(xl): void\",\"dex_descriptor\":\"(Lxl;)V\",\"is_constructor\":false,\"name\":\"d\"},{\"def_pos\":0,\"signature\":\"g(): java.util.Set\",\"dex_descriptor\":\"()Ljava/util/Set;\",\"is_constructor\":false,\"name\":\"g\"},{\"def_pos\":0,\"signature\":\"i(byte[], t91, ku): java.lang.Object\",\"dex_descriptor\":\"([BLt91;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"i\"},{\"def_pos\":0,\"signature\":\"j(): ve0\",\"dex_descriptor\":\"()Lve0;\",\"is_constructor\":false,\"name\":\"j\"},{\"def_pos\":0,\"signature\":\"l(byte[], int, t91): void\",\"dex_descriptor\":\"([BILt91;)V\",\"is_constructor\":false,\"name\":\"l\"}],\"fields\":[{\"type\":\"cg\",\"name\":\"e\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicReference\",\"name\":\"f\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicReference\",\"name\":\"g\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"h\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicLong\",\"name\":\"i\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicLong\",\"name\":\"j\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicLong\",\"name\":\"k\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicLong\",\"name\":\"l\",\"def_pos\":0},{\"type\":\"e11\",\"name\":\"m\",\"def_pos\":0},{\"type\":\"iu\",\"name\":\"n\",\"def_pos\":0},{\"type\":\"java.util.LinkedHashMap\",\"name\":\"o\",\"def_pos\":0},{\"type\":\"java.util.LinkedHashMap\",\"name\":\"p\",\"def_pos\":0},{\"type\":\"xl\",\"name\":\"q\",\"def_pos\":0}],\"field_count\":13,\"full_name\":\"defpackage.bf0\",\"name\":\"bf0\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "defpackage.bf0",
+          "method_name": "i",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"defpackage.bf0\",\"full_name\":\"bf0.i\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"i\",\"overload_count\":1,\"body\":\"    /* JADX WARN: Code duplicated, block: B:46:0x00c5  */\\n    /* JADX WARN: Code duplicated, block: B:48:0x00c8 A[Catch: all -\\u003e 0x0036, TryCatch #0 {all -\\u003e 0x0036, blocks: (B:14:0x0031, B:63:0x010c, B:67:0x0118, B:68:0x011f, B:21:0x0041, B:44:0x00bc, B:48:0x00c8, B:49:0x00cf, B:28:0x0068, B:30:0x007c, B:34:0x0087, B:36:0x0091, B:38:0x0099, B:40:0x009d, B:53:0x00db, B:54:0x00de, B:56:0x00e6, B:57:0x00e9, B:59:0x00ed, B:69:0x0124), top: B:73:0x0027 }] */\\n    /* JADX WARN: Code duplicated, block: B:65:0x0115  */\\n    /* JADX WARN: Code duplicated, block: B:67:0x0118 A[Catch: all -\\u003e 0x0036, TryCatch #0 {all -\\u003e 0x0036, blocks: (B:14:0x0031, B:63:0x010c, B:67:0x0118, B:68:0x011f, B:21:0x0041, B:44:0x00bc, B:48:0x00c8, B:49:0x00cf, B:28:0x0068, B:30:0x007c, B:34:0x0087, B:36:0x0091, B:38:0x0099, B:40:0x009d, B:53:0x00db, B:54:0x00de, B:56:0x00e6, B:57:0x00e9, B:59:0x00ed, B:69:0x0124), top: B:73:0x0027 }] */\\n    /* JADX WARN: Code duplicated, block: B:7:0x0017  */\\n    public final Object i(byte[] bArr, t91 t91Var, ku kuVar) {\\n        af0 af0Var;\\n        byte[] bArr2;\\n        t91 t91Var2;\\n        Boolean boolValueOf;\\n        byte[] bArr3;\\n        byte[] bArr4;\\n        if (kuVar instanceof af0) {\\n            af0Var \\u003d (af0) kuVar;\\n            int i \\u003d af0Var.l;\\n            if ((i \\u0026 Integer.MIN_VALUE) !\\u003d 0) {\\n                af0Var.l \\u003d i - Integer.MIN_VALUE;\\n            } else {\\n                af0Var \\u003d new af0(this, kuVar);\\n            }\\n        } else {\\n            af0Var \\u003d new af0(this, kuVar);\\n        }\\n        Object objQ0 \\u003d af0Var.j;\\n        pv pvVar \\u003d pv.e;\\n        int i2 \\u003d af0Var.l;\\n        boolean z \\u003d false;\\n        try {\\n            if (i2 \\u003d\\u003d 0) {\\n                nd1.y(objQ0);\\n                e11 e11Var \\u003d this.m;\\n                af0Var.h \\u003d bArr;\\n                af0Var.i \\u003d t91Var;\\n                af0Var.l \\u003d 1;\\n                if (e11Var.d(af0Var) !\\u003d pvVar) {\\n                    bArr2 \\u003d bArr;\\n                    t91Var2 \\u003d t91Var;\\n                }\\n                return pvVar;\\n            }\\n            if (i2 !\\u003d 1) {\\n                if (i2 \\u003d\\u003d 2) {\\n                    bArr4 \\u003d af0Var.h;\\n                    nd1.y(objQ0);\\n                    bArr2 \\u003d bArr4;\\n                    if (((Boolean) objQ0).booleanValue()) {\\n                        z \\u003d true;\\n                    }\\n                    if (z) {\\n                        this.l.addAndGet(bArr2.length);\\n                    }\\n                    boolValueOf \\u003d Boolean.valueOf(z);\\n                    this.m.f(null);\\n                    return boolValueOf;\\n                }\\n                if (i2 !\\u003d 3) {\\n                    a.r(\\\"call to \\u0027resume\\u0027 before \\u0027invoke\\u0027 with coroutine\\\");\\n                    return null;\\n                }\\n                bArr3 \\u003d af0Var.h;\\n                nd1.y(objQ0);\\n                bArr2 \\u003d bArr3;\\n                if (((Boolean) objQ0).booleanValue()) {\\n                    z \\u003d true;\\n                }\\n                if (z) {\\n                    this.l.addAndGet(bArr2.length);\\n                }\\n                boolValueOf \\u003d Boolean.valueOf(z);\\n                this.m.f(null);\\n                return boolValueOf;\\n            }\\n            t91Var2 \\u003d af0Var.i;\\n            byte[] bArr5 \\u003d af0Var.h;\\n            nd1.y(objQ0);\\n            bArr2 \\u003d bArr5;\\n            y71 y71Var \\u003d (y71) this.g.get();\\n            ve0 ve0VarJ \\u003d j();\\n            if (!this.h.get() \\u0026\\u0026 t91Var2.a(bArr2.length)) {\\n                if (y71Var !\\u003d null \\u0026\\u0026 ((ml) y71Var.e).c() \\u0026\\u0026 vk0.o(y71Var.f, t91Var2)) {\\n                    xl xlVar \\u003d this.q;\\n                    if (xlVar !\\u003d null) {\\n                        int i3 \\u003d t91Var2.a;\\n                        int i4 \\u003d t91Var2.b;\\n                        int i5 \\u003d t91Var2.c;\\n                        af0Var.h \\u003d bArr2;\\n                        af0Var.i \\u003d null;\\n                        af0Var.l \\u003d 2;\\n                        lx lxVar \\u003d u00.a;\\n                        objQ0 \\u003d vg.q0(cx.g, new vl(i3, i4, i5, bArr2, xlVar, null), af0Var);\\n                        if (objQ0 !\\u003d pvVar) {\\n                            bArr4 \\u003d bArr2;\\n                            bArr2 \\u003d bArr4;\\n                            if (((Boolean) objQ0).booleanValue()) {\\n                                z \\u003d true;\\n                            }\\n                        }\\n                    }\\n                    if (z) {\\n                        this.l.addAndGet(bArr2.length);\\n                    }\\n                    boolValueOf \\u003d Boolean.valueOf(z);\\n                } else if (ve0VarJ !\\u003d null \\u0026\\u0026 vk0.o(ve0VarJ.c, t91Var2)) {\\n                    xl xlVar2 \\u003d this.q;\\n                    if (xlVar2 !\\u003d null) {\\n                        int i6 \\u003d t91Var2.a;\\n                        int i7 \\u003d t91Var2.b;\\n                        int i8 \\u003d t91Var2.c;\\n                        af0Var.h \\u003d bArr2;\\n                        af0Var.i \\u003d null;\\n                        af0Var.l \\u003d 3;\\n                        lx lxVar2 \\u003d u00.a;\\n                        objQ0 \\u003d vg.q0(cx.g, new vl(i6, i7, i8, bArr2, xlVar2, null), af0Var);\\n                        if (objQ0 !\\u003d pvVar) {\\n                            bArr3 \\u003d bArr2;\\n                            bArr2 \\u003d bArr3;\\n                            if (((Boolean) objQ0).booleanValue()) {\\n                                z \\u003d true;\\n                            }\\n                        }\\n                    }\\n                    if (z) {\\n                        this.l.addAndGet(bArr2.length);\\n                    }\\n                    boolValueOf \\u003d Boolean.valueOf(z);\\n                } else {\\n                    boolValueOf \\u003d Boolean.FALSE;\\n                }\\n                return pvVar;\\n            }\\n            boolValueOf \\u003d Boolean.FALSE;\\n            this.m.f(null);\\n            return boolValueOf;\\n        } catch (Throwable th) {\\n            this.m.f(null);\\n            throw th;\\n        }\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 1024
+    },
+    "class_name": "defpackage.bf0",
+    "method": {
+      "name": "i",
+      "reported_signature": "i(byte[], t91, ku): java.lang.Object",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "([BLt91;Lku;)Ljava/lang/Object;"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:46:0x00c5  */\n    /* JADX WARN: Code duplicated, block: B:48:0x00c8 A[Catch: all -> 0x0036, TryCatch #0 {all -> 0x0036, blocks: (B:14:0x0031, B:63:0x010c, B:67:0x0118, B:68:0x011f, B:21:0x0041, B:44:0x00bc, B:48:0x00c8, B:49:0x00cf, B:28:0x0068, B:30:0x007c, B:34:0x0087, B:36:0x0091, B:38:0x0099, B:40:0x009d, B:53:0x00db, B:54:0x00de, B:56:0x00e6, B:57:0x00e9, B:59:0x00ed, B:69:0x0124), top: B:73:0x0027 }] */\n    /* JADX WARN: Code duplicated, block: B:65:0x0115  */\n    /* JADX WARN: Code duplicated, block: B:67:0x0118 A[Catch: all -> 0x0036, TryCatch #0 {all -> 0x0036, blocks: (B:14:0x0031, B:63:0x010c, B:67:0x0118, B:68:0x011f, B:21:0x0041, B:44:0x00bc, B:48:0x00c8, B:49:0x00cf, B:28:0x0068, B:30:0x007c, B:34:0x0087, B:36:0x0091, B:38:0x0099, B:40:0x009d, B:53:0x00db, B:54:0x00de, B:56:0x00e6, B:57:0x00e9, B:59:0x00ed, B:69:0x0124), top: B:73:0x0027 }] */\n    /* JADX WARN: Code duplicated, block: B:7:0x0017  */\n    public final Object i(byte[] bArr, t91 t91Var, ku kuVar) {\n        af0 af0Var;\n        byte[] bArr2;\n        t91 t91Var2;\n        Boolean boolValueOf;\n        byte[] bArr3;\n        byte[] bArr4;\n        if (kuVar instanceof af0) {\n            af0Var = (af0) kuVar;\n            int i = af0Var.l;\n            if ((i & Integer.MIN_VALUE) != 0) {\n                af0Var.l = i - Integer.MIN_VALUE;\n            } else {\n                af0Var = new af0(this, kuVar);\n            }\n        } else {\n            af0Var = new af0(this, kuVar);\n        }\n        Object objQ0 = af0Var.j;\n        pv pvVar = pv.e;\n        int i2 = af0Var.l;\n        boolean z = false;\n        try {\n            if (i2 == 0) {\n                nd1.y(objQ0);\n                e11 e11Var = this.m;\n                af0Var.h = bArr;\n                af0Var.i = t91Var;\n                af0Var.l = 1;\n                if (e11Var.d(af0Var) != pvVar) {\n                    bArr2 = bArr;\n                    t91Var2 = t91Var;\n                }\n                return pvVar;\n            }\n            if (i2 != 1) {\n                if (i2 == 2) {\n                    bArr4 = af0Var.h;\n                    nd1.y(objQ0);\n                    bArr2 = bArr4;\n                    if (((Boolean) objQ0).booleanValue()) {\n                        z = true;\n                    }\n                    if (z) {\n                        this.l.addAndGet(bArr2.length);\n                    }\n                    boolValueOf = Boolean.valueOf(z);\n                    this.m.f(null);\n                    return boolValueOf;\n                }\n                if (i2 != 3) {\n                    a.r(\"call to 'resume' before 'invoke' with coroutine\");\n                    return null;\n                }\n                bArr3 = af0Var.h;\n                nd1.y(objQ0);\n                bArr2 = bArr3;\n                if (((Boolean) objQ0).booleanValue()) {\n                    z = true;\n                }\n                if (z) {\n                    this.l.addAndGet(bArr2.length);\n                }\n                boolValueOf = Boolean.valueOf(z);\n                this.m.f(null);\n                return boolValueOf;\n            }\n            t91Var2 = af0Var.i;\n            byte[] bArr5 = af0Var.h;\n            nd1.y(objQ0);\n            bArr2 = bArr5;\n            y71 y71Var = (y71) this.g.get();\n            ve0 ve0VarJ = j();\n            if (!this.h.get() && t91Var2.a(bArr2.length)) {\n                if (y71Var != null && ((ml) y71Var.e).c() && vk0.o(y71Var.f, t91Var2)) {\n                    xl xlVar = this.q;\n                    if (xlVar != null) {\n                        int i3 = t91Var2.a;\n                        int i4 = t91Var2.b;\n                        int i5 = t91Var2.c;\n                        af0Var.h = bArr2;\n                        af0Var.i = null;\n                        af0Var.l = 2;\n                        lx lxVar = u00.a;\n                        objQ0 = vg.q0(cx.g, new vl(i3, i4, i5, bArr2, xlVar, null), af0Var);\n                        if (objQ0 != pvVar) {\n                            bArr4 = bArr2;\n                            bArr2 = bArr4;\n                            if (((Boolean) objQ0).booleanValue()) {\n                                z = true;\n                            }\n                        }\n                    }\n                    if (z) {\n                        this.l.addAndGet(bArr2.length);\n                    }\n                    boolValueOf = Boolean.valueOf(z);\n                } else if (ve0VarJ != null && vk0.o(ve0VarJ.c, t91Var2)) {\n                    xl xlVar2 = this.q;\n                    if (xlVar2 != null) {\n                        int i6 = t91Var2.a;\n                        int i7 = t91Var2.b;\n                        int i8 = t91Var2.c;\n                        af0Var.h = bArr2;\n                        af0Var.i = null;\n                        af0Var.l = 3;\n                        lx lxVar2 = u00.a;\n                        objQ0 = vg.q0(cx.g, new vl(i6, i7, i8, bArr2, xlVar2, null), af0Var);\n                        if (objQ0 != pvVar) {\n                            bArr3 = bArr2;\n                            bArr2 = bArr3;\n                            if (((Boolean) objQ0).booleanValue()) {\n                                z = true;\n                            }\n                        }\n                    }\n                    if (z) {\n                        this.l.addAndGet(bArr2.length);\n                    }\n                    boolValueOf = Boolean.valueOf(z);\n                } else {\n                    boolValueOf = Boolean.FALSE;\n                }\n                return pvVar;\n            }\n            boolValueOf = Boolean.FALSE;\n            this.m.f(null);\n            return boolValueOf;\n        } catch (Throwable th) {\n            this.m.f(null);\n            throw th;\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

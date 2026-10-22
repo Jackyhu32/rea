@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_e6899c148d726866a46830c5c8fdf7094049e3403c2ca6b98b35d051660604b8",
+  "subject": {
+    "name": "CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "digest": {
+      "sha256": "ec213a90b9900d2d54b379ca8abf9c39b1556b86afec3e82a259c2bf9cee5bed"
+    },
+    "local_path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "class_name": "defpackage.bf0",
+    "method_name": "l"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-zgLMSA/target.apk",
+      "class_count": 3016,
+      "resource_count": 110,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"25.0.4.1\",\"max_heap_bytes\":1073741824}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-zgLMSA/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-zgLMSA/target.apk\",\"class_count\":3016,\"raw_class_count\":3016,\"resource_count\":110,\"load_duration_ms\":1134,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "defpackage.bf0" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"e\",\"def_pos\":0,\"type\":\"cg\"},{\"name\":\"f\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicReference\"},{\"name\":\"g\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicReference\"},{\"name\":\"h\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicBoolean\"},{\"name\":\"i\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"j\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"k\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"l\",\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicLong\"},{\"name\":\"m\",\"def_pos\":0,\"type\":\"e11\"},{\"name\":\"n\",\"def_pos\":0,\"type\":\"iu\"},{\"name\":\"o\",\"def_pos\":0,\"type\":\"java.util.LinkedHashMap\"},{\"name\":\"p\",\"def_pos\":0,\"type\":\"java.util.LinkedHashMap\"},{\"name\":\"q\",\"def_pos\":0,\"type\":\"xl\"}],\"field_count\":13,\"full_name\":\"defpackage.bf0\",\"name\":\"bf0\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":9,\"methods\":[{\"signature\":\"\\u003cinit\\u003e(cg): void\",\"dex_descriptor\":\"(Lcg;)V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(g21, ku): java.lang.Object\",\"dex_descriptor\":\"(Lg21;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(ml, t91, ku): java.lang.Object\",\"dex_descriptor\":\"(Lml;Lt91;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"close(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"close\",\"def_pos\":0},{\"signature\":\"d(xl): void\",\"dex_descriptor\":\"(Lxl;)V\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0},{\"signature\":\"g(): java.util.Set\",\"dex_descriptor\":\"()Ljava/util/Set;\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0},{\"signature\":\"i(byte[], t91, ku): java.lang.Object\",\"dex_descriptor\":\"([BLt91;Lku;)Ljava/lang/Object;\",\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0},{\"signature\":\"j(): ve0\",\"dex_descriptor\":\"()Lve0;\",\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0},{\"signature\":\"l(byte[], int, t91): void\",\"dex_descriptor\":\"([BILt91;)V\",\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "defpackage.bf0",
+          "method_name": "l",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"l\",\"overload_count\":1,\"body\":\"    public final void l(byte[] bArr, int i, t91 t91Var) {\\n        t91Var.getClass();\\n        if (this.h.get()) {\\n            return;\\n        }\\n        if (1 \\u003e i || i \\u003e\\u003d 4 || !t91Var.a(bArr.length)) {\\n            a.v(\\\"Failed requirement.\\\");\\n            return;\\n        }\\n        this.i.incrementAndGet();\\n        ve0 ve0Var \\u003d (ve0) ((Map) this.f.get()).get(Integer.valueOf(i));\\n        AtomicLong atomicLong \\u003d this.j;\\n        if (ve0Var \\u003d\\u003d null || !ve0Var.a.c()) {\\n            atomicLong.incrementAndGet();\\n            return;\\n        }\\n        km kmVar \\u003d (km) hw0.Q(Integer.valueOf(i), this.o);\\n        int length \\u003d bArr.length - (((t91Var.a / 10) * t91Var.b) * 2);\\n        if (length \\u003c 0) {\\n            length \\u003d 0;\\n        }\\n        if (length \\u003e 0) {\\n            atomicLong.incrementAndGet();\\n        }\\n        we0 we0Var \\u003d new we0(ud.j0(bArr, length, bArr.length), t91Var, ve0Var, System.nanoTime());\\n        if (kmVar.t(we0Var) instanceof vm) {\\n            if (!(kmVar.q() instanceof vm)) {\\n                atomicLong.incrementAndGet();\\n            }\\n            if (kmVar.t(we0Var) instanceof vm) {\\n                atomicLong.incrementAndGet();\\n            }\\n        }\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"defpackage.bf0\",\"full_name\":\"bf0.l\",\"mode\":\"java\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 1024
+    },
+    "class_name": "defpackage.bf0",
+    "method": {
+      "name": "l",
+      "reported_signature": "l(byte[], int, t91): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "([BILt91;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void l(byte[] bArr, int i, t91 t91Var) {\n        t91Var.getClass();\n        if (this.h.get()) {\n            return;\n        }\n        if (1 > i || i >= 4 || !t91Var.a(bArr.length)) {\n            a.v(\"Failed requirement.\");\n            return;\n        }\n        this.i.incrementAndGet();\n        ve0 ve0Var = (ve0) ((Map) this.f.get()).get(Integer.valueOf(i));\n        AtomicLong atomicLong = this.j;\n        if (ve0Var == null || !ve0Var.a.c()) {\n            atomicLong.incrementAndGet();\n            return;\n        }\n        km kmVar = (km) hw0.Q(Integer.valueOf(i), this.o);\n        int length = bArr.length - (((t91Var.a / 10) * t91Var.b) * 2);\n        if (length < 0) {\n            length = 0;\n        }\n        if (length > 0) {\n            atomicLong.incrementAndGet();\n        }\n        we0 we0Var = new we0(ud.j0(bArr, length, bArr.length), t91Var, ve0Var, System.nanoTime());\n        if (kmVar.t(we0Var) instanceof vm) {\n            if (!(kmVar.q() instanceof vm)) {\n                atomicLong.incrementAndGet();\n            }\n            if (kmVar.t(we0Var) instanceof vm) {\n                atomicLong.incrementAndGet();\n            }\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

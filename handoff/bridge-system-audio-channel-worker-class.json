@@ -1,0 +1,149 @@
+{
+  "evidence_id": "ev_8fbcbfc56e775ac49f4a6974da5ad3689a7562c36c17ec3214a8f641def7f929",
+  "subject": {
+    "name": "CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "digest": {
+      "sha256": "ec213a90b9900d2d54b379ca8abf9c39b1556b86afec3e82a259c2bf9cee5bed"
+    },
+    "local_path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "class_name": "defpackage.ue0"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-cOw4YV/target.apk",
+      "class_count": 3016,
+      "resource_count": 110,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":1073741824,\"java_version\":\"25.0.4.1\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-cOw4YV/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-cOw4YV/target.apk\",\"class_count\":3016,\"raw_class_count\":3016,\"resource_count\":110,\"load_duration_ms\":1224,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "defpackage.ue0" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"type\":\"s91\",\"def_pos\":0,\"name\":\"i\"},{\"type\":\"ve0\",\"def_pos\":0,\"name\":\"j\"},{\"type\":\"jj\",\"def_pos\":0,\"name\":\"k\"},{\"type\":\"we0\",\"def_pos\":0,\"name\":\"l\"},{\"type\":\"t91\",\"def_pos\":0,\"name\":\"m\"},{\"type\":\"byte[]\",\"def_pos\":0,\"name\":\"n\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"o\"},{\"type\":\"long\",\"def_pos\":0,\"name\":\"p\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"q\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"r\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"s\"},{\"type\":\"byte\",\"def_pos\":0,\"name\":\"t\"},{\"type\":\"km\",\"def_pos\":0,\"name\":\"u\"},{\"type\":\"bf0\",\"def_pos\":0,\"name\":\"v\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"w\"}],\"methods\":[{\"dex_descriptor\":\"(Lkm;Lbf0;ILju;)V\",\"signature\":\"\\u003cinit\\u003e(km, bf0, int, ju): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"dex_descriptor\":\"(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"g(java.lang.Object, java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false},{\"dex_descriptor\":\"(Lju;Ljava/lang/Object;)Lju;\",\"signature\":\"o(ju, java.lang.Object): ju\",\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false},{\"dex_descriptor\":\"(Ljava/lang/Object;)Ljava/lang/Object;\",\"signature\":\"q(java.lang.Object): java.lang.Object\",\"def_pos\":0,\"name\":\"q\",\"is_constructor\":false}],\"method_count\":4,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"ue0\",\"full_name\":\"defpackage.ue0\",\"field_count\":15}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 1024
+    },
+    "class_name": "defpackage.ue0",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(km, bf0, int, ju): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(Lkm;Lbf0;ILju;)V"
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(java.lang.Object, java.lang.Object): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(ju, java.lang.Object): ju",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lju;Ljava/lang/Object;)Lju;"
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(java.lang.Object): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      { "name": "i", "reported_type": "s91" },
+      { "name": "j", "reported_type": "ve0" },
+      { "name": "k", "reported_type": "jj" },
+      { "name": "l", "reported_type": "we0" },
+      { "name": "m", "reported_type": "t91" },
+      { "name": "n", "reported_type": "byte[]" },
+      { "name": "o", "reported_type": "long" },
+      { "name": "p", "reported_type": "long" },
+      { "name": "q", "reported_type": "int" },
+      { "name": "r", "reported_type": "int" },
+      { "name": "s", "reported_type": "int" },
+      { "name": "t", "reported_type": "byte" },
+      { "name": "u", "reported_type": "km" },
+      { "name": "v", "reported_type": "bf0" },
+      { "name": "w", "reported_type": "int" }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}
