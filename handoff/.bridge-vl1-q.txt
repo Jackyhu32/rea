@@ -1,0 +1,55 @@
+    @Override // defpackage.gf
+    public final Object q(Object obj) throws Throwable {
+        Object objQ0;
+        byte b = this.i;
+        t52 t52Var = t52.a;
+        Object obj2 = this.m;
+        Object obj3 = this.l;
+        pv pvVar = pv.e;
+        int i = this.k;
+        switch (b) {
+            case 0:
+                boolean z = this.j;
+                if (z) {
+                    if (z) {
+                        nd1.y(obj);
+                        return t52Var;
+                    }
+                    a.r("call to 'resume' before 'invoke' with coroutine");
+                    return null;
+                }
+                nd1.y(obj);
+                ra raVar = (ra) obj3;
+                Integer num = new Integer(i);
+                iu1 iu1Var = ((wl1) obj2).b;
+                this.j = true;
+                return ra.a(raVar, num, iu1Var, null, this, 12) == pvVar ? pvVar : t52Var;
+            default:
+                boolean z2 = this.j;
+                if (!z2) {
+                    nd1.y(obj);
+                    xl xlVar = (xl) obj3;
+                    h5 h5Var = new h5(i, (byte) 6);
+                    this.j = true;
+                    xlVar.getClass();
+                    lx lxVar = u00.a;
+                    objQ0 = vg.q0(cx.g, new x7(xlVar, h5Var, "carlife_change_theme", (ju) null), this);
+                    if (objQ0 == pvVar) {
+                        return pvVar;
+                    }
+                } else {
+                    if (!z2) {
+                        a.r("call to 'resume' before 'invoke' with coroutine");
+                        return null;
+                    }
+                    nd1.y(obj);
+                    objQ0 = obj;
+                }
+                Bundle bundle = (Bundle) objQ0;
+                ni niVar = ni.a;
+                String str = (String) obj2;
+                ql1 ql1Var = ql1.a;
+                niVar.c(str, ql1Var.a(48836, 48775, 48805, 48822, 48868, 48810, 48813, 48803, 48812, 48816, 48868, 48809, 48811, 48800, 48801, 48889) + i + ql1Var.a(30390, 30358, 30416, 30425, 30404, 30401, 30423, 30404, 30418, 30419, 30418, 30358, 30423, 30405, 30358, 30421, 30423, 30404, 30426, 30431, 30416, 30419, 30441, 30421, 30430, 30423, 30424, 30417, 30419, 30441, 30402, 30430, 30419, 30427, 30419, 30358, 30404, 30419, 30406, 30426, 30415, 30347) + (bundle != null));
+                return t52Var;
+        }
+    }

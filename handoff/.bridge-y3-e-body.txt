@@ -1,0 +1,8484 @@
+.method public final e(ILt91;Lto1;Lku;)Ljava/lang/Object;
+    .registers 59
+
+    .line 1
+    move-object/from16 v2, p0
+
+    .line 2
+    .line 3
+    move/from16 v0, p1
+
+    .line 4
+    .line 5
+    move-object/from16 v1, p2
+
+    .line 6
+    .line 7
+    move-object/from16 v3, p3
+
+    .line 8
+    .line 9
+    move-object/from16 v4, p4
+
+    .line 10
+    .line 11
+    sget-object v9, Lyk;->e:Lyk;
+
+    .line 12
+    .line 13
+    instance-of v5, v4, Lk3;
+
+    .line 14
+    .line 15
+    if-eqz v5, :cond_20
+
+    .line 16
+    .line 17
+    move-object v5, v4
+
+    .line 18
+    check-cast v5, Lk3;
+
+    .line 19
+    .line 20
+    iget v6, v5, Lk3;->z:I
+
+    .line 21
+    .line 22
+    const/high16 v7, -0x80000000
+
+    .line 23
+    .line 24
+    and-int v8, v6, v7
+
+    .line 25
+    .line 26
+    if-eqz v8, :cond_20
+
+    .line 27
+    .line 28
+    sub-int/2addr v6, v7
+
+    .line 29
+    iput v6, v5, Lk3;->z:I
+
+    .line 30
+    .line 31
+    :goto_1e
+    move-object v10, v5
+
+    .line 32
+    goto :goto_26
+
+    .line 33
+    :cond_20
+    new-instance v5, Lk3;
+
+    .line 34
+    .line 35
+    invoke-direct {v5, v2, v4}, Lk3;-><init>(Ly3;Lku;)V
+
+    .line 36
+    .line 37
+    .line 38
+    goto :goto_1e
+
+    .line 39
+    :goto_26
+    iget-object v4, v10, Lk3;->x:Ljava/lang/Object;
+
+    .line 40
+    .line 41
+    sget-object v11, Lpv;->e:Lpv;
+
+    .line 42
+    .line 43
+    iget v5, v10, Lk3;->z:I
+
+    .line 44
+    .line 45
+    const-string v12, "DataStream-Salt"
+
+    .line 46
+    .line 47
+    const-string v14, "controlPort"
+
+    .line 48
+    .line 49
+    const-string v15, "streamConnectionID"
+
+    .line 50
+    .line 51
+    const-string v8, "streams"
+
+    .line 52
+    .line 53
+    const-string v13, "type"
+
+    .line 54
+    .line 55
+    const-string v7, "/"
+
+    .line 56
+    .line 57
+    const v18, 0xd2fb
+
+    .line 58
+    .line 59
+    .line 60
+    const/4 v6, 0x1
+
+    .line 61
+    move-object/from16 v23, v4
+
+    .line 62
+    .line 63
+    const/4 v4, 0x0
+
+    .line 64
+    if-eqz v5, :cond_11b
+
+    .line 65
+    .line 66
+    if-eq v5, v6, :cond_e1
+
+    .line 67
+    .line 68
+    const/4 v1, 0x2
+
+    .line 69
+    if-eq v5, v1, :cond_7a
+
+    .line 70
+    .line 71
+    const/4 v1, 0x3
+
+    .line 72
+    if-ne v5, v1, :cond_74
+
+    .line 73
+    .line 74
+    iget v1, v10, Lk3;->k:I
+
+    .line 75
+    .line 76
+    iget-wide v3, v10, Lk3;->w:J
+
+    .line 77
+    .line 78
+    iget-object v5, v10, Lk3;->v:Lg21;
+
+    .line 79
+    .line 80
+    iget-object v6, v10, Lk3;->t:Ljava/net/DatagramSocket;
+
+    .line 81
+    .line 82
+    iget-object v9, v10, Lk3;->s:Ljava/net/DatagramSocket;
+
+    .line 83
+    .line 84
+    iget-object v11, v10, Lk3;->p:Lmi1;
+
+    .line 85
+    .line 86
+    iget-object v10, v10, Lk3;->n:Lal;
+
+    .line 87
+    .line 88
+    :try_start_57
+    invoke-static/range {v23 .. v23}, Lnd1;->y(Ljava/lang/Object;)V
+    :try_end_5a
+    .catchall {:try_start_57 .. :try_end_5a} :catchall_66
+
+    .line 89
+    .line 90
+    .line 91
+    move-object/from16 v49, v7
+
+    .line 92
+    .line 93
+    move-object/from16 v27, v8
+
+    .line 94
+    .line 95
+    move-object/from16 v30, v13
+
+    .line 96
+    .line 97
+    move-object/from16 v28, v15
+
+    .line 98
+    .line 99
+    move-object v13, v6
+
+    .line 100
+    move-object v6, v2
+
+    .line 101
+    goto/16 :goto_8d7
+
+    .line 102
+    .line 103
+    :catchall_66
+    move-exception v0
+
+    .line 104
+    move v14, v1
+
+    .line 105
+    move-object/from16 v49, v7
+
+    .line 106
+    .line 107
+    move-object/from16 v27, v8
+
+    .line 108
+    .line 109
+    move-object/from16 v30, v13
+
+    .line 110
+    .line 111
+    move-object/from16 v28, v15
+
+    .line 112
+    .line 113
+    move-object v13, v6
+
+    .line 114
+    move-object v6, v2
+
+    .line 115
+    goto/16 :goto_90f
+
+    .line 116
+    .line 117
+    :cond_74
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 118
+    .line 119
+    invoke-static {v0}, La;->r(Ljava/lang/String;)V
+
+    .line 120
+    .line 121
+    .line 122
+    return-object v4
+
+    .line 123
+    :cond_7a
+    iget v0, v10, Lk3;->l:I
+
+    .line 124
+    .line 125
+    iget v1, v10, Lk3;->k:I
+
+    .line 126
+    .line 127
+    move-object/from16 v24, v4
+
+    .line 128
+    .line 129
+    iget-wide v4, v10, Lk3;->w:J
+
+    .line 130
+    .line 131
+    iget v3, v10, Lk3;->j:I
+
+    .line 132
+    .line 133
+    iget v9, v10, Lk3;->i:I
+
+    .line 134
+    .line 135
+    iget v6, v10, Lk3;->h:I
+
+    .line 136
+    .line 137
+    move/from16 v16, v0
+
+    .line 138
+    .line 139
+    iget-object v0, v10, Lk3;->u:Ljava/util/Map;
+
+    .line 140
+    .line 141
+    move/from16 v17, v1
+
+    .line 142
+    .line 143
+    iget-object v1, v10, Lk3;->t:Ljava/net/DatagramSocket;
+
+    .line 144
+    .line 145
+    move-object/from16 v18, v1
+
+    .line 146
+    .line 147
+    iget-object v1, v10, Lk3;->s:Ljava/net/DatagramSocket;
+
+    .line 148
+    .line 149
+    move-object/from16 v19, v0
+
+    .line 150
+    .line 151
+    iget-object v0, v10, Lk3;->q:Lzk;
+
+    .line 152
+    .line 153
+    move-object/from16 v20, v1
+
+    .line 154
+    .line 155
+    iget-object v1, v10, Lk3;->p:Lmi1;
+
+    .line 156
+    .line 157
+    move-object/from16 v22, v0
+
+    .line 158
+    .line 159
+    iget-object v0, v10, Lk3;->o:[B
+
+    .line 160
+    .line 161
+    move-object/from16 p1, v1
+
+    .line 162
+    .line 163
+    iget-object v1, v10, Lk3;->n:Lal;
+
+    .line 164
+    .line 165
+    move-object/from16 p2, v0
+
+    .line 166
+    .line 167
+    iget-object v0, v10, Lk3;->m:Lob0;
+
+    .line 168
+    .line 169
+    :try_start_a8
+    invoke-static/range {v23 .. v23}, Lnd1;->y(Ljava/lang/Object;)V
+    :try_end_ab
+    .catch Ljava/lang/Exception; {:try_start_a8 .. :try_end_ab} :catch_c9
+
+    .line 170
+    .line 171
+    .line 172
+    move-object/from16 v36, p1
+
+    .line 173
+    .line 174
+    move-object/from16 v47, p2
+
+    .line 175
+    .line 176
+    move/from16 v29, v3
+
+    .line 177
+    .line 178
+    move-wide/from16 v24, v4
+
+    .line 179
+    .line 180
+    move-object/from16 v49, v7
+
+    .line 181
+    .line 182
+    move-object v3, v8
+
+    .line 183
+    move-object v8, v12
+
+    .line 184
+    move-object v4, v13
+
+    .line 185
+    move-object v2, v15
+
+    .line 186
+    move/from16 v13, v16
+
+    .line 187
+    .line 188
+    move-object/from16 v44, v18
+
+    .line 189
+    .line 190
+    move-object/from16 v48, v22
+
+    .line 191
+    .line 192
+    const/4 v7, 0x1
+
+    .line 193
+    move-object v5, v1
+
+    .line 194
+    move-object v15, v10
+
+    .line 195
+    move-object v1, v14
+
+    .line 196
+    move v10, v6
+
+    .line 197
+    move-object v6, v11
+
+    .line 198
+    move-object/from16 v11, v20
+
+    .line 199
+    .line 200
+    goto/16 :goto_80b
+
+    .line 201
+    .line 202
+    :catch_c9
+    move-exception v0
+
+    .line 203
+    move-object v6, v2
+
+    .line 204
+    move-wide/from16 v24, v4
+
+    .line 205
+    .line 206
+    move-object/from16 v49, v7
+
+    .line 207
+    .line 208
+    move-object/from16 v27, v8
+
+    .line 209
+    .line 210
+    move-object/from16 v30, v13
+
+    .line 211
+    .line 212
+    move-object/from16 v28, v15
+
+    .line 213
+    .line 214
+    move/from16 v14, v17
+
+    .line 215
+    .line 216
+    move-object/from16 v44, v18
+
+    .line 217
+    .line 218
+    move-object/from16 v11, v20
+
+    .line 219
+    .line 220
+    move-object/from16 v13, p1
+
+    .line 221
+    .line 222
+    move-object v5, v1
+
+    .line 223
+    :goto_de
+    move-object v1, v0
+
+    .line 224
+    goto/16 :goto_c3e
+
+    .line 225
+    .line 226
+    :cond_e1
+    move-object/from16 v24, v4
+
+    .line 227
+    .line 228
+    iget v0, v10, Lk3;->j:I
+
+    .line 229
+    .line 230
+    iget v1, v10, Lk3;->i:I
+
+    .line 231
+    .line 232
+    iget v3, v10, Lk3;->h:I
+
+    .line 233
+    .line 234
+    iget-object v4, v10, Lk3;->r:Lt91;
+
+    .line 235
+    .line 236
+    iget-object v5, v10, Lk3;->q:Lzk;
+
+    .line 237
+    .line 238
+    iget-object v6, v10, Lk3;->p:Lmi1;
+
+    .line 239
+    .line 240
+    move/from16 p1, v0
+
+    .line 241
+    .line 242
+    iget-object v0, v10, Lk3;->o:[B
+
+    .line 243
+    .line 244
+    move-object/from16 p2, v0
+
+    .line 245
+    .line 246
+    iget-object v0, v10, Lk3;->n:Lal;
+
+    .line 247
+    .line 248
+    move-object/from16 p3, v0
+
+    .line 249
+    .line 250
+    iget-object v0, v10, Lk3;->m:Lob0;
+
+    .line 251
+    .line 252
+    invoke-static/range {v23 .. v23}, Lnd1;->y(Ljava/lang/Object;)V
+
+    .line 253
+    .line 254
+    .line 255
+    move/from16 v23, v3
+
+    .line 256
+    .line 257
+    move-object v3, v0
+
+    .line 258
+    move/from16 v0, v23
+
+    .line 259
+    .line 260
+    move-object/from16 v26, v8
+
+    .line 261
+    .line 262
+    move-object/from16 v27, v9
+
+    .line 263
+    .line 264
+    move-object/from16 v23, v12
+
+    .line 265
+    .line 266
+    move-object/from16 v30, v13
+
+    .line 267
+    .line 268
+    move-object/from16 v28, v14
+
+    .line 269
+    .line 270
+    move-object/from16 v29, v15
+
+    .line 271
+    .line 272
+    move/from16 v12, p1
+
+    .line 273
+    .line 274
+    move-object/from16 v8, p2
+
+    .line 275
+    .line 276
+    move-object v9, v5
+
+    .line 277
+    move-object v14, v11
+
+    .line 278
+    move-object/from16 v5, p3
+
+    .line 279
+    .line 280
+    move-object v11, v6
+
+    .line 281
+    const/4 v6, 0x4
+
+    .line 282
+    goto/16 :goto_2e2
+
+    .line 283
+    .line 284
+    :cond_11b
+    move-object/from16 v24, v4
+
+    .line 285
+    .line 286
+    invoke-static/range {v23 .. v23}, Lnd1;->y(Ljava/lang/Object;)V
+
+    .line 287
+    .line 288
+    .line 289
+    sget-object v4, Lbl;->a:Lbl;
+
+    .line 290
+    .line 291
+    iget-object v5, v2, Ly3;->v:Ljava/util/List;
+
+    .line 292
+    .line 293
+    invoke-static {v0, v5}, Lbl;->f(ILjava/util/List;)Lal;
+
+    .line 294
+    .line 295
+    .line 296
+    move-result-object v5
+
+    .line 297
+    iget-object v6, v2, Ly3;->v:Ljava/util/List;
+
+    .line 298
+    .line 299
+    invoke-virtual {v4, v6, v5, v1}, Lbl;->g(Ljava/util/List;Lal;Lt91;)Ljava/util/List;
+
+    .line 300
+    .line 301
+    .line 302
+    move-result-object v6
+
+    .line 303
+    move-object/from16 v23, v12
+
+    .line 304
+    .line 305
+    const/4 v12, 0x3
+
+    .line 306
+    if-ne v0, v12, :cond_159
+
+    .line 307
+    .line 308
+    if-eqz v3, :cond_159
+
+    .line 309
+    .line 310
+    new-instance v12, Lq0;
+
+    .line 311
+    .line 312
+    move-object/from16 v26, v8
+
+    .line 313
+    .line 314
+    const/4 v8, 0x5
+
+    .line 315
+    invoke-direct {v12, v8}, Lq0;-><init>(B)V
+
+    .line 316
+    .line 317
+    .line 318
+    new-instance v8, Lf;
+
+    .line 319
+    .line 320
+    move-object/from16 v27, v12
+
+    .line 321
+    .line 322
+    const/4 v12, 0x1
+
+    .line 323
+    invoke-direct {v8, v5, v2, v12}, Lf;-><init>(Ljava/lang/Object;Ljava/lang/Object;B)V
+
+    .line 324
+    .line 325
+    .line 326
+    const/4 v12, 0x2
+
+    .line 327
+    new-array v12, v12, [Ljb0;
+
+    .line 328
+    .line 329
+    const/16 v28, 0x0
+
+    .line 330
+    .line 331
+    aput-object v27, v12, v28
+
+    .line 332
+    .line 333
+    const/16 v27, 0x1
+
+    .line 334
+    .line 335
+    aput-object v8, v12, v27
+
+    .line 336
+    .line 337
+    invoke-static {v12}, Log;->m([Ljb0;)Lop;
+
+    .line 338
+    .line 339
+    .line 340
+    move-result-object v8
+
+    .line 341
+    invoke-static {v6, v8}, Lio;->w0(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+
+    .line 342
+    .line 343
+    .line 344
+    move-result-object v6
+
+    .line 345
+    goto :goto_15b
+
+    .line 346
+    :cond_159
+    move-object/from16 v26, v8
+
+    .line 347
+    .line 348
+    :goto_15b
+    new-instance v8, Lb3;
+
+    .line 349
+    .line 350
+    const/4 v12, 0x0
+
+    .line 351
+    invoke-direct {v8, v2, v0, v12}, Lb3;-><init>(Ljava/lang/Object;IB)V
+
+    .line 352
+    .line 353
+    .line 354
+    invoke-static {v6, v8}, Lbl;->d(Ljava/util/List;Ljb0;)Ljava/util/ArrayList;
+
+    .line 355
+    .line 356
+    .line 357
+    move-result-object v6
+
+    .line 358
+    invoke-static {v6}, Lio;->j0(Ljava/util/List;)Ljava/lang/Object;
+
+    .line 359
+    .line 360
+    .line 361
+    move-result-object v6
+
+    .line 362
+    check-cast v6, Lzk;
+
+    .line 363
+    .line 364
+    iget-object v8, v2, Ly3;->f:Lcg;
+
+    .line 365
+    .line 366
+    sget-object v12, Lql1;->a:Lql1;
+
+    .line 367
+    .line 368
+    move-object/from16 v27, v9
+
+    .line 369
+    .line 370
+    const/16 v9, 0xf
+
+    .line 371
+    .line 372
+    new-array v9, v9, [I
+
+    .line 373
+    .line 374
+    fill-array-data v9, :array_d4c
+
+    .line 375
+    .line 376
+    .line 377
+    move-object/from16 v28, v14
+
+    .line 378
+    .line 379
+    const v14, 0xf028
+
+    .line 380
+    .line 381
+    .line 382
+    invoke-virtual {v12, v14, v9}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 383
+    .line 384
+    .line 385
+    move-result-object v9
+
+    .line 386
+    const/16 v14, 0x1a
+
+    .line 387
+    .line 388
+    new-array v14, v14, [I
+
+    .line 389
+    .line 390
+    fill-array-data v14, :array_d6e
+
+    .line 391
+    .line 392
+    .line 393
+    move-object/from16 v29, v15
+
+    .line 394
+    .line 395
+    const/16 v15, 0x59e0
+
+    .line 396
+    .line 397
+    invoke-virtual {v12, v15, v14}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 398
+    .line 399
+    .line 400
+    move-result-object v14
+
+    .line 401
+    if-eqz v6, :cond_1b7
+
+    .line 402
+    .line 403
+    iget-object v15, v6, Lzk;->b:Lyk;
+
+    .line 404
+    .line 405
+    move-object/from16 v30, v13
+
+    .line 406
+    .line 407
+    iget v13, v6, Lzk;->c:I
+
+    .line 408
+    .line 409
+    move-object/from16 v31, v11
+
+    .line 410
+    .line 411
+    iget-byte v11, v6, Lzk;->d:B
+
+    .line 412
+    .line 413
+    move-object/from16 v32, v6
+
+    .line 414
+    .line 415
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 416
+    .line 417
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 418
+    .line 419
+    .line 420
+    invoke-virtual {v6, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 421
+    .line 422
+    .line 423
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 424
+    .line 425
+    .line 426
+    invoke-virtual {v6, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 427
+    .line 428
+    .line 429
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 430
+    .line 431
+    .line 432
+    invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 433
+    .line 434
+    .line 435
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 436
+    .line 437
+    .line 438
+    move-result-object v6
+
+    .line 439
+    goto :goto_1ca
+
+    .line 440
+    :cond_1b7
+    move-object/from16 v32, v6
+
+    .line 441
+    .line 442
+    move-object/from16 v31, v11
+
+    .line 443
+    .line 444
+    move-object/from16 v30, v13
+
+    .line 445
+    .line 446
+    const/16 v6, 0x24
+
+    .line 447
+    .line 448
+    new-array v6, v6, [I
+
+    .line 449
+    .line 450
+    fill-array-data v6, :array_da6
+
+    .line 451
+    .line 452
+    .line 453
+    const/16 v11, 0x75b4
+
+    .line 454
+    .line 455
+    invoke-virtual {v12, v11, v6}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 456
+    .line 457
+    .line 458
+    move-result-object v6
+
+    .line 459
+    :goto_1ca
+    const/16 v11, 0x3a
+
+    .line 460
+    .line 461
+    new-array v11, v11, [I
+
+    .line 462
+    .line 463
+    fill-array-data v11, :array_df2
+
+    .line 464
+    .line 465
+    .line 466
+    const/16 v13, 0x7f26
+
+    .line 467
+    .line 468
+    invoke-virtual {v12, v13, v11}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 469
+    .line 470
+    .line 471
+    move-result-object v11
+
+    .line 472
+    new-instance v13, Ljava/lang/StringBuilder;
+
+    .line 473
+    .line 474
+    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 475
+    .line 476
+    .line 477
+    invoke-virtual {v13, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 478
+    .line 479
+    .line 480
+    invoke-virtual {v13, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 481
+    .line 482
+    .line 483
+    invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 484
+    .line 485
+    .line 486
+    invoke-virtual {v13, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 487
+    .line 488
+    .line 489
+    invoke-virtual {v13, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 490
+    .line 491
+    .line 492
+    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 493
+    .line 494
+    .line 495
+    move-result-object v6
+
+    .line 496
+    invoke-virtual {v8, v6}, Lcg;->i(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 497
+    .line 498
+    .line 499
+    const/4 v6, 0x1
+
+    .line 500
+    if-gt v6, v0, :cond_d37
+
+    .line 501
+    .line 502
+    const/4 v6, 0x4
+
+    .line 503
+    if-ge v0, v6, :cond_d37
+
+    .line 504
+    .line 505
+    iget-object v8, v2, Ly3;->C:[B
+
+    .line 506
+    .line 507
+    if-eqz v8, :cond_d23
+
+    .line 508
+    .line 509
+    iget-object v9, v2, Ly3;->t:Lmi1;
+
+    .line 510
+    .line 511
+    if-eqz v9, :cond_d10
+
+    .line 512
+    .line 513
+    const v11, 0xa476
+
+    .line 514
+    .line 515
+    .line 516
+    if-nez v32, :cond_22c
+
+    .line 517
+    .line 518
+    iget-object v13, v2, Ly3;->v:Ljava/util/List;
+
+    .line 519
+    .line 520
+    invoke-virtual {v4, v13, v5, v1}, Lbl;->e(Ljava/util/List;Lal;Lt91;)Lzk;
+
+    .line 521
+    .line 522
+    .line 523
+    move-result-object v1
+
+    .line 524
+    if-eqz v1, :cond_20e
+
+    .line 525
+    .line 526
+    goto :goto_22e
+
+    .line 527
+    :cond_20e
+    const/16 v0, 0x3b
+
+    .line 528
+    .line 529
+    new-array v0, v0, [I
+
+    .line 530
+    .line 531
+    fill-array-data v0, :array_e6a
+
+    .line 532
+    .line 533
+    .line 534
+    invoke-virtual {v12, v11, v0}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 535
+    .line 536
+    .line 537
+    move-result-object v0
+
+    .line 538
+    iget-byte v1, v5, Lal;->b:B
+
+    .line 539
+    .line 540
+    filled-new-array/range {v18 .. v18}, [I
+
+    .line 541
+    .line 542
+    .line 543
+    move-result-object v2
+
+    .line 544
+    const v3, 0xd2d4
+
+    .line 545
+    .line 546
+    .line 547
+    invoke-virtual {v12, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 548
+    .line 549
+    .line 550
+    move-result-object v2
+
+    .line 551
+    iget-object v3, v5, Lal;->c:Ljava/lang/String;
+
+    .line 552
+    .line 553
+    invoke-static {v0, v1, v2, v3}, La;->i(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+
+    .line 554
+    .line 555
+    .line 556
+    return-object v24
+
+    .line 557
+    :cond_22c
+    move-object/from16 v1, v32
+
+    .line 558
+    .line 559
+    :goto_22e
+    invoke-virtual {v1}, Lzk;->a()Lt91;
+
+    .line 560
+    .line 561
+    .line 562
+    move-result-object v4
+
+    .line 563
+    sget-object v13, Ln71;->a:Ljava/lang/String;
+
+    .line 564
+    .line 565
+    iget-object v13, v2, Ly3;->a:Lcom/baidu/carlife/service/CarlifeConnectService;
+
+    .line 566
+    .line 567
+    invoke-static {v13}, Ln71;->j(Lcom/baidu/carlife/service/CarlifeConnectService;)Z
+
+    .line 568
+    .line 569
+    .line 570
+    move-result v13
+
+    .line 571
+    if-eqz v13, :cond_cf0
+
+    .line 572
+    .line 573
+    sget-object v13, Llx1;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 574
+    .line 575
+    iget-object v13, v2, Ly3;->a:Lcom/baidu/carlife/service/CarlifeConnectService;
+
+    .line 576
+    .line 577
+    new-instance v14, Lc3;
+
+    .line 578
+    .line 579
+    const/4 v15, 0x0
+
+    .line 580
+    invoke-direct {v14, v2, v15}, Lc3;-><init>(Ly3;B)V
+
+    .line 581
+    .line 582
+    .line 583
+    invoke-static {v13, v14}, Llx1;->a(Lcom/baidu/carlife/service/CarlifeConnectService;Lc3;)Z
+
+    .line 584
+    .line 585
+    .line 586
+    move-result v13
+
+    .line 587
+    if-nez v13, :cond_cd0
+
+    .line 588
+    .line 589
+    iget-object v11, v2, Ly3;->v:Ljava/util/List;
+
+    .line 590
+    .line 591
+    if-eqz v11, :cond_258
+
+    .line 592
+    .line 593
+    invoke-interface {v11}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 594
+    .line 595
+    .line 596
+    move-result v12
+
+    .line 597
+    if-eqz v12, :cond_258
+
+    .line 598
+    .line 599
+    :cond_256
+    const/4 v11, 0x0
+
+    .line 600
+    goto :goto_27d
+
+    .line 601
+    :cond_258
+    invoke-interface {v11}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 602
+    .line 603
+    .line 604
+    move-result-object v11
+
+    .line 605
+    :cond_25c
+    invoke-interface {v11}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 606
+    .line 607
+    .line 608
+    move-result v12
+
+    .line 609
+    if-eqz v12, :cond_256
+
+    .line 610
+    .line 611
+    invoke-interface {v11}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 612
+    .line 613
+    .line 614
+    move-result-object v12
+
+    .line 615
+    check-cast v12, Lzd;
+
+    .line 616
+    .line 617
+    iget v13, v12, Lzd;->a:I
+
+    .line 618
+    .line 619
+    const/16 v14, 0x64
+
+    .line 620
+    .line 621
+    if-ne v13, v14, :cond_25c
+
+    .line 622
+    .line 623
+    iget-object v12, v12, Lzd;->c:Ljava/lang/Long;
+
+    .line 624
+    .line 625
+    if-eqz v12, :cond_25c
+
+    .line 626
+    .line 627
+    const-wide/16 v13, 0x0
+
+    .line 628
+    .line 629
+    invoke-virtual {v12}, Ljava/lang/Long;->longValue()J
+
+    .line 630
+    .line 631
+    .line 632
+    move-result-wide v32
+
+    .line 633
+    cmp-long v12, v32, v13
+
+    .line 634
+    .line 635
+    if-eqz v12, :cond_25c
+
+    .line 636
+    .line 637
+    const/4 v11, 0x1
+
+    .line 638
+    :goto_27d
+    if-eqz v3, :cond_288
+
+    .line 639
+    .line 640
+    invoke-static {v5, v2, v1}, Ly3;->f(Lal;Ly3;Lzk;)Z
+
+    .line 641
+    .line 642
+    .line 643
+    move-result v12
+
+    .line 644
+    if-eqz v12, :cond_288
+
+    .line 645
+    .line 646
+    const/4 v12, 0x1
+
+    .line 647
+    :goto_286
+    const/4 v13, 0x3
+
+    .line 648
+    goto :goto_28a
+
+    .line 649
+    :cond_288
+    const/4 v12, 0x0
+
+    .line 650
+    goto :goto_286
+
+    .line 651
+    :goto_28a
+    if-ne v0, v13, :cond_292
+
+    .line 652
+    .line 653
+    if-eqz v3, :cond_292
+
+    .line 654
+    .line 655
+    if-eqz v11, :cond_292
+
+    .line 656
+    .line 657
+    if-eqz v12, :cond_294
+
+    .line 658
+    .line 659
+    :cond_292
+    const/4 v13, 0x1
+
+    .line 660
+    goto :goto_2a9
+
+    .line 661
+    :cond_294
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 662
+    .line 663
+    sget-object v1, Lql1;->a:Lql1;
+
+    .line 664
+    .line 665
+    const/16 v2, 0x5b
+
+    .line 666
+    .line 667
+    new-array v2, v2, [I
+
+    .line 668
+    .line 669
+    fill-array-data v2, :array_ee4
+
+    .line 670
+    .line 671
+    .line 672
+    const/16 v3, 0x70c2
+
+    .line 673
+    .line 674
+    invoke-virtual {v1, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 675
+    .line 676
+    .line 677
+    move-result-object v1
+
+    .line 678
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 679
+    .line 680
+    .line 681
+    throw v0
+
+    .line 682
+    :goto_2a9
+    if-eq v0, v13, :cond_2ba
+
+    .line 683
+    .line 684
+    const/4 v13, 0x3
+
+    .line 685
+    if-eq v0, v13, :cond_2ba
+
+    .line 686
+    .line 687
+    move-object v13, v9
+
+    .line 688
+    move v15, v12
+
+    .line 689
+    move-object/from16 v14, v31
+
+    .line 690
+    .line 691
+    move-object v12, v1
+
+    .line 692
+    move-object v9, v3
+
+    .line 693
+    move-object v3, v4
+
+    .line 694
+    move v4, v11
+
+    .line 695
+    move v1, v0
+
+    .line 696
+    move-object v11, v8
+
+    .line 697
+    move-object v8, v5
+
+    .line 698
+    goto :goto_2eb
+
+    .line 699
+    :cond_2ba
+    iget-object v13, v2, Ly3;->A:Lqe;
+
+    .line 700
+    .line 701
+    iput-object v3, v10, Lk3;->m:Lob0;
+
+    .line 702
+    .line 703
+    iput-object v5, v10, Lk3;->n:Lal;
+
+    .line 704
+    .line 705
+    iput-object v8, v10, Lk3;->o:[B
+
+    .line 706
+    .line 707
+    iput-object v9, v10, Lk3;->p:Lmi1;
+
+    .line 708
+    .line 709
+    iput-object v1, v10, Lk3;->q:Lzk;
+
+    .line 710
+    .line 711
+    iput-object v4, v10, Lk3;->r:Lt91;
+
+    .line 712
+    .line 713
+    iput v0, v10, Lk3;->h:I
+
+    .line 714
+    .line 715
+    iput v11, v10, Lk3;->i:I
+
+    .line 716
+    .line 717
+    iput v12, v10, Lk3;->j:I
+
+    .line 718
+    .line 719
+    const/4 v14, 0x1
+
+    .line 720
+    iput v14, v10, Lk3;->z:I
+
+    .line 721
+    .line 722
+    invoke-virtual {v13, v10}, Lqe;->e(Lku;)Ljava/lang/Object;
+
+    .line 723
+    .line 724
+    .line 725
+    move-result-object v13
+
+    .line 726
+    move-object/from16 v14, v31
+
+    .line 727
+    .line 728
+    if-ne v13, v14, :cond_2dc
+
+    .line 729
+    .line 730
+    move-object v2, v14
+
+    .line 731
+    goto/16 :goto_8cb
+
+    .line 732
+    .line 733
+    :cond_2dc
+    move-object/from16 v52, v9
+
+    .line 734
+    .line 735
+    move-object v9, v1
+
+    .line 736
+    move v1, v11
+
+    .line 737
+    move-object/from16 v11, v52
+
+    .line 738
+    .line 739
+    :goto_2e2
+    move-object v13, v11
+
+    .line 740
+    move v15, v12
+
+    .line 741
+    move-object v12, v9
+
+    .line 742
+    move-object v9, v3
+
+    .line 743
+    move-object v3, v4
+
+    .line 744
+    move v4, v1
+
+    .line 745
+    move-object v11, v8
+
+    .line 746
+    move-object v8, v5
+
+    .line 747
+    move v1, v0
+
+    .line 748
+    :goto_2eb
+    sget-object v0, Lxv;->a:Ljava/security/SecureRandom;
+
+    .line 749
+    .line 750
+    invoke-virtual {v0}, Ljava/util/Random;->nextLong()J
+
+    .line 751
+    .line 752
+    .line 753
+    move-result-wide v31
+
+    .line 754
+    const-wide v33, 0x7fffffffffffffffL
+
+    .line 755
+    .line 756
+    .line 757
+    .line 758
+    .line 759
+    and-long v31, v31, v33
+
+    .line 760
+    .line 761
+    const-wide/16 v33, 0x1
+
+    .line 762
+    .line 763
+    cmp-long v0, v31, v33
+
+    .line 764
+    .line 765
+    if-gez v0, :cond_301
+
+    .line 766
+    .line 767
+    move-wide/from16 p1, v33
+
+    .line 768
+    .line 769
+    goto :goto_303
+
+    .line 770
+    :cond_301
+    move-wide/from16 p1, v31
+
+    .line 771
+    .line 772
+    :goto_303
+    iget-object v0, v2, Ly3;->Q:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 773
+    .line 774
+    iget-byte v5, v8, Lal;->b:B
+
+    .line 775
+    .line 776
+    invoke-static {v5}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 777
+    .line 778
+    .line 779
+    move-result-object v5
+
+    .line 780
+    invoke-virtual {v0, v5}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
+
+    .line 781
+    .line 782
+    .line 783
+    move-result v0
+
+    .line 784
+    if-nez v0, :cond_c94
+
+    .line 785
+    .line 786
+    new-instance v5, Ljava/net/DatagramSocket;
+
+    .line 787
+    .line 788
+    move-object/from16 v6, v24
+
+    .line 789
+    .line 790
+    invoke-direct {v5, v6}, Ljava/net/DatagramSocket;-><init>(Ljava/net/SocketAddress;)V
+
+    .line 791
+    .line 792
+    .line 793
+    move-object/from16 v24, v14
+
+    .line 794
+    .line 795
+    :try_start_31a
+    new-instance v14, Ljava/net/DatagramSocket;
+
+    .line 796
+    .line 797
+    invoke-direct {v14, v6}, Ljava/net/DatagramSocket;-><init>(Ljava/net/SocketAddress;)V
+    :try_end_31f
+    .catchall {:try_start_31a .. :try_end_31f} :catchall_c8e
+
+    .line 798
+    .line 799
+    .line 800
+    iget-object v0, v2, Ly3;->Q:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 801
+    .line 802
+    iget-byte v6, v8, Lal;->b:B
+
+    .line 803
+    .line 804
+    invoke-static {v6}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 805
+    .line 806
+    .line 807
+    move-result-object v6
+
+    .line 808
+    move/from16 p3, v4
+
+    .line 809
+    .line 810
+    invoke-static/range {p1 .. p2}, Log;->j(J)Ljava/lang/Long;
+
+    .line 811
+    .line 812
+    .line 813
+    move-result-object v4
+
+    .line 814
+    invoke-virtual {v0, v6, v4}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 815
+    .line 816
+    .line 817
+    :try_start_330
+    sget-object v0, Ljh;->a:Ljava/util/UUID;
+
+    .line 818
+    .line 819
+    iget-object v0, v2, Ly3;->p:Landroid/net/Network;
+
+    .line 820
+    .line 821
+    iget-object v4, v2, Ly3;->d:Lk61;
+
+    .line 822
+    .line 823
+    iget-boolean v4, v4, Lk61;->k:Z
+    :try_end_338
+    .catch Ljava/lang/Exception; {:try_start_330 .. :try_end_338} :catch_bbc
+
+    .line 824
+    .line 825
+    :try_start_338
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_33b
+    .catch Ljava/lang/Exception; {:try_start_338 .. :try_end_33b} :catch_c2b
+
+    .line 826
+    .line 827
+    .line 828
+    if-nez v4, :cond_33e
+
+    .line 829
+    .line 830
+    goto :goto_34c
+
+    .line 831
+    :cond_33e
+    :try_start_33e
+    invoke-virtual {v0, v5}, Landroid/net/Network;->bindSocket(Ljava/net/DatagramSocket;)V
+    :try_end_341
+    .catch Ljava/net/SocketException; {:try_start_33e .. :try_end_341} :catch_342
+    .catch Ljava/lang/Exception; {:try_start_33e .. :try_end_341} :catch_c2b
+
+    .line 832
+    .line 833
+    .line 834
+    goto :goto_34c
+
+    .line 835
+    :catch_342
+    move-exception v0
+
+    .line 836
+    :try_start_343
+    invoke-static {v0}, Ljh;->j(Ljava/net/SocketException;)Z
+
+    .line 837
+    .line 838
+    .line 839
+    move-result v4
+
+    .line 840
+    if-eqz v4, :cond_c1a
+
+    .line 841
+    .line 842
+    invoke-virtual {v2, v0}, Ly3;->p(Ljava/net/SocketException;)V
+    :try_end_34c
+    .catch Ljava/lang/Exception; {:try_start_343 .. :try_end_34c} :catch_c2b
+
+    .line 843
+    .line 844
+    .line 845
+    :goto_34c
+    :try_start_34c
+    iget-object v0, v2, Ly3;->p:Landroid/net/Network;
+
+    .line 846
+    .line 847
+    iget-object v4, v2, Ly3;->d:Lk61;
+
+    .line 848
+    .line 849
+    iget-boolean v4, v4, Lk61;->k:Z
+    :try_end_352
+    .catch Ljava/lang/Exception; {:try_start_34c .. :try_end_352} :catch_bbc
+
+    .line 850
+    .line 851
+    :try_start_352
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_355
+    .catch Ljava/lang/Exception; {:try_start_352 .. :try_end_355} :catch_c2b
+
+    .line 852
+    .line 853
+    .line 854
+    if-nez v4, :cond_358
+
+    .line 855
+    .line 856
+    goto :goto_366
+
+    .line 857
+    :cond_358
+    :try_start_358
+    invoke-virtual {v0, v14}, Landroid/net/Network;->bindSocket(Ljava/net/DatagramSocket;)V
+    :try_end_35b
+    .catch Ljava/net/SocketException; {:try_start_358 .. :try_end_35b} :catch_35c
+    .catch Ljava/lang/Exception; {:try_start_358 .. :try_end_35b} :catch_c2b
+
+    .line 858
+    .line 859
+    .line 860
+    goto :goto_366
+
+    .line 861
+    :catch_35c
+    move-exception v0
+
+    .line 862
+    :try_start_35d
+    invoke-static {v0}, Ljh;->j(Ljava/net/SocketException;)Z
+
+    .line 863
+    .line 864
+    .line 865
+    move-result v4
+
+    .line 866
+    if-eqz v4, :cond_c1a
+
+    .line 867
+    .line 868
+    invoke-virtual {v2, v0}, Ly3;->p(Ljava/net/SocketException;)V
+    :try_end_366
+    .catch Ljava/lang/Exception; {:try_start_35d .. :try_end_366} :catch_c2b
+
+    .line 869
+    .line 870
+    .line 871
+    :goto_366
+    :try_start_366
+    iget-object v0, v2, Ly3;->b:Lt21;
+
+    .line 872
+    .line 873
+    iget-object v0, v0, Lt21;->b:Landroid/net/LinkProperties;
+
+    .line 874
+    .line 875
+    invoke-virtual {v0}, Landroid/net/LinkProperties;->getLinkAddresses()Ljava/util/List;
+
+    .line 876
+    .line 877
+    .line 878
+    move-result-object v0
+
+    .line 879
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 880
+    .line 881
+    .line 882
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 883
+    .line 884
+    .line 885
+    move-result-object v0
+
+    .line 886
+    :goto_375
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 887
+    .line 888
+    .line 889
+    move-result v4
+
+    .line 890
+    if-eqz v4, :cond_bff
+
+    .line 891
+    .line 892
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 893
+    .line 894
+    .line 895
+    move-result-object v4
+
+    .line 896
+    move-object v6, v4
+
+    .line 897
+    check-cast v6, Landroid/net/LinkAddress;
+
+    .line 898
+    .line 899
+    invoke-virtual {v6}, Landroid/net/LinkAddress;->getAddress()Ljava/net/InetAddress;
+
+    .line 900
+    .line 901
+    .line 902
+    move-result-object v6
+
+    .line 903
+    instance-of v6, v6, Ljava/net/Inet6Address;
+
+    .line 904
+    .line 905
+    move-object/from16 v32, v0
+
+    .line 906
+    .line 907
+    iget-object v0, v2, Ly3;->q:Ljava/net/InetAddress;
+
+    .line 908
+    .line 909
+    instance-of v0, v0, Ljava/net/Inet6Address;
+
+    .line 910
+    .line 911
+    if-ne v6, v0, :cond_bd4
+
+    .line 912
+    .line 913
+    check-cast v4, Landroid/net/LinkAddress;
+
+    .line 914
+    .line 915
+    invoke-virtual {v4}, Landroid/net/LinkAddress;->getAddress()Ljava/net/InetAddress;
+
+    .line 916
+    .line 917
+    .line 918
+    move-result-object v0
+
+    .line 919
+    new-instance v4, Ljava/net/InetSocketAddress;
+    :try_end_398
+    .catch Ljava/lang/Exception; {:try_start_366 .. :try_end_398} :catch_bbc
+
+    .line 920
+    .line 921
+    const/4 v6, 0x0
+
+    .line 922
+    :try_start_399
+    invoke-direct {v4, v0, v6}, Ljava/net/InetSocketAddress;-><init>(Ljava/net/InetAddress;I)V
+
+    .line 923
+    .line 924
+    .line 925
+    invoke-virtual {v5, v4}, Ljava/net/DatagramSocket;->bind(Ljava/net/SocketAddress;)V
+
+    .line 926
+    .line 927
+    .line 928
+    new-instance v4, Ljava/net/InetSocketAddress;
+
+    .line 929
+    .line 930
+    invoke-direct {v4, v0, v6}, Ljava/net/InetSocketAddress;-><init>(Ljava/net/InetAddress;I)V
+    :try_end_3a4
+    .catch Ljava/lang/Exception; {:try_start_399 .. :try_end_3a4} :catch_bc1
+
+    .line 931
+    .line 932
+    .line 933
+    :try_start_3a4
+    invoke-virtual {v14, v4}, Ljava/net/DatagramSocket;->bind(Ljava/net/SocketAddress;)V
+
+    .line 934
+    .line 935
+    .line 936
+    new-instance v6, Lhe;
+
+    .line 937
+    .line 938
+    iget-object v0, v2, Ly3;->q:Ljava/net/InetAddress;
+
+    .line 939
+    .line 940
+    iget-object v4, v2, Ly3;->f:Lcg;
+
+    .line 941
+    .line 942
+    invoke-direct {v6, v14, v0, v4}, Lhe;-><init>(Ljava/net/DatagramSocket;Ljava/net/InetAddress;Lcg;)V
+
+    .line 943
+    .line 944
+    .line 945
+    iget-byte v0, v8, Lal;->b:B
+
+    .line 946
+    .line 947
+    invoke-static {v0}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 948
+    .line 949
+    .line 950
+    move-result-object v0
+    :try_end_3b6
+    .catch Ljava/lang/Exception; {:try_start_3a4 .. :try_end_3b6} :catch_bbc
+
+    .line 951
+    move-object/from16 v4, v30
+
+    .line 952
+    .line 953
+    :try_start_3b8
+    invoke-static {v4, v0}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 954
+    .line 955
+    .line 956
+    move-result-object v32
+
+    .line 957
+    const-string v0, "audioType"
+    :try_end_3be
+    .catch Ljava/lang/Exception; {:try_start_3b8 .. :try_end_3be} :catch_ba7
+
+    .line 958
+    .line 959
+    move-object/from16 v30, v5
+
+    .line 960
+    .line 961
+    :try_start_3c0
+    iget-object v5, v8, Lal;->c:Ljava/lang/String;
+
+    .line 962
+    .line 963
+    invoke-static {v0, v5}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 964
+    .line 965
+    .line 966
+    move-result-object v33
+
+    .line 967
+    const-string v0, "audioFormat"
+
+    .line 968
+    .line 969
+    move-object/from16 v41, v6
+
+    .line 970
+    .line 971
+    iget-wide v5, v12, Lzk;->a:J
+
+    .line 972
+    .line 973
+    invoke-static {v5, v6}, Log;->j(J)Ljava/lang/Long;
+
+    .line 974
+    .line 975
+    .line 976
+    move-result-object v5
+
+    .line 977
+    invoke-static {v0, v5}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 978
+    .line 979
+    .line 980
+    move-result-object v34
+
+    .line 981
+    invoke-static/range {p1 .. p2}, Log;->j(J)Ljava/lang/Long;
+
+    .line 982
+    .line 983
+    .line 984
+    move-result-object v0
+    :try_end_3d8
+    .catch Ljava/lang/Exception; {:try_start_3c0 .. :try_end_3d8} :catch_b94
+
+    .line 985
+    move-object/from16 v6, v29
+
+    .line 986
+    .line 987
+    :try_start_3da
+    invoke-static {v6, v0}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 988
+    .line 989
+    .line 990
+    move-result-object v35
+
+    .line 991
+    invoke-virtual {v14}, Ljava/net/DatagramSocket;->getLocalPort()I
+
+    .line 992
+    .line 993
+    .line 994
+    move-result v0
+
+    .line 995
+    invoke-static {v0}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 996
+    .line 997
+    .line 998
+    move-result-object v0
+
+    .line 999
+    move-object/from16 v5, v28
+
+    .line 1000
+    .line 1001
+    invoke-static {v5, v0}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 1002
+    .line 1003
+    .line 1004
+    move-result-object v36
+
+    .line 1005
+    const-string v0, "audioLatencyMs"
+
+    .line 1006
+    .line 1007
+    move-object/from16 v28, v5
+
+    .line 1008
+    .line 1009
+    const/16 v16, 0x64
+
+    .line 1010
+    .line 1011
+    invoke-static/range {v16 .. v16}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 1012
+    .line 1013
+    .line 1014
+    move-result-object v5
+
+    .line 1015
+    invoke-static {v0, v5}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 1016
+    .line 1017
+    .line 1018
+    move-result-object v37
+
+    .line 1019
+    const-string v0, "spf"
+
+    .line 1020
+    .line 1021
+    iget-object v5, v12, Lzk;->b:Lyk;
+    :try_end_3fe
+    .catch Ljava/lang/Exception; {:try_start_3da .. :try_end_3fe} :catch_b7e
+
+    .line 1022
+    .line 1023
+    move/from16 v29, v15
+
+    .line 1024
+    .line 1025
+    move-object/from16 v15, v27
+
+    .line 1026
+    .line 1027
+    if-ne v5, v15, :cond_41e
+
+    .line 1028
+    .line 1029
+    :try_start_404
+    iget v5, v3, Lt91;->a:I
+
+    .line 1030
+    .line 1031
+    div-int/lit16 v5, v5, 0xc8
+    :try_end_408
+    .catch Ljava/lang/Exception; {:try_start_404 .. :try_end_408} :catch_409
+
+    .line 1032
+    .line 1033
+    goto :goto_420
+
+    .line 1034
+    :catch_409
+    move-exception v0
+
+    .line 1035
+    move-wide/from16 v24, p1
+
+    .line 1036
+    .line 1037
+    move-object v1, v0
+
+    .line 1038
+    move-object/from16 v28, v6
+
+    .line 1039
+    .line 1040
+    move-object/from16 v49, v7
+
+    .line 1041
+    .line 1042
+    move-object v5, v8
+
+    .line 1043
+    move-object/from16 v44, v14
+
+    .line 1044
+    .line 1045
+    move-object/from16 v27, v26
+
+    .line 1046
+    .line 1047
+    move-object/from16 v11, v30
+
+    .line 1048
+    .line 1049
+    const/4 v14, 0x0
+
+    .line 1050
+    move-object v6, v2
+
+    .line 1051
+    move-object/from16 v30, v4
+
+    .line 1052
+    .line 1053
+    goto/16 :goto_c3e
+
+    .line 1054
+    .line 1055
+    :cond_41e
+    :try_start_41e
+    iget-short v5, v12, Lzk;->e:S
+
+    .line 1056
+    .line 1057
+    :goto_420
+    invoke-static {v5}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 1058
+    .line 1059
+    .line 1060
+    move-result-object v5
+
+    .line 1061
+    invoke-static {v0, v5}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 1062
+    .line 1063
+    .line 1064
+    move-result-object v38
+
+    .line 1065
+    const-string v0, "sr"
+
+    .line 1066
+    .line 1067
+    iget v5, v3, Lt91;->a:I
+
+    .line 1068
+    .line 1069
+    invoke-static {v5}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 1070
+    .line 1071
+    .line 1072
+    move-result-object v5
+
+    .line 1073
+    invoke-static {v0, v5}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 1074
+    .line 1075
+    .line 1076
+    move-result-object v39
+
+    .line 1077
+    const-string v0, "ct"
+
+    .line 1078
+    .line 1079
+    iget-object v5, v12, Lzk;->b:Lyk;
+
+    .line 1080
+    .line 1081
+    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+
+    .line 1082
+    .line 1083
+    .line 1084
+    move-result v5
+    :try_end_43c
+    .catch Ljava/lang/Exception; {:try_start_41e .. :try_end_43c} :catch_b7e
+
+    .line 1085
+    move-object/from16 v27, v6
+
+    .line 1086
+    .line 1087
+    if-eqz v5, :cond_46e
+
+    .line 1088
+    .line 1089
+    const/4 v6, 0x1
+
+    .line 1090
+    if-eq v5, v6, :cond_46b
+
+    .line 1091
+    .line 1092
+    const/4 v6, 0x2
+
+    .line 1093
+    if-eq v5, v6, :cond_467
+
+    .line 1094
+    .line 1095
+    const/4 v6, 0x3
+
+    .line 1096
+    if-ne v5, v6, :cond_44c
+
+    .line 1097
+    .line 1098
+    const/16 v5, 0x20
+
+    .line 1099
+    .line 1100
+    goto :goto_470
+
+    .line 1101
+    :cond_44c
+    :try_start_44c
+    new-instance v0, Ltp;
+
+    .line 1102
+    .line 1103
+    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 1104
+    .line 1105
+    .line 1106
+    throw v0
+    :try_end_452
+    .catch Ljava/lang/Exception; {:try_start_44c .. :try_end_452} :catch_452
+
+    .line 1107
+    :catch_452
+    move-exception v0
+
+    .line 1108
+    move-wide/from16 v24, p1
+
+    .line 1109
+    .line 1110
+    move-object v1, v0
+
+    .line 1111
+    move-object v6, v2
+
+    .line 1112
+    move-object/from16 v49, v7
+
+    .line 1113
+    .line 1114
+    move-object v5, v8
+
+    .line 1115
+    move-object/from16 v44, v14
+
+    .line 1116
+    .line 1117
+    move-object/from16 v28, v27
+
+    .line 1118
+    .line 1119
+    move-object/from16 v11, v30
+
+    .line 1120
+    .line 1121
+    const/4 v14, 0x0
+
+    .line 1122
+    move-object/from16 v30, v4
+
+    .line 1123
+    .line 1124
+    :goto_463
+    move-object/from16 v27, v26
+
+    .line 1125
+    .line 1126
+    goto/16 :goto_c3e
+
+    .line 1127
+    .line 1128
+    :cond_467
+    const/4 v6, 0x3
+
+    .line 1129
+    const/16 v5, 0x8
+
+    .line 1130
+    .line 1131
+    goto :goto_470
+
+    .line 1132
+    :cond_46b
+    const/4 v6, 0x3
+
+    .line 1133
+    const/4 v5, 0x4
+
+    .line 1134
+    goto :goto_470
+
+    .line 1135
+    :cond_46e
+    const/4 v6, 0x3
+
+    .line 1136
+    const/4 v5, 0x1
+
+    .line 1137
+    :goto_470
+    :try_start_470
+    invoke-static {v5}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 1138
+    .line 1139
+    .line 1140
+    move-result-object v5
+
+    .line 1141
+    invoke-static {v0, v5}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 1142
+    .line 1143
+    .line 1144
+    move-result-object v40
+
+    .line 1145
+    filled-new-array/range {v32 .. v40}, [Ly71;
+
+    .line 1146
+    .line 1147
+    .line 1148
+    move-result-object v0
+
+    .line 1149
+    invoke-static {v0}, Lhw0;->U([Ly71;)Ljava/util/LinkedHashMap;
+
+    .line 1150
+    .line 1151
+    .line 1152
+    move-result-object v0
+    :try_end_480
+    .catch Ljava/lang/Exception; {:try_start_470 .. :try_end_480} :catch_b79
+
+    .line 1153
+    if-eqz v29, :cond_48f
+
+    .line 1154
+    .line 1155
+    :try_start_482
+    const-string v5, "dataPort"
+
+    .line 1156
+    .line 1157
+    invoke-virtual/range {v30 .. v30}, Ljava/net/DatagramSocket;->getLocalPort()I
+
+    .line 1158
+    .line 1159
+    .line 1160
+    move-result v16
+
+    .line 1161
+    invoke-static/range {v16 .. v16}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 1162
+    .line 1163
+    .line 1164
+    move-result-object v6
+
+    .line 1165
+    invoke-interface {v0, v5, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_48f
+    .catch Ljava/lang/Exception; {:try_start_482 .. :try_end_48f} :catch_452
+
+    .line 1166
+    .line 1167
+    .line 1168
+    :cond_48f
+    :try_start_48f
+    iget-object v5, v2, Ly3;->f:Lcg;
+
+    .line 1169
+    .line 1170
+    sget-object v6, Lql1;->a:Lql1;
+    :try_end_493
+    .catch Ljava/lang/Exception; {:try_start_48f .. :try_end_493} :catch_b79
+
+    .line 1171
+    .line 1172
+    move-object/from16 v16, v0
+
+    .line 1173
+    .line 1174
+    const/16 v0, 0x1d
+
+    .line 1175
+    .line 1176
+    :try_start_497
+    new-array v0, v0, [I
+
+    .line 1177
+    .line 1178
+    fill-array-data v0, :array_f9e
+    :try_end_49c
+    .catch Ljava/lang/Exception; {:try_start_497 .. :try_end_49c} :catch_b74
+
+    .line 1179
+    .line 1180
+    .line 1181
+    const v2, 0x9887
+
+    .line 1182
+    .line 1183
+    .line 1184
+    :try_start_49f
+    invoke-virtual {v6, v2, v0}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1185
+    .line 1186
+    .line 1187
+    move-result-object v0
+    :try_end_4a3
+    .catch Ljava/lang/Exception; {:try_start_49f .. :try_end_4a3} :catch_b67
+
+    .line 1188
+    const/4 v2, 0x6
+
+    .line 1189
+    :try_start_4a4
+    new-array v2, v2, [I
+
+    .line 1190
+    .line 1191
+    fill-array-data v2, :array_fdc
+    :try_end_4a9
+    .catch Ljava/lang/Exception; {:try_start_4a4 .. :try_end_4a9} :catch_b5a
+
+    .line 1192
+    .line 1193
+    .line 1194
+    move-object/from16 v44, v14
+
+    .line 1195
+    .line 1196
+    const v14, 0xb62f
+
+    .line 1197
+    .line 1198
+    .line 1199
+    :try_start_4ae
+    invoke-virtual {v6, v14, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1200
+    .line 1201
+    .line 1202
+    move-result-object v2
+
+    .line 1203
+    iget-byte v14, v8, Lal;->b:B
+
+    .line 1204
+    .line 1205
+    move-object/from16 v45, v9
+
+    .line 1206
+    .line 1207
+    filled-new-array/range {v18 .. v18}, [I
+
+    .line 1208
+    .line 1209
+    .line 1210
+    move-result-object v9
+
+    .line 1211
+    move-object/from16 v46, v10
+
+    .line 1212
+    .line 1213
+    const v10, 0xd2d4
+
+    .line 1214
+    .line 1215
+    .line 1216
+    invoke-virtual {v6, v10, v9}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1217
+    .line 1218
+    .line 1219
+    move-result-object v9
+
+    .line 1220
+    iget-object v10, v8, Lal;->c:Ljava/lang/String;
+    :try_end_4c5
+    .catch Ljava/lang/Exception; {:try_start_4ae .. :try_end_4c5} :catch_b39
+
+    .line 1221
+    .line 1222
+    move-object/from16 v33, v15
+
+    .line 1223
+    .line 1224
+    const/4 v15, 0x7
+
+    .line 1225
+    :try_start_4c8
+    new-array v15, v15, [I
+
+    .line 1226
+    .line 1227
+    fill-array-data v15, :array_fec
+    :try_end_4cd
+    .catch Ljava/lang/Exception; {:try_start_4c8 .. :try_end_4cd} :catch_b48
+
+    .line 1228
+    .line 1229
+    .line 1230
+    move-object/from16 v47, v11
+
+    .line 1231
+    .line 1232
+    const/16 v11, 0x6660
+
+    .line 1233
+    .line 1234
+    :try_start_4d1
+    invoke-virtual {v6, v11, v15}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1235
+    .line 1236
+    .line 1237
+    move-result-object v11
+
+    .line 1238
+    iget-object v15, v12, Lzk;->b:Lyk;
+
+    .line 1239
+    .line 1240
+    const v17, 0xcf65
+
+    .line 1241
+    .line 1242
+    .line 1243
+    move-object/from16 v48, v12
+
+    .line 1244
+    .line 1245
+    filled-new-array/range {v17 .. v17}, [I
+
+    .line 1246
+    .line 1247
+    .line 1248
+    move-result-object v12
+    :try_end_4e0
+    .catch Ljava/lang/Exception; {:try_start_4d1 .. :try_end_4e0} :catch_b39
+
+    .line 1249
+    move-object/from16 v34, v8
+
+    .line 1250
+    .line 1251
+    const v8, 0xcf45
+
+    .line 1252
+    .line 1253
+    .line 1254
+    :try_start_4e5
+    invoke-virtual {v6, v8, v12}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1255
+    .line 1256
+    .line 1257
+    move-result-object v8
+
+    .line 1258
+    iget v12, v3, Lt91;->a:I
+    :try_end_4eb
+    .catch Ljava/lang/Exception; {:try_start_4e5 .. :try_end_4eb} :catch_b26
+
+    .line 1259
+    .line 1260
+    move-object/from16 v32, v4
+
+    .line 1261
+    .line 1262
+    :try_start_4ed
+    filled-new-array/range {v18 .. v18}, [I
+
+    .line 1263
+    .line 1264
+    .line 1265
+    move-result-object v4
+    :try_end_4f1
+    .catch Ljava/lang/Exception; {:try_start_4ed .. :try_end_4f1} :catch_b14
+
+    .line 1266
+    move-object/from16 v35, v7
+
+    .line 1267
+    .line 1268
+    const v7, 0xd2d4
+
+    .line 1269
+    .line 1270
+    .line 1271
+    :try_start_4f6
+    invoke-virtual {v6, v7, v4}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1272
+    .line 1273
+    .line 1274
+    move-result-object v4
+
+    .line 1275
+    iget v7, v3, Lt91;->b:I
+    :try_end_4fc
+    .catch Ljava/lang/Exception; {:try_start_4f6 .. :try_end_4fc} :catch_afe
+
+    .line 1276
+    .line 1277
+    move-object/from16 v20, v3
+
+    .line 1278
+    .line 1279
+    const/16 v3, 0x19
+
+    .line 1280
+    .line 1281
+    :try_start_500
+    new-array v3, v3, [I
+
+    .line 1282
+    .line 1283
+    fill-array-data v3, :array_ffe
+    :try_end_505
+    .catch Ljava/lang/Exception; {:try_start_500 .. :try_end_505} :catch_af6
+
+    .line 1284
+    .line 1285
+    .line 1286
+    move-object/from16 v36, v13
+
+    .line 1287
+    .line 1288
+    const v13, 0xedf0
+
+    .line 1289
+    .line 1290
+    .line 1291
+    :try_start_50a
+    invoke-virtual {v6, v13, v3}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1292
+    .line 1293
+    .line 1294
+    move-result-object v3
+
+    .line 1295
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 1296
+    .line 1297
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 1298
+    .line 1299
+    .line 1300
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1301
+    .line 1302
+    .line 1303
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 1304
+    .line 1305
+    .line 1306
+    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1307
+    .line 1308
+    .line 1309
+    invoke-virtual {v6, v14}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 1310
+    .line 1311
+    .line 1312
+    invoke-virtual {v6, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1313
+    .line 1314
+    .line 1315
+    invoke-virtual {v6, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1316
+    .line 1317
+    .line 1318
+    invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1319
+    .line 1320
+    .line 1321
+    invoke-virtual {v6, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 1322
+    .line 1323
+    .line 1324
+    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1325
+    .line 1326
+    .line 1327
+    invoke-virtual {v6, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 1328
+    .line 1329
+    .line 1330
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1331
+    .line 1332
+    .line 1333
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 1334
+    .line 1335
+    .line 1336
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 1337
+    .line 1338
+    .line 1339
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 1340
+    .line 1341
+    .line 1342
+    move-result-object v0
+
+    .line 1343
+    invoke-virtual {v5, v0}, Lcg;->i(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1344
+    .line 1345
+    .line 1346
+    const-string v0, "SETUP"
+
+    .line 1347
+    .line 1348
+    invoke-static/range {v16 .. v16}, Lug;->D(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 1349
+    .line 1350
+    .line 1351
+    move-result-object v2
+    :try_end_547
+    .catch Ljava/lang/Exception; {:try_start_50a .. :try_end_547} :catch_ae2
+
+    .line 1352
+    move-object/from16 v6, v26
+
+    .line 1353
+    .line 1354
+    :try_start_549
+    invoke-static {v6, v2}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 1355
+    .line 1356
+    .line 1357
+    move-result-object v2
+
+    .line 1358
+    invoke-static {v2}, Lhw0;->S(Ly71;)Ljava/util/Map;
+
+    .line 1359
+    .line 1360
+    .line 1361
+    move-result-object v2
+    :try_end_551
+    .catch Ljava/lang/Exception; {:try_start_549 .. :try_end_551} :catch_ad4
+
+    .line 1362
+    move-object/from16 v7, v35
+
+    .line 1363
+    .line 1364
+    move-object/from16 v11, v36
+
+    .line 1365
+    .line 1366
+    :try_start_555
+    invoke-virtual {v11, v0, v7, v2}, Lmi1;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 1367
+    .line 1368
+    .line 1369
+    move-result-object v0
+    :try_end_559
+    .catch Ljava/lang/Exception; {:try_start_555 .. :try_end_559} :catch_ac0
+
+    .line 1370
+    :try_start_559
+    invoke-interface {v0, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1371
+    .line 1372
+    .line 1373
+    move-result-object v0
+
+    .line 1374
+    instance-of v2, v0, Ljava/util/List;
+    :try_end_55f
+    .catch Ljava/lang/Exception; {:try_start_559 .. :try_end_55f} :catch_a70
+
+    .line 1375
+    .line 1376
+    if-eqz v2, :cond_57a
+
+    .line 1377
+    .line 1378
+    :try_start_561
+    check-cast v0, Ljava/util/List;
+    :try_end_563
+    .catch Ljava/lang/Exception; {:try_start_561 .. :try_end_563} :catch_564
+
+    .line 1379
+    .line 1380
+    goto :goto_57b
+
+    .line 1381
+    :catch_564
+    move-exception v0
+
+    .line 1382
+    move-wide/from16 v24, p1
+
+    .line 1383
+    .line 1384
+    move-object v1, v0
+
+    .line 1385
+    move-object/from16 v49, v7
+
+    .line 1386
+    .line 1387
+    move-object v13, v11
+
+    .line 1388
+    move-object/from16 v28, v27
+
+    .line 1389
+    .line 1390
+    move-object/from16 v11, v30
+
+    .line 1391
+    .line 1392
+    move-object/from16 v30, v32
+
+    .line 1393
+    .line 1394
+    move-object/from16 v5, v34
+
+    .line 1395
+    .line 1396
+    const/4 v14, 0x1
+
+    .line 1397
+    move-object/from16 v27, v6
+
+    .line 1398
+    .line 1399
+    :goto_576
+    move-object/from16 v6, p0
+
+    .line 1400
+    .line 1401
+    goto/16 :goto_c3e
+
+    .line 1402
+    .line 1403
+    :cond_57a
+    const/4 v0, 0x0
+
+    .line 1404
+    :goto_57b
+    if-eqz v0, :cond_a84
+
+    .line 1405
+    .line 1406
+    :try_start_57d
+    new-instance v2, Ljava/util/ArrayList;
+
+    .line 1407
+    .line 1408
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    .line 1409
+    .line 1410
+    .line 1411
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 1412
+    .line 1413
+    .line 1414
+    move-result-object v0
+
+    .line 1415
+    :cond_586
+    :goto_586
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 1416
+    .line 1417
+    .line 1418
+    move-result v3
+    :try_end_58a
+    .catch Ljava/lang/Exception; {:try_start_57d .. :try_end_58a} :catch_a70
+
+    .line 1419
+    if-eqz v3, :cond_598
+
+    .line 1420
+    .line 1421
+    :try_start_58c
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 1422
+    .line 1423
+    .line 1424
+    move-result-object v3
+
+    .line 1425
+    instance-of v4, v3, Ljava/util/Map;
+
+    .line 1426
+    .line 1427
+    if-eqz v4, :cond_586
+
+    .line 1428
+    .line 1429
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_597
+    .catch Ljava/lang/Exception; {:try_start_58c .. :try_end_597} :catch_564
+
+    .line 1430
+    .line 1431
+    .line 1432
+    goto :goto_586
+
+    .line 1433
+    :cond_598
+    :try_start_598
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    .line 1434
+    .line 1435
+    .line 1436
+    move-result v0
+    :try_end_59c
+    .catch Ljava/lang/Exception; {:try_start_598 .. :try_end_59c} :catch_a70
+
+    .line 1437
+    const/4 v3, 0x0
+
+    .line 1438
+    const/4 v4, 0x0
+
+    .line 1439
+    const/4 v5, 0x0
+
+    .line 1440
+    :goto_59f
+    if-ge v4, v0, :cond_5fe
+
+    .line 1441
+    .line 1442
+    :try_start_5a1
+    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 1443
+    .line 1444
+    .line 1445
+    move-result-object v8
+
+    .line 1446
+    add-int/lit8 v4, v4, 0x1
+
+    .line 1447
+    .line 1448
+    move-object v9, v8
+
+    .line 1449
+    check-cast v9, Ljava/util/Map;
+    :try_end_5aa
+    .catch Ljava/lang/Exception; {:try_start_5a1 .. :try_end_5aa} :catch_5fa
+
+    .line 1450
+    .line 1451
+    move-object/from16 v10, v32
+
+    .line 1452
+    .line 1453
+    :try_start_5ac
+    invoke-interface {v9, v10}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1454
+    .line 1455
+    .line 1456
+    move-result-object v9
+
+    .line 1457
+    instance-of v12, v9, Ljava/lang/Number;
+    :try_end_5b2
+    .catch Ljava/lang/Exception; {:try_start_5ac .. :try_end_5b2} :catch_5ef
+
+    .line 1458
+    .line 1459
+    if-eqz v12, :cond_5ca
+
+    .line 1460
+    .line 1461
+    :try_start_5b4
+    check-cast v9, Ljava/lang/Number;
+    :try_end_5b6
+    .catch Ljava/lang/Exception; {:try_start_5b4 .. :try_end_5b6} :catch_5b7
+
+    .line 1462
+    .line 1463
+    goto :goto_5cb
+
+    .line 1464
+    :catch_5b7
+    move-exception v0
+
+    .line 1465
+    move-wide/from16 v24, p1
+
+    .line 1466
+    .line 1467
+    move-object v1, v0
+
+    .line 1468
+    move-object/from16 v49, v7
+
+    .line 1469
+    .line 1470
+    move-object v13, v11
+
+    .line 1471
+    move-object/from16 v28, v27
+
+    .line 1472
+    .line 1473
+    move-object/from16 v11, v30
+
+    .line 1474
+    .line 1475
+    move-object/from16 v5, v34
+
+    .line 1476
+    .line 1477
+    :goto_5c4
+    const/4 v14, 0x1
+
+    .line 1478
+    :goto_5c5
+    move-object/from16 v27, v6
+
+    .line 1479
+    .line 1480
+    move-object/from16 v30, v10
+
+    .line 1481
+    .line 1482
+    goto :goto_576
+
+    .line 1483
+    :cond_5ca
+    const/4 v9, 0x0
+
+    .line 1484
+    :goto_5cb
+    if-eqz v9, :cond_5f3
+
+    .line 1485
+    .line 1486
+    :try_start_5cd
+    invoke-virtual {v9}, Ljava/lang/Number;->intValue()I
+
+    .line 1487
+    .line 1488
+    .line 1489
+    move-result v9
+    :try_end_5d1
+    .catch Ljava/lang/Exception; {:try_start_5cd .. :try_end_5d1} :catch_5ef
+
+    .line 1490
+    move-object/from16 v12, v34
+
+    .line 1491
+    .line 1492
+    :try_start_5d3
+    iget-byte v13, v12, Lal;->b:B
+    :try_end_5d5
+    .catch Ljava/lang/Exception; {:try_start_5d3 .. :try_end_5d5} :catch_5e2
+
+    .line 1493
+    .line 1494
+    if-ne v9, v13, :cond_5f5
+
+    .line 1495
+    .line 1496
+    if-eqz v3, :cond_5db
+
+    .line 1497
+    .line 1498
+    :goto_5d9
+    const/4 v5, 0x0
+
+    .line 1499
+    goto :goto_605
+
+    .line 1500
+    :cond_5db
+    move-object v5, v8
+
+    .line 1501
+    move-object/from16 v32, v10
+
+    .line 1502
+    .line 1503
+    move-object/from16 v34, v12
+
+    .line 1504
+    .line 1505
+    const/4 v3, 0x1
+
+    .line 1506
+    goto :goto_59f
+
+    .line 1507
+    :catch_5e2
+    move-exception v0
+
+    .line 1508
+    :goto_5e3
+    move-wide/from16 v24, p1
+
+    .line 1509
+    .line 1510
+    move-object v1, v0
+
+    .line 1511
+    move-object/from16 v49, v7
+
+    .line 1512
+    .line 1513
+    move-object v13, v11
+
+    .line 1514
+    move-object v5, v12
+
+    .line 1515
+    move-object/from16 v28, v27
+
+    .line 1516
+    .line 1517
+    move-object/from16 v11, v30
+
+    .line 1518
+    .line 1519
+    goto :goto_5c4
+
+    .line 1520
+    :catch_5ef
+    move-exception v0
+
+    .line 1521
+    :goto_5f0
+    move-object/from16 v12, v34
+
+    .line 1522
+    .line 1523
+    goto :goto_5e3
+
+    .line 1524
+    :cond_5f3
+    move-object/from16 v12, v34
+
+    .line 1525
+    .line 1526
+    :cond_5f5
+    move-object/from16 v32, v10
+
+    .line 1527
+    .line 1528
+    move-object/from16 v34, v12
+
+    .line 1529
+    .line 1530
+    goto :goto_59f
+
+    .line 1531
+    :catch_5fa
+    move-exception v0
+
+    .line 1532
+    move-object/from16 v10, v32
+
+    .line 1533
+    .line 1534
+    goto :goto_5f0
+
+    .line 1535
+    :cond_5fe
+    move-object/from16 v10, v32
+
+    .line 1536
+    .line 1537
+    move-object/from16 v12, v34
+
+    .line 1538
+    .line 1539
+    if-nez v3, :cond_605
+
+    .line 1540
+    .line 1541
+    goto :goto_5d9
+
+    .line 1542
+    :cond_605
+    :goto_605
+    :try_start_605
+    move-object v9, v5
+
+    .line 1543
+    check-cast v9, Ljava/util/Map;
+
+    .line 1544
+    .line 1545
+    if-eqz v9, :cond_a5c
+
+    .line 1546
+    .line 1547
+    sget-object v0, Lql1;->a:Lql1;
+    :try_end_60c
+    .catch Ljava/lang/Exception; {:try_start_605 .. :try_end_60c} :catch_a20
+
+    .line 1548
+    .line 1549
+    const/16 v2, 0x8
+
+    .line 1550
+    .line 1551
+    :try_start_60e
+    new-array v2, v2, [I
+
+    .line 1552
+    .line 1553
+    fill-array-data v2, :array_1034
+    :try_end_613
+    .catch Ljava/lang/Exception; {:try_start_60e .. :try_end_613} :catch_a4e
+
+    .line 1554
+    .line 1555
+    .line 1556
+    const/16 v3, 0xabd
+
+    .line 1557
+    .line 1558
+    :try_start_615
+    invoke-virtual {v0, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1559
+    .line 1560
+    .line 1561
+    move-result-object v2
+
+    .line 1562
+    invoke-interface {v9, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1563
+    .line 1564
+    .line 1565
+    move-result-object v2
+
+    .line 1566
+    instance-of v3, v2, Ljava/lang/Number;
+    :try_end_61f
+    .catch Ljava/lang/Exception; {:try_start_615 .. :try_end_61f} :catch_a20
+
+    .line 1567
+    .line 1568
+    if-eqz v3, :cond_624
+
+    .line 1569
+    .line 1570
+    :try_start_621
+    check-cast v2, Ljava/lang/Number;
+    :try_end_623
+    .catch Ljava/lang/Exception; {:try_start_621 .. :try_end_623} :catch_5e2
+
+    .line 1571
+    .line 1572
+    goto :goto_625
+
+    .line 1573
+    :cond_624
+    const/4 v2, 0x0
+
+    .line 1574
+    :goto_625
+    if-eqz v2, :cond_a24
+
+    .line 1575
+    .line 1576
+    :try_start_627
+    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
+
+    .line 1577
+    .line 1578
+    .line 1579
+    move-result v13
+    :try_end_62b
+    .catch Ljava/lang/Exception; {:try_start_627 .. :try_end_62b} :catch_a20
+
+    .line 1580
+    const/4 v14, 0x1
+
+    .line 1581
+    if-gt v14, v13, :cond_a03
+
+    .line 1582
+    .line 1583
+    const/high16 v15, 0x10000
+
+    .line 1584
+    .line 1585
+    if-ge v13, v15, :cond_a03
+
+    .line 1586
+    .line 1587
+    const/16 v2, 0x12
+
+    .line 1588
+    .line 1589
+    :try_start_634
+    new-array v2, v2, [I
+
+    .line 1590
+    .line 1591
+    fill-array-data v2, :array_1048
+    :try_end_639
+    .catch Ljava/lang/Exception; {:try_start_634 .. :try_end_639} :catch_9f1
+
+    .line 1592
+    .line 1593
+    .line 1594
+    const/16 v3, 0x6d4b
+
+    .line 1595
+    .line 1596
+    :try_start_63b
+    invoke-virtual {v0, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1597
+    .line 1598
+    .line 1599
+    move-result-object v2
+
+    .line 1600
+    invoke-interface {v9, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1601
+    .line 1602
+    .line 1603
+    move-result-object v2
+    :try_end_643
+    .catch Ljava/lang/Exception; {:try_start_63b .. :try_end_643} :catch_9ed
+
+    .line 1604
+    if-eqz v2, :cond_68c
+
+    .line 1605
+    .line 1606
+    const/16 v2, 0x12
+
+    .line 1607
+    .line 1608
+    :try_start_647
+    new-array v2, v2, [I
+
+    .line 1609
+    .line 1610
+    fill-array-data v2, :array_1070
+
+    .line 1611
+    .line 1612
+    .line 1613
+    invoke-virtual {v0, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1614
+    .line 1615
+    .line 1616
+    move-result-object v2
+
+    .line 1617
+    invoke-interface {v9, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1618
+    .line 1619
+    .line 1620
+    move-result-object v2
+
+    .line 1621
+    instance-of v3, v2, Ljava/lang/Number;
+
+    .line 1622
+    .line 1623
+    if-eqz v3, :cond_669
+
+    .line 1624
+    .line 1625
+    check-cast v2, Ljava/lang/Number;
+
+    .line 1626
+    .line 1627
+    goto :goto_66a
+
+    .line 1628
+    :catch_65b
+    move-exception v0
+
+    .line 1629
+    move-wide/from16 v24, p1
+
+    .line 1630
+    .line 1631
+    move-object v1, v0
+
+    .line 1632
+    move-object/from16 v49, v7
+
+    .line 1633
+    .line 1634
+    move-object v13, v11
+
+    .line 1635
+    move-object v5, v12
+
+    .line 1636
+    move-object/from16 v28, v27
+
+    .line 1637
+    .line 1638
+    move-object/from16 v11, v30
+
+    .line 1639
+    .line 1640
+    goto/16 :goto_5c5
+
+    .line 1641
+    .line 1642
+    :cond_669
+    const/4 v2, 0x0
+
+    .line 1643
+    :goto_66a
+    if-eqz v2, :cond_675
+
+    .line 1644
+    .line 1645
+    invoke-virtual {v2}, Ljava/lang/Number;->longValue()J
+
+    .line 1646
+    .line 1647
+    .line 1648
+    move-result-wide v2
+
+    .line 1649
+    cmp-long v2, v2, p1
+
+    .line 1650
+    .line 1651
+    if-nez v2, :cond_675
+
+    .line 1652
+    .line 1653
+    goto :goto_68c
+
+    .line 1654
+    :cond_675
+    const/16 v1, 0x1e
+
+    .line 1655
+    .line 1656
+    new-array v1, v1, [I
+
+    .line 1657
+    .line 1658
+    fill-array-data v1, :array_1098
+
+    .line 1659
+    .line 1660
+    .line 1661
+    const/16 v2, 0x1b92
+
+    .line 1662
+    .line 1663
+    invoke-virtual {v0, v2, v1}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1664
+    .line 1665
+    .line 1666
+    move-result-object v0
+
+    .line 1667
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    .line 1668
+    .line 1669
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 1670
+    .line 1671
+    .line 1672
+    move-result-object v0
+
+    .line 1673
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 1674
+    .line 1675
+    .line 1676
+    throw v1
+    :try_end_68c
+    .catch Ljava/lang/Exception; {:try_start_647 .. :try_end_68c} :catch_65b
+
+    .line 1677
+    :cond_68c
+    :goto_68c
+    const/16 v2, 0x9
+
+    .line 1678
+    .line 1679
+    :try_start_68e
+    new-array v2, v2, [I
+
+    .line 1680
+    .line 1681
+    fill-array-data v2, :array_10d8
+    :try_end_693
+    .catch Ljava/lang/Exception; {:try_start_68e .. :try_end_693} :catch_9f1
+
+    .line 1682
+    .line 1683
+    .line 1684
+    const v3, 0xef4e
+
+    .line 1685
+    .line 1686
+    .line 1687
+    :try_start_696
+    invoke-virtual {v0, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1688
+    .line 1689
+    .line 1690
+    move-result-object v2
+
+    .line 1691
+    invoke-interface {v9, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1692
+    .line 1693
+    .line 1694
+    move-result-object v2
+    :try_end_69e
+    .catch Ljava/lang/Exception; {:try_start_696 .. :try_end_69e} :catch_9ed
+
+    .line 1695
+    if-eqz v2, :cond_6c1
+
+    .line 1696
+    .line 1697
+    :try_start_6a0
+    iget-object v3, v12, Lal;->c:Ljava/lang/String;
+
+    .line 1698
+    .line 1699
+    invoke-static {v2, v3}, Lvk0;->o(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 1700
+    .line 1701
+    .line 1702
+    move-result v2
+
+    .line 1703
+    if-eqz v2, :cond_6a9
+
+    .line 1704
+    .line 1705
+    goto :goto_6c1
+
+    .line 1706
+    :cond_6a9
+    const/16 v1, 0x16
+
+    .line 1707
+    .line 1708
+    new-array v1, v1, [I
+
+    .line 1709
+    .line 1710
+    fill-array-data v1, :array_10ee
+
+    .line 1711
+    .line 1712
+    .line 1713
+    const v2, 0xee05
+
+    .line 1714
+    .line 1715
+    .line 1716
+    invoke-virtual {v0, v2, v1}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1717
+    .line 1718
+    .line 1719
+    move-result-object v0
+
+    .line 1720
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    .line 1721
+    .line 1722
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 1723
+    .line 1724
+    .line 1725
+    move-result-object v0
+
+    .line 1726
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 1727
+    .line 1728
+    .line 1729
+    throw v1
+    :try_end_6c1
+    .catch Ljava/lang/Exception; {:try_start_6a0 .. :try_end_6c1} :catch_65b
+
+    .line 1730
+    :cond_6c1
+    :goto_6c1
+    :try_start_6c1
+    sget-object v0, Lxv;->a:Ljava/security/SecureRandom;
+
+    .line 1731
+    .line 1732
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 1733
+    .line 1734
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 1735
+    .line 1736
+    .line 1737
+    move-object/from16 v8, v23
+
+    .line 1738
+    .line 1739
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_end_6cd
+    .catch Ljava/lang/Exception; {:try_start_6c1 .. :try_end_6cd} :catch_9ed
+
+    .line 1740
+    .line 1741
+    .line 1742
+    move-wide/from16 v2, p1
+
+    .line 1743
+    .line 1744
+    :try_start_6cf
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 1745
+    .line 1746
+    .line 1747
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 1748
+    .line 1749
+    .line 1750
+    move-result-object v0
+
+    .line 1751
+    const-string v4, "DataStream-Output-Encryption-Key"
+
+    .line 1752
+    .line 1753
+    move-object/from16 v5, v47
+
+    .line 1754
+    .line 1755
+    invoke-static {v0, v4, v5}, Lxv;->d(Ljava/lang/String;Ljava/lang/String;[B)[B
+
+    .line 1756
+    .line 1757
+    .line 1758
+    move-result-object v17
+
+    .line 1759
+    new-instance v4, Ljava/util/concurrent/atomic/AtomicBoolean;
+    :try_end_6e0
+    .catch Ljava/lang/Exception; {:try_start_6cf .. :try_end_6e0} :catch_9d7
+
+    .line 1760
+    .line 1761
+    const/4 v14, 0x0
+
+    .line 1762
+    :try_start_6e1
+    invoke-direct {v4, v14}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+    :try_end_6e4
+    .catch Ljava/lang/Exception; {:try_start_6e1 .. :try_end_6e4} :catch_9ce
+
+    .line 1763
+    .line 1764
+    .line 1765
+    move-wide/from16 v22, v2
+
+    .line 1766
+    .line 1767
+    :try_start_6e6
+    new-instance v3, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 1768
+    .line 1769
+    invoke-direct {v3, v14}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    .line 1770
+    .line 1771
+    .line 1772
+    new-instance v0, Lm3;
+    :try_end_6ed
+    .catch Ljava/lang/Exception; {:try_start_6e6 .. :try_end_6ed} :catch_9bc
+
+    .line 1773
+    .line 1774
+    move-object/from16 v47, v5
+
+    .line 1775
+    .line 1776
+    const/4 v5, 0x0
+
+    .line 1777
+    const/4 v14, 0x0
+
+    .line 1778
+    move-object/from16 v2, p0
+
+    .line 1779
+    .line 1780
+    move-object/from16 v16, v10
+
+    .line 1781
+    .line 1782
+    move-object/from16 v35, v20
+
+    .line 1783
+    .line 1784
+    move-object/from16 v15, v47
+
+    .line 1785
+    .line 1786
+    move/from16 v10, p3
+
+    .line 1787
+    .line 1788
+    :try_start_6fb
+    invoke-direct/range {v0 .. v5}, Lm3;-><init>(ILy3;Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/util/concurrent/atomic/AtomicBoolean;Lju;)V
+    :try_end_6fe
+    .catch Ljava/lang/Exception; {:try_start_6fb .. :try_end_6fe} :catch_9a9
+
+    .line 1789
+    .line 1790
+    .line 1791
+    move-object/from16 v40, v0
+
+    .line 1792
+    .line 1793
+    move-object v0, v3
+
+    .line 1794
+    move-object v3, v4
+
+    .line 1795
+    :try_start_702
+    new-instance v20, Ld3;
+    :try_end_704
+    .catch Ljava/lang/Exception; {:try_start_702 .. :try_end_704} :catch_995
+
+    .line 1796
+    .line 1797
+    move-object/from16 v2, p0
+
+    .line 1798
+    .line 1799
+    move-object/from16 v26, v6
+
+    .line 1800
+    .line 1801
+    move-object/from16 v49, v7
+
+    .line 1802
+    .line 1803
+    move-object v4, v11
+
+    .line 1804
+    move-object v5, v12
+
+    .line 1805
+    move-wide/from16 v6, v22
+
+    .line 1806
+    .line 1807
+    move-object/from16 v18, v41
+
+    .line 1808
+    .line 1809
+    const/4 v11, 0x1
+
+    .line 1810
+    const/4 v12, 0x2
+
+    .line 1811
+    move-object/from16 v23, v8
+
+    .line 1812
+    .line 1813
+    move v8, v1
+
+    .line 1814
+    move-object v1, v0
+
+    .line 1815
+    move-object/from16 v0, v20
+
+    .line 1816
+    .line 1817
+    :try_start_718
+    invoke-direct/range {v0 .. v8}, Ld3;-><init>(Ljava/util/concurrent/atomic/AtomicBoolean;Ly3;Ljava/util/concurrent/atomic/AtomicBoolean;Lmi1;Lal;JI)V
+    :try_end_71b
+    .catch Ljava/lang/Exception; {:try_start_718 .. :try_end_71b} :catch_989
+
+    .line 1818
+    .line 1819
+    .line 1820
+    move-object v1, v2
+
+    .line 1821
+    move-wide v2, v6
+
+    .line 1822
+    move-object/from16 v6, v48
+
+    .line 1823
+    .line 1824
+    :try_start_71f
+    iget-object v7, v6, Lzk;->b:Lyk;
+    :try_end_721
+    .catch Ljava/lang/Exception; {:try_start_71f .. :try_end_721} :catch_97b
+
+    .line 1825
+    .line 1826
+    move-object/from16 v12, v33
+
+    .line 1827
+    .line 1828
+    if-ne v7, v12, :cond_789
+
+    .line 1829
+    .line 1830
+    :try_start_725
+    new-instance v31, Lhl;
+
+    .line 1831
+    .line 1832
+    iget-object v7, v1, Ly3;->q:Ljava/net/InetAddress;
+
+    .line 1833
+    .line 1834
+    iget-byte v12, v5, Lal;->b:B
+
+    .line 1835
+    .line 1836
+    iget-object v11, v1, Ly3;->f:Lcg;
+
+    .line 1837
+    .line 1838
+    new-instance v14, Le3;
+
+    .line 1839
+    .line 1840
+    move-object/from16 v41, v0
+
+    .line 1841
+    .line 1842
+    const/4 v0, 0x0
+
+    .line 1843
+    invoke-direct {v14, v8, v1, v0}, Le3;-><init>(ILy3;B)V
+    :try_end_735
+    .catch Ljava/lang/Exception; {:try_start_725 .. :try_end_735} :catch_785
+
+    .line 1844
+    .line 1845
+    .line 1846
+    move-object/from16 v33, v7
+
+    .line 1847
+    .line 1848
+    move/from16 v36, v8
+
+    .line 1849
+    .line 1850
+    move-object/from16 v42, v11
+
+    .line 1851
+    .line 1852
+    move/from16 v37, v12
+
+    .line 1853
+    .line 1854
+    move/from16 v34, v13
+
+    .line 1855
+    .line 1856
+    move-object/from16 v43, v14
+
+    .line 1857
+    .line 1858
+    move-object/from16 v38, v17
+
+    .line 1859
+    .line 1860
+    move-object/from16 v39, v18
+
+    .line 1861
+    .line 1862
+    move-object/from16 v32, v30
+
+    .line 1863
+    .line 1864
+    :try_start_747
+    invoke-direct/range {v31 .. v43}, Lhl;-><init>(Ljava/net/DatagramSocket;Ljava/net/InetAddress;ILt91;II[BLhe;Lm3;Ld3;Lcg;Le3;)V
+    :try_end_74a
+    .catch Ljava/lang/Exception; {:try_start_747 .. :try_end_74a} :catch_776
+
+    .line 1865
+    .line 1866
+    .line 1867
+    move-object/from16 v11, v32
+
+    .line 1868
+    .line 1869
+    move/from16 v13, v34
+
+    .line 1870
+    .line 1871
+    move/from16 v8, v36
+
+    .line 1872
+    .line 1873
+    move-object/from16 v51, v5
+
+    .line 1874
+    .line 1875
+    move-object/from16 v17, v6
+
+    .line 1876
+    .line 1877
+    move-object v0, v9
+
+    .line 1878
+    move v9, v10
+
+    .line 1879
+    move-object/from16 v50, v11
+
+    .line 1880
+    .line 1881
+    move-object v7, v15
+
+    .line 1882
+    move-object/from16 v30, v16
+
+    .line 1883
+    .line 1884
+    move-object/from16 v6, v24
+
+    .line 1885
+    .line 1886
+    move-object/from16 v1, v28
+
+    .line 1887
+    .line 1888
+    move-object/from16 v5, v31
+
+    .line 1889
+    .line 1890
+    move-object/from16 v15, v46
+
+    .line 1891
+    .line 1892
+    const/4 v14, 0x1
+
+    .line 1893
+    move-wide v11, v2
+
+    .line 1894
+    move-object v3, v4
+
+    .line 1895
+    move v10, v8
+
+    .line 1896
+    move-object/from16 v8, v23
+
+    .line 1897
+    .line 1898
+    move-object/from16 v28, v27
+
+    .line 1899
+    .line 1900
+    move-object/from16 v23, v45
+
+    .line 1901
+    .line 1902
+    move-object/from16 v27, v26
+
+    .line 1903
+    .line 1904
+    :goto_76f
+    move v2, v13
+
+    .line 1905
+    move/from16 v4, v29
+
+    .line 1906
+    .line 1907
+    move-object/from16 v13, v44
+
+    .line 1908
+    .line 1909
+    goto/16 :goto_829
+
+    .line 1910
+    .line 1911
+    :catch_776
+    move-exception v0
+
+    .line 1912
+    move-object/from16 v11, v32
+
+    .line 1913
+    .line 1914
+    :goto_779
+    move-object v6, v1
+
+    .line 1915
+    move-wide/from16 v24, v2
+
+    .line 1916
+    .line 1917
+    move-object v13, v4
+
+    .line 1918
+    move-object/from16 v30, v16
+
+    .line 1919
+    .line 1920
+    move-object/from16 v28, v27
+
+    .line 1921
+    .line 1922
+    const/4 v14, 0x1
+
+    .line 1923
+    move-object v1, v0
+
+    .line 1924
+    goto/16 :goto_463
+
+    .line 1925
+    .line 1926
+    :catch_785
+    move-exception v0
+
+    .line 1927
+    move-object/from16 v11, v30
+
+    .line 1928
+    .line 1929
+    goto :goto_779
+
+    .line 1930
+    :cond_789
+    move-object/from16 v11, v30
+
+    .line 1931
+    .line 1932
+    :try_start_78b
+    sget-object v7, Lel;->z:Lac1;
+
+    .line 1933
+    .line 1934
+    iget-object v12, v1, Ly3;->q:Ljava/net/InetAddress;
+
+    .line 1935
+    .line 1936
+    iget-byte v14, v5, Lal;->b:B
+
+    .line 1937
+    .line 1938
+    move-object/from16 v41, v0
+
+    .line 1939
+    .line 1940
+    iget-object v0, v1, Ly3;->f:Lcg;
+
+    .line 1941
+    .line 1942
+    move-object/from16 v21, v0
+
+    .line 1943
+    .line 1944
+    new-instance v0, Le3;
+
+    .line 1945
+    .line 1946
+    move-object/from16 p1, v7
+
+    .line 1947
+    .line 1948
+    const/4 v7, 0x1
+
+    .line 1949
+    invoke-direct {v0, v8, v1, v7}, Le3;-><init>(ILy3;B)V
+    :try_end_79f
+    .catch Ljava/lang/Exception; {:try_start_78b .. :try_end_79f} :catch_978
+
+    .line 1950
+    .line 1951
+    .line 1952
+    move-object/from16 v1, v45
+
+    .line 1953
+    .line 1954
+    move-object/from16 v7, v46
+
+    .line 1955
+    .line 1956
+    :try_start_7a3
+    iput-object v1, v7, Lk3;->m:Lob0;
+
+    .line 1957
+    .line 1958
+    iput-object v5, v7, Lk3;->n:Lal;
+
+    .line 1959
+    .line 1960
+    iput-object v15, v7, Lk3;->o:[B
+
+    .line 1961
+    .line 1962
+    iput-object v4, v7, Lk3;->p:Lmi1;
+
+    .line 1963
+    .line 1964
+    iput-object v6, v7, Lk3;->q:Lzk;
+
+    .line 1965
+    .line 1966
+    move-object/from16 v45, v1
+
+    .line 1967
+    .line 1968
+    const/4 v1, 0x0
+
+    .line 1969
+    iput-object v1, v7, Lk3;->r:Lt91;
+
+    .line 1970
+    .line 1971
+    iput-object v11, v7, Lk3;->s:Ljava/net/DatagramSocket;
+    :try_end_7b4
+    .catch Ljava/lang/Exception; {:try_start_7a3 .. :try_end_7b4} :catch_956
+
+    .line 1972
+    .line 1973
+    move-object/from16 v1, v44
+
+    .line 1974
+    .line 1975
+    :try_start_7b6
+    iput-object v1, v7, Lk3;->t:Ljava/net/DatagramSocket;
+
+    .line 1976
+    .line 1977
+    iput-object v9, v7, Lk3;->u:Ljava/util/Map;
+
+    .line 1978
+    .line 1979
+    iput v8, v7, Lk3;->h:I
+
+    .line 1980
+    .line 1981
+    iput v10, v7, Lk3;->i:I
+    :try_end_7be
+    .catch Ljava/lang/Exception; {:try_start_7b6 .. :try_end_7be} :catch_972
+
+    .line 1982
+    .line 1983
+    move-object/from16 v44, v1
+
+    .line 1984
+    .line 1985
+    move/from16 v1, v29
+
+    .line 1986
+    .line 1987
+    :try_start_7c2
+    iput v1, v7, Lk3;->j:I
+
+    .line 1988
+    .line 1989
+    iput-wide v2, v7, Lk3;->w:J
+    :try_end_7c6
+    .catch Ljava/lang/Exception; {:try_start_7c2 .. :try_end_7c6} :catch_956
+
+    .line 1990
+    .line 1991
+    move/from16 v29, v1
+
+    .line 1992
+    .line 1993
+    const/4 v1, 0x1
+
+    .line 1994
+    :try_start_7c9
+    iput v1, v7, Lk3;->k:I
+
+    .line 1995
+    .line 1996
+    iput v13, v7, Lk3;->l:I
+    :try_end_7cd
+    .catch Ljava/lang/Exception; {:try_start_7c9 .. :try_end_7cd} :catch_965
+
+    .line 1997
+    .line 1998
+    const/4 v1, 0x2
+
+    .line 1999
+    :try_start_7ce
+    iput v1, v7, Lk3;->z:I
+    :try_end_7d0
+    .catch Ljava/lang/Exception; {:try_start_7ce .. :try_end_7d0} :catch_956
+
+    .line 2000
+    .line 2001
+    move-object/from16 v22, v0
+
+    .line 2002
+    .line 2003
+    move-object/from16 v36, v4
+
+    .line 2004
+    .line 2005
+    move/from16 p3, v10
+
+    .line 2006
+    .line 2007
+    move-object/from16 v47, v15
+
+    .line 2008
+    .line 2009
+    move-object/from16 v4, v16
+
+    .line 2010
+    .line 2011
+    move-object/from16 v1, v28
+
+    .line 2012
+    .line 2013
+    move-object/from16 v19, v40
+
+    .line 2014
+    .line 2015
+    move-object/from16 v20, v41
+
+    .line 2016
+    .line 2017
+    move-object/from16 v10, p1
+
+    .line 2018
+    .line 2019
+    move-object/from16 v16, v6
+
+    .line 2020
+    .line 2021
+    move v15, v14
+
+    .line 2022
+    move-object/from16 v6, v24
+
+    .line 2023
+    .line 2024
+    move-wide/from16 v24, v2
+
+    .line 2025
+    .line 2026
+    move v14, v8
+
+    .line 2027
+    move-object/from16 v8, v23
+
+    .line 2028
+    .line 2029
+    move-object/from16 v3, v26
+
+    .line 2030
+    .line 2031
+    move-object/from16 v2, v27
+
+    .line 2032
+    .line 2033
+    move-object/from16 v23, v7
+
+    .line 2034
+    .line 2035
+    const/4 v7, 0x1
+
+    .line 2036
+    :try_start_7f3
+    invoke-virtual/range {v10 .. v23}, Lac1;->i(Ljava/net/DatagramSocket;Ljava/net/InetAddress;IIILzk;[BLhe;Lm3;Ld3;Lcg;Le3;Lku;)Ljava/lang/Object;
+
+    .line 2037
+    .line 2038
+    .line 2039
+    move-result-object v0
+    :try_end_7f7
+    .catch Ljava/lang/Exception; {:try_start_7f3 .. :try_end_7f7} :catch_949
+
+    .line 2040
+    move v10, v14
+
+    .line 2041
+    move-object/from16 v48, v16
+
+    .line 2042
+    .line 2043
+    move-object/from16 v15, v23
+
+    .line 2044
+    .line 2045
+    if-ne v0, v6, :cond_801
+
+    .line 2046
+    .line 2047
+    move-object v2, v6
+
+    .line 2048
+    goto/16 :goto_8cb
+
+    .line 2049
+    .line 2050
+    :cond_801
+    move-object/from16 v23, v0
+
+    .line 2051
+    .line 2052
+    move/from16 v17, v7
+
+    .line 2053
+    .line 2054
+    move-object/from16 v19, v9
+
+    .line 2055
+    .line 2056
+    move-object/from16 v0, v45
+
+    .line 2057
+    .line 2058
+    move/from16 v9, p3
+
+    .line 2059
+    .line 2060
+    :goto_80b
+    :try_start_80b
+    check-cast v23, Lg21;
+    :try_end_80d
+    .catch Ljava/lang/Exception; {:try_start_80b .. :try_end_80d} :catch_939
+
+    .line 2061
+    .line 2062
+    move-object/from16 v28, v2
+
+    .line 2063
+    .line 2064
+    move-object/from16 v27, v3
+
+    .line 2065
+    .line 2066
+    move-object/from16 v30, v4
+
+    .line 2067
+    .line 2068
+    move-object/from16 v51, v5
+
+    .line 2069
+    .line 2070
+    move-object/from16 v50, v11
+
+    .line 2071
+    .line 2072
+    move/from16 v14, v17
+
+    .line 2073
+    .line 2074
+    move-object/from16 v5, v23
+
+    .line 2075
+    .line 2076
+    move-wide/from16 v11, v24
+
+    .line 2077
+    .line 2078
+    move-object/from16 v3, v36
+
+    .line 2079
+    .line 2080
+    move-object/from16 v7, v47
+
+    .line 2081
+    .line 2082
+    move-object/from16 v17, v48
+
+    .line 2083
+    .line 2084
+    move-object/from16 v23, v0
+
+    .line 2085
+    .line 2086
+    move-object/from16 v0, v19
+
+    .line 2087
+    .line 2088
+    goto/16 :goto_76f
+
+    .line 2089
+    .line 2090
+    :goto_829
+    if-eqz v4, :cond_91e
+
+    .line 2091
+    .line 2092
+    :try_start_82b
+    sget-object v16, Lxv;->a:Ljava/security/SecureRandom;
+
+    .line 2093
+    .line 2094
+    move-object/from16 v31, v6
+
+    .line 2095
+    .line 2096
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 2097
+    .line 2098
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2099
+    .line 2100
+    .line 2101
+    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2102
+    .line 2103
+    .line 2104
+    invoke-virtual {v6, v11, v12}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 2105
+    .line 2106
+    .line 2107
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 2108
+    .line 2109
+    .line 2110
+    move-result-object v6
+
+    .line 2111
+    const-string v8, "DataStream-Input-Encryption-Key"
+
+    .line 2112
+    .line 2113
+    invoke-static {v6, v8, v7}, Lxv;->d(Ljava/lang/String;Ljava/lang/String;[B)[B
+
+    .line 2114
+    .line 2115
+    .line 2116
+    move-result-object v21
+    :try_end_844
+    .catchall {:try_start_82b .. :try_end_844} :catchall_90b
+
+    .line 2117
+    move-object/from16 v6, p0
+
+    .line 2118
+    .line 2119
+    :try_start_846
+    iget-object v7, v6, Ly3;->q:Ljava/net/InetAddress;
+
+    .line 2120
+    .line 2121
+    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2122
+    .line 2123
+    .line 2124
+    move-result-object v0
+
+    .line 2125
+    instance-of v1, v0, Ljava/lang/Number;
+    :try_end_84e
+    .catchall {:try_start_846 .. :try_end_84e} :catchall_8f9
+
+    .line 2126
+    .line 2127
+    if-eqz v1, :cond_85d
+
+    .line 2128
+    .line 2129
+    :try_start_850
+    check-cast v0, Ljava/lang/Number;
+
+    .line 2130
+    .line 2131
+    goto :goto_85e
+
+    .line 2132
+    :catchall_853
+    move-exception v0
+
+    .line 2133
+    move-wide v9, v11
+
+    .line 2134
+    move-object v11, v3
+
+    .line 2135
+    move-wide v3, v9
+
+    .line 2136
+    move-object/from16 v9, v50
+
+    .line 2137
+    .line 2138
+    move-object/from16 v10, v51
+
+    .line 2139
+    .line 2140
+    goto/16 :goto_90f
+
+    .line 2141
+    .line 2142
+    :cond_85d
+    const/4 v0, 0x0
+
+    .line 2143
+    :goto_85e
+    if-eqz v0, :cond_876
+
+    .line 2144
+    .line 2145
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    .line 2146
+    .line 2147
+    .line 2148
+    move-result v0
+
+    .line 2149
+    invoke-static {v0}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 2150
+    .line 2151
+    .line 2152
+    move-result-object v0
+
+    .line 2153
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    .line 2154
+    .line 2155
+    .line 2156
+    move-result v1
+    :try_end_86c
+    .catchall {:try_start_850 .. :try_end_86c} :catchall_853
+
+    .line 2157
+    const/4 v8, 0x1
+
+    .line 2158
+    if-gt v8, v1, :cond_876
+
+    .line 2159
+    .line 2160
+    const/high16 v8, 0x10000
+
+    .line 2161
+    .line 2162
+    if-ge v1, v8, :cond_876
+
+    .line 2163
+    .line 2164
+    move-object/from16 v22, v0
+
+    .line 2165
+    .line 2166
+    goto :goto_878
+
+    .line 2167
+    :cond_876
+    const/16 v22, 0x0
+
+    .line 2168
+    .line 2169
+    :goto_878
+    if-eqz v23, :cond_8ff
+
+    .line 2170
+    .line 2171
+    :try_start_87a
+    iget-object v0, v6, Ly3;->f:Lcg;
+
+    .line 2172
+    .line 2173
+    const/4 v1, 0x0
+
+    .line 2174
+    iput-object v1, v15, Lk3;->m:Lob0;
+    :try_end_87f
+    .catchall {:try_start_87a .. :try_end_87f} :catchall_8f9
+
+    .line 2175
+    .line 2176
+    move-object/from16 v8, v51
+
+    .line 2177
+    .line 2178
+    :try_start_881
+    iput-object v8, v15, Lk3;->n:Lal;
+
+    .line 2179
+    .line 2180
+    iput-object v1, v15, Lk3;->o:[B
+
+    .line 2181
+    .line 2182
+    iput-object v3, v15, Lk3;->p:Lmi1;
+
+    .line 2183
+    .line 2184
+    iput-object v1, v15, Lk3;->q:Lzk;
+
+    .line 2185
+    .line 2186
+    iput-object v1, v15, Lk3;->r:Lt91;
+    :try_end_88b
+    .catchall {:try_start_881 .. :try_end_88b} :catchall_8f5
+
+    .line 2187
+    .line 2188
+    move-object/from16 v1, v50
+
+    .line 2189
+    .line 2190
+    :try_start_88d
+    iput-object v1, v15, Lk3;->s:Ljava/net/DatagramSocket;
+
+    .line 2191
+    .line 2192
+    iput-object v13, v15, Lk3;->t:Ljava/net/DatagramSocket;
+    :try_end_891
+    .catchall {:try_start_88d .. :try_end_891} :catchall_8f1
+
+    .line 2193
+    .line 2194
+    move-object/from16 v18, v1
+
+    .line 2195
+    .line 2196
+    const/4 v1, 0x0
+
+    .line 2197
+    :try_start_894
+    iput-object v1, v15, Lk3;->u:Ljava/util/Map;
+
+    .line 2198
+    .line 2199
+    iput-object v5, v15, Lk3;->v:Lg21;
+
+    .line 2200
+    .line 2201
+    iput v10, v15, Lk3;->h:I
+
+    .line 2202
+    .line 2203
+    iput v9, v15, Lk3;->i:I
+
+    .line 2204
+    .line 2205
+    iput v4, v15, Lk3;->j:I
+
+    .line 2206
+    .line 2207
+    iput-wide v11, v15, Lk3;->w:J
+
+    .line 2208
+    .line 2209
+    iput v14, v15, Lk3;->k:I
+
+    .line 2210
+    .line 2211
+    iput v2, v15, Lk3;->l:I
+
+    .line 2212
+    .line 2213
+    const/4 v4, 0x3
+
+    .line 2214
+    iput v4, v15, Lk3;->z:I
+
+    .line 2215
+    .line 2216
+    new-instance v1, Lh2;
+
+    .line 2217
+    .line 2218
+    const/16 v4, 0xd
+
+    .line 2219
+    .line 2220
+    invoke-direct {v1, v4}, Lh2;-><init>(B)V
+
+    .line 2221
+    .line 2222
+    .line 2223
+    sget-object v4, Lu00;->a:Llx;
+
+    .line 2224
+    .line 2225
+    sget-object v4, Lcx;->g:Lcx;
+
+    .line 2226
+    .line 2227
+    new-instance v16, Lil;
+
+    .line 2228
+    .line 2229
+    const/16 v26, 0x0
+
+    .line 2230
+    .line 2231
+    move-object/from16 v24, v0
+
+    .line 2232
+    .line 2233
+    move-object/from16 v25, v1
+
+    .line 2234
+    .line 2235
+    move/from16 v20, v2
+
+    .line 2236
+    .line 2237
+    move-object/from16 v19, v7
+
+    .line 2238
+    .line 2239
+    invoke-direct/range {v16 .. v26}, Lil;-><init>(Lzk;Ljava/net/DatagramSocket;Ljava/net/InetAddress;I[BLjava/lang/Integer;Lob0;Lcg;Lya0;Lju;)V
+
+    .line 2240
+    .line 2241
+    .line 2242
+    move-object/from16 v0, v16
+
+    .line 2243
+    .line 2244
+    invoke-static {v4, v0, v15}, Lvg;->q0(Lfv;Lnb0;Lju;)Ljava/lang/Object;
+
+    .line 2245
+    .line 2246
+    .line 2247
+    move-result-object v4
+    :try_end_8c7
+    .catchall {:try_start_894 .. :try_end_8c7} :catchall_8ef
+
+    .line 2248
+    move-object/from16 v2, v31
+
+    .line 2249
+    .line 2250
+    if-ne v4, v2, :cond_8cc
+
+    .line 2251
+    .line 2252
+    :goto_8cb
+    return-object v2
+
+    .line 2253
+    :cond_8cc
+    move-object/from16 v23, v4
+
+    .line 2254
+    .line 2255
+    move-object v10, v8
+
+    .line 2256
+    move v1, v14
+
+    .line 2257
+    move-object/from16 v9, v18
+
+    .line 2258
+    .line 2259
+    move-wide/from16 v52, v11
+
+    .line 2260
+    .line 2261
+    move-object v11, v3
+
+    .line 2262
+    move-wide/from16 v3, v52
+
+    .line 2263
+    .line 2264
+    :goto_8d7
+    :try_start_8d7
+    move-object/from16 v0, v23
+
+    .line 2265
+    .line 2266
+    check-cast v0, Lml;
+
+    .line 2267
+    .line 2268
+    new-instance v2, Ly30;
+
+    .line 2269
+    .line 2270
+    invoke-direct {v2, v5, v0}, Ly30;-><init>(Lg21;Lml;)V
+    :try_end_8e0
+    .catchall {:try_start_8d7 .. :try_end_8e0} :catchall_8e5
+
+    .line 2271
+    .line 2272
+    .line 2273
+    move v14, v1
+
+    .line 2274
+    move-wide v4, v3
+
+    .line 2275
+    move-object v1, v9
+
+    .line 2276
+    move-object v8, v10
+
+    .line 2277
+    goto :goto_929
+
+    .line 2278
+    :catchall_8e5
+    move-exception v0
+
+    .line 2279
+    move v14, v1
+
+    .line 2280
+    goto :goto_90f
+
+    .line 2281
+    :goto_8e8
+    move-wide v9, v11
+
+    .line 2282
+    move-object v11, v3
+
+    .line 2283
+    move-wide v3, v9
+
+    .line 2284
+    move-object v10, v8
+
+    .line 2285
+    move-object/from16 v9, v18
+
+    .line 2286
+    .line 2287
+    goto :goto_90f
+
+    .line 2288
+    :catchall_8ef
+    move-exception v0
+
+    .line 2289
+    goto :goto_8e8
+
+    .line 2290
+    :catchall_8f1
+    move-exception v0
+
+    .line 2291
+    move-object/from16 v18, v1
+
+    .line 2292
+    .line 2293
+    goto :goto_8e8
+
+    .line 2294
+    :catchall_8f5
+    move-exception v0
+
+    .line 2295
+    move-object/from16 v18, v50
+
+    .line 2296
+    .line 2297
+    goto :goto_8e8
+
+    .line 2298
+    :catchall_8f9
+    move-exception v0
+
+    .line 2299
+    :goto_8fa
+    move-object/from16 v18, v50
+
+    .line 2300
+    .line 2301
+    move-object/from16 v8, v51
+
+    .line 2302
+    .line 2303
+    goto :goto_8e8
+
+    .line 2304
+    :cond_8ff
+    move-object/from16 v18, v50
+
+    .line 2305
+    .line 2306
+    move-object/from16 v8, v51
+
+    .line 2307
+    .line 2308
+    :try_start_903
+    const-string v0, "Required value was null."
+
+    .line 2309
+    .line 2310
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    .line 2311
+    .line 2312
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 2313
+    .line 2314
+    .line 2315
+    throw v1
+    :try_end_90b
+    .catchall {:try_start_903 .. :try_end_90b} :catchall_8ef
+
+    .line 2316
+    :catchall_90b
+    move-exception v0
+
+    .line 2317
+    move-object/from16 v6, p0
+
+    .line 2318
+    .line 2319
+    goto :goto_8fa
+
+    .line 2320
+    :goto_90f
+    :try_start_90f
+    invoke-static {v5}, Lz2;->r(Lg21;)V
+
+    .line 2321
+    .line 2322
+    .line 2323
+    throw v0
+    :try_end_913
+    .catch Ljava/lang/Exception; {:try_start_90f .. :try_end_913} :catch_913
+
+    .line 2324
+    :catch_913
+    move-exception v0
+
+    .line 2325
+    move-object v1, v0
+
+    .line 2326
+    move-wide/from16 v24, v3
+
+    .line 2327
+    .line 2328
+    move-object v5, v10
+
+    .line 2329
+    move-object/from16 v44, v13
+
+    .line 2330
+    .line 2331
+    move-object v13, v11
+
+    .line 2332
+    move-object v11, v9
+
+    .line 2333
+    goto/16 :goto_c3e
+
+    .line 2334
+    .line 2335
+    :cond_91e
+    move-object/from16 v6, p0
+
+    .line 2336
+    .line 2337
+    move-object/from16 v18, v50
+
+    .line 2338
+    .line 2339
+    move-object/from16 v8, v51
+
+    .line 2340
+    .line 2341
+    move-object v2, v5
+
+    .line 2342
+    move-wide v4, v11
+
+    .line 2343
+    move-object/from16 v1, v18
+
+    .line 2344
+    .line 2345
+    move-object v11, v3
+
+    .line 2346
+    :goto_929
+    :try_start_929
+    iget-object v0, v6, Ly3;->e:Lhh;
+
+    .line 2347
+    .line 2348
+    invoke-virtual {v0, v2}, Lhh;->a(Ljava/lang/AutoCloseable;)V
+    :try_end_92e
+    .catch Ljava/lang/Exception; {:try_start_929 .. :try_end_92e} :catch_92f
+
+    .line 2349
+    .line 2350
+    .line 2351
+    return-object v2
+
+    .line 2352
+    :catch_92f
+    move-exception v0
+
+    .line 2353
+    move-wide/from16 v24, v4
+
+    .line 2354
+    .line 2355
+    move-object v5, v8
+
+    .line 2356
+    move-object/from16 v44, v13
+
+    .line 2357
+    .line 2358
+    move-object v13, v11
+
+    .line 2359
+    move-object v11, v1
+
+    .line 2360
+    goto/16 :goto_de
+
+    .line 2361
+    .line 2362
+    :catch_939
+    move-exception v0
+
+    .line 2363
+    move-object/from16 v6, p0
+
+    .line 2364
+    .line 2365
+    move-object/from16 v28, v2
+
+    .line 2366
+    .line 2367
+    move-object/from16 v27, v3
+
+    .line 2368
+    .line 2369
+    move-object/from16 v30, v4
+
+    .line 2370
+    .line 2371
+    move-object v1, v0
+
+    .line 2372
+    move/from16 v14, v17
+
+    .line 2373
+    .line 2374
+    :goto_945
+    move-object/from16 v13, v36
+
+    .line 2375
+    .line 2376
+    goto/16 :goto_c3e
+
+    .line 2377
+    .line 2378
+    :catch_949
+    move-exception v0
+
+    .line 2379
+    move-object/from16 v6, p0
+
+    .line 2380
+    .line 2381
+    move-object/from16 v28, v2
+
+    .line 2382
+    .line 2383
+    move-object/from16 v27, v3
+
+    .line 2384
+    .line 2385
+    move-object/from16 v30, v4
+
+    .line 2386
+    .line 2387
+    move v8, v7
+
+    .line 2388
+    :goto_953
+    move-object v1, v0
+
+    .line 2389
+    move v14, v8
+
+    .line 2390
+    goto :goto_945
+
+    .line 2391
+    :catch_956
+    move-exception v0
+
+    .line 2392
+    move-object/from16 v6, p0
+
+    .line 2393
+    .line 2394
+    :goto_959
+    move-wide/from16 v24, v2
+
+    .line 2395
+    .line 2396
+    move-object/from16 v36, v4
+
+    .line 2397
+    .line 2398
+    move-object/from16 v30, v16
+
+    .line 2399
+    .line 2400
+    move-object/from16 v28, v27
+
+    .line 2401
+    .line 2402
+    const/4 v8, 0x1
+
+    .line 2403
+    :goto_962
+    move-object/from16 v27, v26
+
+    .line 2404
+    .line 2405
+    goto :goto_953
+
+    .line 2406
+    :catch_965
+    move-exception v0
+
+    .line 2407
+    move-object/from16 v6, p0
+
+    .line 2408
+    .line 2409
+    move v8, v1
+
+    .line 2410
+    move-wide/from16 v24, v2
+
+    .line 2411
+    .line 2412
+    move-object/from16 v36, v4
+
+    .line 2413
+    .line 2414
+    move-object/from16 v30, v16
+
+    .line 2415
+    .line 2416
+    move-object/from16 v28, v27
+
+    .line 2417
+    .line 2418
+    goto :goto_962
+
+    .line 2419
+    :catch_972
+    move-exception v0
+
+    .line 2420
+    move-object/from16 v6, p0
+
+    .line 2421
+    .line 2422
+    move-object/from16 v44, v1
+
+    .line 2423
+    .line 2424
+    goto :goto_959
+
+    .line 2425
+    :catch_978
+    move-exception v0
+
+    .line 2426
+    move-object v6, v1
+
+    .line 2427
+    goto :goto_959
+
+    .line 2428
+    :catch_97b
+    move-exception v0
+
+    .line 2429
+    move-object v6, v1
+
+    .line 2430
+    move-wide/from16 v24, v2
+
+    .line 2431
+    .line 2432
+    move-object/from16 v36, v4
+
+    .line 2433
+    .line 2434
+    move v8, v11
+
+    .line 2435
+    move-object/from16 v28, v27
+
+    .line 2436
+    .line 2437
+    move-object/from16 v11, v30
+
+    .line 2438
+    .line 2439
+    :goto_986
+    move-object/from16 v30, v16
+
+    .line 2440
+    .line 2441
+    goto :goto_962
+
+    .line 2442
+    :catch_989
+    move-exception v0
+
+    .line 2443
+    move-object/from16 v36, v4
+
+    .line 2444
+    .line 2445
+    move-wide/from16 v24, v6
+
+    .line 2446
+    .line 2447
+    move v8, v11
+
+    .line 2448
+    move-object/from16 v28, v27
+
+    .line 2449
+    .line 2450
+    move-object/from16 v11, v30
+
+    .line 2451
+    .line 2452
+    move-object v6, v2
+
+    .line 2453
+    goto :goto_986
+
+    .line 2454
+    :catch_995
+    move-exception v0
+
+    .line 2455
+    move-object/from16 v49, v7
+
+    .line 2456
+    .line 2457
+    move-object/from16 v36, v11
+
+    .line 2458
+    .line 2459
+    move-object v5, v12
+
+    .line 2460
+    move-wide/from16 v24, v22
+
+    .line 2461
+    .line 2462
+    move-object/from16 v28, v27
+
+    .line 2463
+    .line 2464
+    move-object/from16 v11, v30
+
+    .line 2465
+    .line 2466
+    const/4 v8, 0x1
+
+    .line 2467
+    move-object/from16 v27, v6
+
+    .line 2468
+    .line 2469
+    move-object/from16 v30, v16
+
+    .line 2470
+    .line 2471
+    :goto_9a6
+    move-object/from16 v6, p0
+
+    .line 2472
+    .line 2473
+    goto :goto_953
+
+    .line 2474
+    :catch_9a9
+    move-exception v0
+
+    .line 2475
+    move-object/from16 v49, v7
+
+    .line 2476
+    .line 2477
+    move-object/from16 v36, v11
+
+    .line 2478
+    .line 2479
+    move-object v5, v12
+
+    .line 2480
+    move-wide/from16 v24, v22
+
+    .line 2481
+    .line 2482
+    move-object/from16 v28, v27
+
+    .line 2483
+    .line 2484
+    move-object/from16 v11, v30
+
+    .line 2485
+    .line 2486
+    const/4 v8, 0x1
+
+    .line 2487
+    move-object/from16 v27, v6
+
+    .line 2488
+    .line 2489
+    move-object/from16 v30, v16
+
+    .line 2490
+    .line 2491
+    move-object v6, v2
+
+    .line 2492
+    goto :goto_953
+
+    .line 2493
+    :catch_9bc
+    move-exception v0
+
+    .line 2494
+    move-object/from16 v49, v7
+
+    .line 2495
+    .line 2496
+    move-object/from16 v36, v11
+
+    .line 2497
+    .line 2498
+    move-object v5, v12
+
+    .line 2499
+    move-wide/from16 v24, v22
+
+    .line 2500
+    .line 2501
+    :goto_9c4
+    move-object/from16 v28, v27
+
+    .line 2502
+    .line 2503
+    move-object/from16 v11, v30
+
+    .line 2504
+    .line 2505
+    const/4 v8, 0x1
+
+    .line 2506
+    move-object/from16 v27, v6
+
+    .line 2507
+    .line 2508
+    move-object/from16 v30, v10
+
+    .line 2509
+    .line 2510
+    goto :goto_9a6
+
+    .line 2511
+    :catch_9ce
+    move-exception v0
+
+    .line 2512
+    move-wide/from16 v24, v2
+
+    .line 2513
+    .line 2514
+    :goto_9d1
+    move-object/from16 v49, v7
+
+    .line 2515
+    .line 2516
+    move-object/from16 v36, v11
+
+    .line 2517
+    .line 2518
+    move-object v5, v12
+
+    .line 2519
+    goto :goto_9c4
+
+    .line 2520
+    :catch_9d7
+    move-exception v0
+
+    .line 2521
+    move-wide/from16 v24, v2
+
+    .line 2522
+    .line 2523
+    :goto_9da
+    move-object/from16 v49, v7
+
+    .line 2524
+    .line 2525
+    move-object/from16 v36, v11
+
+    .line 2526
+    .line 2527
+    move-object v5, v12
+
+    .line 2528
+    move v8, v14
+
+    .line 2529
+    move-object/from16 v28, v27
+
+    .line 2530
+    .line 2531
+    move-object/from16 v11, v30
+
+    .line 2532
+    .line 2533
+    move-object/from16 v27, v6
+
+    .line 2534
+    .line 2535
+    move-object/from16 v30, v10
+
+    .line 2536
+    .line 2537
+    :goto_9e8
+    move-object/from16 v6, p0
+
+    .line 2538
+    .line 2539
+    :goto_9ea
+    move-object v1, v0
+
+    .line 2540
+    goto/16 :goto_945
+
+    .line 2541
+    .line 2542
+    :catch_9ed
+    move-exception v0
+
+    .line 2543
+    move-wide/from16 v24, p1
+
+    .line 2544
+    .line 2545
+    goto :goto_9da
+
+    .line 2546
+    :catch_9f1
+    move-exception v0
+
+    .line 2547
+    move-wide/from16 v24, p1
+
+    .line 2548
+    .line 2549
+    move-object/from16 v49, v7
+
+    .line 2550
+    .line 2551
+    move-object/from16 v36, v11
+
+    .line 2552
+    .line 2553
+    move-object v5, v12
+
+    .line 2554
+    move v8, v14
+
+    .line 2555
+    move-object/from16 v28, v27
+
+    .line 2556
+    .line 2557
+    move-object/from16 v11, v30
+
+    .line 2558
+    .line 2559
+    :goto_9fe
+    move-object/from16 v27, v6
+
+    .line 2560
+    .line 2561
+    move-object/from16 v30, v10
+
+    .line 2562
+    .line 2563
+    goto :goto_9a6
+
+    .line 2564
+    :cond_a03
+    move-wide/from16 v24, p1
+
+    .line 2565
+    .line 2566
+    move-object/from16 v49, v7
+
+    .line 2567
+    .line 2568
+    move-object/from16 v36, v11
+
+    .line 2569
+    .line 2570
+    move-object v5, v12
+
+    .line 2571
+    move v8, v14
+
+    .line 2572
+    move-object/from16 v28, v27
+
+    .line 2573
+    .line 2574
+    move-object/from16 v11, v30
+
+    .line 2575
+    .line 2576
+    move-object/from16 v27, v6
+
+    .line 2577
+    .line 2578
+    move-object/from16 v30, v10
+
+    .line 2579
+    .line 2580
+    move-object/from16 v6, p0
+
+    .line 2581
+    .line 2582
+    :try_start_a15
+    const-string v0, "Failed requirement."
+
+    .line 2583
+    .line 2584
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    .line 2585
+    .line 2586
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 2587
+    .line 2588
+    .line 2589
+    throw v1
+
+    .line 2590
+    :catch_a1d
+    move-exception v0
+
+    .line 2591
+    goto/16 :goto_953
+
+    .line 2592
+    .line 2593
+    :catch_a20
+    move-exception v0
+
+    .line 2594
+    move-wide/from16 v24, p1
+
+    .line 2595
+    .line 2596
+    goto :goto_9d1
+
+    .line 2597
+    :cond_a24
+    move-wide/from16 v24, p1
+
+    .line 2598
+    .line 2599
+    move-object/from16 v49, v7
+
+    .line 2600
+    .line 2601
+    move-object/from16 v36, v11
+
+    .line 2602
+    .line 2603
+    move-object v5, v12
+
+    .line 2604
+    move-object/from16 v28, v27
+
+    .line 2605
+    .line 2606
+    move-object/from16 v11, v30
+
+    .line 2607
+    .line 2608
+    const/4 v8, 0x1
+
+    .line 2609
+    move-object/from16 v27, v6
+
+    .line 2610
+    .line 2611
+    move-object/from16 v30, v10
+
+    .line 2612
+    .line 2613
+    move-object/from16 v6, p0
+
+    .line 2614
+    .line 2615
+    const/16 v1, 0x16
+
+    .line 2616
+    .line 2617
+    new-array v1, v1, [I
+
+    .line 2618
+    .line 2619
+    fill-array-data v1, :array_111e
+
+    .line 2620
+    .line 2621
+    .line 2622
+    const v2, 0xf28a
+
+    .line 2623
+    .line 2624
+    .line 2625
+    invoke-virtual {v0, v2, v1}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 2626
+    .line 2627
+    .line 2628
+    move-result-object v0
+
+    .line 2629
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    .line 2630
+    .line 2631
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 2632
+    .line 2633
+    .line 2634
+    move-result-object v0
+
+    .line 2635
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 2636
+    .line 2637
+    .line 2638
+    throw v1
+
+    .line 2639
+    :catch_a4e
+    move-exception v0
+
+    .line 2640
+    move-wide/from16 v24, p1
+
+    .line 2641
+    .line 2642
+    move-object/from16 v49, v7
+
+    .line 2643
+    .line 2644
+    move-object/from16 v36, v11
+
+    .line 2645
+    .line 2646
+    move-object v5, v12
+
+    .line 2647
+    move-object/from16 v28, v27
+
+    .line 2648
+    .line 2649
+    move-object/from16 v11, v30
+
+    .line 2650
+    .line 2651
+    const/4 v8, 0x1
+
+    .line 2652
+    goto :goto_9fe
+
+    .line 2653
+    :cond_a5c
+    move-object/from16 v36, v11
+
+    .line 2654
+    .line 2655
+    move-object v5, v12
+
+    .line 2656
+    move-object/from16 v11, v30
+
+    .line 2657
+    .line 2658
+    move-object/from16 v30, v10
+
+    .line 2659
+    .line 2660
+    move-wide/from16 v24, p1
+
+    .line 2661
+    .line 2662
+    move-object/from16 v49, v7
+
+    .line 2663
+    .line 2664
+    move-object/from16 v28, v27
+
+    .line 2665
+    .line 2666
+    const/4 v8, 0x1
+
+    .line 2667
+    move-object/from16 v27, v6
+
+    .line 2668
+    .line 2669
+    move-object/from16 v6, p0
+
+    .line 2670
+    .line 2671
+    move v10, v1
+
+    .line 2672
+    goto :goto_a98
+
+    .line 2673
+    :catch_a70
+    move-exception v0
+
+    .line 2674
+    move-wide/from16 v24, p1
+
+    .line 2675
+    .line 2676
+    move-object/from16 v49, v7
+
+    .line 2677
+    .line 2678
+    move-object/from16 v36, v11
+
+    .line 2679
+    .line 2680
+    move-object/from16 v28, v27
+
+    .line 2681
+    .line 2682
+    move-object/from16 v11, v30
+
+    .line 2683
+    .line 2684
+    move-object/from16 v30, v32
+
+    .line 2685
+    .line 2686
+    move-object/from16 v5, v34
+
+    .line 2687
+    .line 2688
+    const/4 v8, 0x1
+
+    .line 2689
+    move-object/from16 v27, v6
+
+    .line 2690
+    .line 2691
+    goto/16 :goto_9a6
+
+    .line 2692
+    .line 2693
+    :cond_a84
+    move-object/from16 v36, v11
+
+    .line 2694
+    .line 2695
+    move-object/from16 v11, v30
+
+    .line 2696
+    .line 2697
+    move-object/from16 v30, v32
+
+    .line 2698
+    .line 2699
+    move-object/from16 v5, v34
+
+    .line 2700
+    .line 2701
+    move-wide/from16 v24, p1
+
+    .line 2702
+    .line 2703
+    move v10, v1
+
+    .line 2704
+    move-object/from16 v49, v7
+
+    .line 2705
+    .line 2706
+    move-object/from16 v28, v27
+
+    .line 2707
+    .line 2708
+    const/4 v8, 0x1
+
+    .line 2709
+    move-object/from16 v27, v6
+
+    .line 2710
+    .line 2711
+    move-object/from16 v6, p0
+
+    .line 2712
+    .line 2713
+    :goto_a98
+    sget-object v0, Lql1;->a:Lql1;
+
+    .line 2714
+    .line 2715
+    const/16 v1, 0x2c
+
+    .line 2716
+    .line 2717
+    new-array v1, v1, [I
+
+    .line 2718
+    .line 2719
+    fill-array-data v1, :array_114e
+
+    .line 2720
+    .line 2721
+    .line 2722
+    const/16 v2, 0x1395
+
+    .line 2723
+    .line 2724
+    invoke-virtual {v0, v2, v1}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 2725
+    .line 2726
+    .line 2727
+    move-result-object v0
+
+    .line 2728
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 2729
+    .line 2730
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2731
+    .line 2732
+    .line 2733
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2734
+    .line 2735
+    .line 2736
+    invoke-virtual {v1, v10}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 2737
+    .line 2738
+    .line 2739
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 2740
+    .line 2741
+    .line 2742
+    move-result-object v0
+
+    .line 2743
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    .line 2744
+    .line 2745
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 2746
+    .line 2747
+    .line 2748
+    move-result-object v0
+
+    .line 2749
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 2750
+    .line 2751
+    .line 2752
+    throw v1
+    :try_end_ac0
+    .catch Ljava/lang/Exception; {:try_start_a15 .. :try_end_ac0} :catch_a1d
+
+    .line 2753
+    :catch_ac0
+    move-exception v0
+
+    .line 2754
+    move-wide/from16 v24, p1
+
+    .line 2755
+    .line 2756
+    move-object/from16 v49, v7
+
+    .line 2757
+    .line 2758
+    move-object/from16 v36, v11
+
+    .line 2759
+    .line 2760
+    move-object/from16 v28, v27
+
+    .line 2761
+    .line 2762
+    move-object/from16 v11, v30
+
+    .line 2763
+    .line 2764
+    move-object/from16 v30, v32
+
+    .line 2765
+    .line 2766
+    move-object/from16 v5, v34
+
+    .line 2767
+    .line 2768
+    :goto_acf
+    const/4 v14, 0x0
+
+    .line 2769
+    move-object/from16 v27, v6
+
+    .line 2770
+    .line 2771
+    goto/16 :goto_9e8
+
+    .line 2772
+    .line 2773
+    :catch_ad4
+    move-exception v0
+
+    .line 2774
+    move-wide/from16 v24, p1
+
+    .line 2775
+    .line 2776
+    move-object/from16 v28, v27
+
+    .line 2777
+    .line 2778
+    move-object/from16 v11, v30
+
+    .line 2779
+    .line 2780
+    move-object/from16 v30, v32
+
+    .line 2781
+    .line 2782
+    move-object/from16 v5, v34
+
+    .line 2783
+    .line 2784
+    move-object/from16 v49, v35
+
+    .line 2785
+    .line 2786
+    goto :goto_acf
+
+    .line 2787
+    :catch_ae2
+    move-exception v0
+
+    .line 2788
+    move-object/from16 v6, p0
+
+    .line 2789
+    .line 2790
+    move-wide/from16 v24, p1
+
+    .line 2791
+    .line 2792
+    :goto_ae7
+    move-object/from16 v28, v27
+
+    .line 2793
+    .line 2794
+    move-object/from16 v11, v30
+
+    .line 2795
+    .line 2796
+    move-object/from16 v30, v32
+
+    .line 2797
+    .line 2798
+    move-object/from16 v5, v34
+
+    .line 2799
+    .line 2800
+    move-object/from16 v49, v35
+
+    .line 2801
+    .line 2802
+    const/4 v14, 0x0
+
+    .line 2803
+    :goto_af2
+    move-object/from16 v27, v26
+
+    .line 2804
+    .line 2805
+    goto/16 :goto_9ea
+
+    .line 2806
+    .line 2807
+    :catch_af6
+    move-exception v0
+
+    .line 2808
+    move-object/from16 v6, p0
+
+    .line 2809
+    .line 2810
+    move-wide/from16 v24, p1
+
+    .line 2811
+    .line 2812
+    move-object/from16 v36, v13
+
+    .line 2813
+    .line 2814
+    goto :goto_ae7
+
+    .line 2815
+    :catch_afe
+    move-exception v0
+
+    .line 2816
+    move-object/from16 v6, p0
+
+    .line 2817
+    .line 2818
+    move-wide/from16 v24, p1
+
+    .line 2819
+    .line 2820
+    move-object/from16 v36, v13
+
+    .line 2821
+    .line 2822
+    move-object/from16 v28, v27
+
+    .line 2823
+    .line 2824
+    move-object/from16 v11, v30
+
+    .line 2825
+    .line 2826
+    move-object/from16 v30, v32
+
+    .line 2827
+    .line 2828
+    move-object/from16 v5, v34
+
+    .line 2829
+    .line 2830
+    move-object/from16 v49, v35
+
+    .line 2831
+    .line 2832
+    :goto_b0f
+    const/4 v14, 0x0
+
+    .line 2833
+    :goto_b10
+    move-object/from16 v27, v26
+
+    .line 2834
+    .line 2835
+    goto/16 :goto_de
+
+    .line 2836
+    .line 2837
+    :catch_b14
+    move-exception v0
+
+    .line 2838
+    move-object/from16 v6, p0
+
+    .line 2839
+    .line 2840
+    move-wide/from16 v24, p1
+
+    .line 2841
+    .line 2842
+    move-object/from16 v49, v7
+
+    .line 2843
+    .line 2844
+    move-object/from16 v36, v13
+
+    .line 2845
+    .line 2846
+    move-object/from16 v28, v27
+
+    .line 2847
+    .line 2848
+    move-object/from16 v11, v30
+
+    .line 2849
+    .line 2850
+    move-object/from16 v30, v32
+
+    .line 2851
+    .line 2852
+    move-object/from16 v5, v34
+
+    .line 2853
+    .line 2854
+    goto :goto_b0f
+
+    .line 2855
+    :catch_b26
+    move-exception v0
+
+    .line 2856
+    move-object/from16 v6, p0
+
+    .line 2857
+    .line 2858
+    move-wide/from16 v24, p1
+
+    .line 2859
+    .line 2860
+    move-object/from16 v49, v7
+
+    .line 2861
+    .line 2862
+    move-object/from16 v36, v13
+
+    .line 2863
+    .line 2864
+    move-object/from16 v28, v27
+
+    .line 2865
+    .line 2866
+    move-object/from16 v11, v30
+
+    .line 2867
+    .line 2868
+    move-object/from16 v5, v34
+
+    .line 2869
+    .line 2870
+    :goto_b35
+    const/4 v14, 0x0
+
+    .line 2871
+    move-object/from16 v30, v4
+
+    .line 2872
+    .line 2873
+    goto :goto_b10
+
+    .line 2874
+    :catch_b39
+    move-exception v0
+
+    .line 2875
+    move-object/from16 v6, p0
+
+    .line 2876
+    .line 2877
+    move-wide/from16 v24, p1
+
+    .line 2878
+    .line 2879
+    move-object/from16 v49, v7
+
+    .line 2880
+    .line 2881
+    move-object v5, v8
+
+    .line 2882
+    move-object/from16 v36, v13
+
+    .line 2883
+    .line 2884
+    :goto_b43
+    move-object/from16 v28, v27
+
+    .line 2885
+    .line 2886
+    move-object/from16 v11, v30
+
+    .line 2887
+    .line 2888
+    goto :goto_b35
+
+    .line 2889
+    :catch_b48
+    move-exception v0
+
+    .line 2890
+    move-object/from16 v6, p0
+
+    .line 2891
+    .line 2892
+    move-wide/from16 v24, p1
+
+    .line 2893
+    .line 2894
+    move-object/from16 v49, v7
+
+    .line 2895
+    .line 2896
+    move-object v5, v8
+
+    .line 2897
+    move-object/from16 v36, v13
+
+    .line 2898
+    .line 2899
+    :goto_b52
+    move-object/from16 v28, v27
+
+    .line 2900
+    .line 2901
+    move-object/from16 v11, v30
+
+    .line 2902
+    .line 2903
+    const/4 v14, 0x0
+
+    .line 2904
+    move-object/from16 v30, v4
+
+    .line 2905
+    .line 2906
+    goto :goto_af2
+
+    .line 2907
+    :catch_b5a
+    move-exception v0
+
+    .line 2908
+    move-object/from16 v6, p0
+
+    .line 2909
+    .line 2910
+    move-wide/from16 v24, p1
+
+    .line 2911
+    .line 2912
+    :goto_b5f
+    move-object/from16 v49, v7
+
+    .line 2913
+    .line 2914
+    move-object v5, v8
+
+    .line 2915
+    move-object/from16 v36, v13
+
+    .line 2916
+    .line 2917
+    move-object/from16 v44, v14
+
+    .line 2918
+    .line 2919
+    goto :goto_b52
+
+    .line 2920
+    :catch_b67
+    move-exception v0
+
+    .line 2921
+    move-object/from16 v6, p0
+
+    .line 2922
+    .line 2923
+    move-wide/from16 v24, p1
+
+    .line 2924
+    .line 2925
+    :goto_b6c
+    move-object/from16 v49, v7
+
+    .line 2926
+    .line 2927
+    move-object v5, v8
+
+    .line 2928
+    move-object/from16 v36, v13
+
+    .line 2929
+    .line 2930
+    move-object/from16 v44, v14
+
+    .line 2931
+    .line 2932
+    goto :goto_b43
+
+    .line 2933
+    :catch_b74
+    move-exception v0
+
+    .line 2934
+    move-wide/from16 v24, p1
+
+    .line 2935
+    .line 2936
+    move-object v6, v2
+
+    .line 2937
+    goto :goto_b5f
+
+    .line 2938
+    :catch_b79
+    move-exception v0
+
+    .line 2939
+    move-wide/from16 v24, p1
+
+    .line 2940
+    .line 2941
+    move-object v6, v2
+
+    .line 2942
+    goto :goto_b6c
+
+    .line 2943
+    :catch_b7e
+    move-exception v0
+
+    .line 2944
+    move-wide/from16 v24, p1
+
+    .line 2945
+    .line 2946
+    move-object/from16 v28, v6
+
+    .line 2947
+    .line 2948
+    move-object/from16 v49, v7
+
+    .line 2949
+    .line 2950
+    move-object v5, v8
+
+    .line 2951
+    move-object/from16 v36, v13
+
+    .line 2952
+    .line 2953
+    move-object/from16 v44, v14
+
+    .line 2954
+    .line 2955
+    move-object/from16 v27, v26
+
+    .line 2956
+    .line 2957
+    move-object/from16 v11, v30
+
+    .line 2958
+    .line 2959
+    const/4 v14, 0x0
+
+    .line 2960
+    move-object v6, v2
+
+    .line 2961
+    :goto_b90
+    move-object/from16 v30, v4
+
+    .line 2962
+    .line 2963
+    goto/16 :goto_de
+
+    .line 2964
+    .line 2965
+    :catch_b94
+    move-exception v0
+
+    .line 2966
+    move-wide/from16 v24, p1
+
+    .line 2967
+    .line 2968
+    move-object v6, v2
+
+    .line 2969
+    move-object/from16 v49, v7
+
+    .line 2970
+    .line 2971
+    move-object v5, v8
+
+    .line 2972
+    move-object/from16 v36, v13
+
+    .line 2973
+    .line 2974
+    move-object/from16 v44, v14
+
+    .line 2975
+    .line 2976
+    move-object/from16 v27, v26
+
+    .line 2977
+    .line 2978
+    move-object/from16 v28, v29
+
+    .line 2979
+    .line 2980
+    move-object/from16 v11, v30
+
+    .line 2981
+    .line 2982
+    const/4 v14, 0x0
+
+    .line 2983
+    goto :goto_b90
+
+    .line 2984
+    :catch_ba7
+    move-exception v0
+
+    .line 2985
+    move-wide/from16 v24, p1
+
+    .line 2986
+    .line 2987
+    move-object v6, v2
+
+    .line 2988
+    move-object/from16 v30, v4
+
+    .line 2989
+    .line 2990
+    :goto_bad
+    move-object v11, v5
+
+    .line 2991
+    move-object/from16 v49, v7
+
+    .line 2992
+    .line 2993
+    move-object v5, v8
+
+    .line 2994
+    move-object/from16 v36, v13
+
+    .line 2995
+    .line 2996
+    move-object/from16 v44, v14
+
+    .line 2997
+    .line 2998
+    move-object/from16 v27, v26
+
+    .line 2999
+    .line 3000
+    move-object/from16 v28, v29
+
+    .line 3001
+    .line 3002
+    const/4 v14, 0x0
+
+    .line 3003
+    goto/16 :goto_de
+
+    .line 3004
+    .line 3005
+    :catch_bbc
+    move-exception v0
+
+    .line 3006
+    move-wide/from16 v24, p1
+
+    .line 3007
+    .line 3008
+    move-object v6, v2
+
+    .line 3009
+    goto :goto_bad
+
+    .line 3010
+    :catch_bc1
+    move-exception v0
+
+    .line 3011
+    move-wide/from16 v24, p1
+
+    .line 3012
+    .line 3013
+    move-object v11, v5
+
+    .line 3014
+    move-object/from16 v49, v7
+
+    .line 3015
+    .line 3016
+    move-object v5, v8
+
+    .line 3017
+    move-object/from16 v36, v13
+
+    .line 3018
+    .line 3019
+    move-object/from16 v44, v14
+
+    .line 3020
+    .line 3021
+    move-object/from16 v27, v26
+
+    .line 3022
+    .line 3023
+    move-object/from16 v28, v29
+
+    .line 3024
+    .line 3025
+    move v14, v6
+
+    .line 3026
+    move-object v6, v2
+
+    .line 3027
+    goto/16 :goto_de
+
+    .line 3028
+    .line 3029
+    :cond_bd4
+    move-object v6, v10
+
+    .line 3030
+    move v10, v1
+
+    .line 3031
+    move-object/from16 v1, v28
+
+    .line 3032
+    .line 3033
+    move-object/from16 v28, v29
+
+    .line 3034
+    .line 3035
+    move/from16 v29, v15
+
+    .line 3036
+    .line 3037
+    move-object v15, v6
+
+    .line 3038
+    move-object v6, v2
+
+    .line 3039
+    move-object/from16 v47, v11
+
+    .line 3040
+    .line 3041
+    move-object/from16 v48, v12
+
+    .line 3042
+    .line 3043
+    move-object/from16 v36, v13
+
+    .line 3044
+    .line 3045
+    move-object/from16 v44, v14
+
+    .line 3046
+    .line 3047
+    const/16 v16, 0x64
+
+    .line 3048
+    .line 3049
+    const/16 v19, 0x2
+
+    .line 3050
+    .line 3051
+    const/16 v31, 0x0
+
+    .line 3052
+    .line 3053
+    move-object v11, v5
+
+    .line 3054
+    move-object v5, v8
+
+    .line 3055
+    move-object/from16 v0, v28
+
+    .line 3056
+    .line 3057
+    move-object/from16 v28, v1
+
+    .line 3058
+    .line 3059
+    move v1, v10
+
+    .line 3060
+    move-object v10, v15
+
+    .line 3061
+    move/from16 v15, v29
+
+    .line 3062
+    .line 3063
+    move-object/from16 v29, v0
+
+    .line 3064
+    .line 3065
+    move-object v5, v11
+
+    .line 3066
+    move-object/from16 v0, v32
+
+    .line 3067
+    .line 3068
+    move-object/from16 v11, v47
+
+    .line 3069
+    .line 3070
+    goto/16 :goto_375
+
+    .line 3071
+    .line 3072
+    :cond_bff
+    move-wide/from16 v24, p1
+
+    .line 3073
+    .line 3074
+    move-object v6, v2
+
+    .line 3075
+    move-object v11, v5
+
+    .line 3076
+    move-object/from16 v49, v7
+
+    .line 3077
+    .line 3078
+    move-object v5, v8
+
+    .line 3079
+    move-object/from16 v36, v13
+
+    .line 3080
+    .line 3081
+    move-object/from16 v44, v14
+
+    .line 3082
+    .line 3083
+    move-object/from16 v27, v26
+
+    .line 3084
+    .line 3085
+    move-object/from16 v28, v29
+
+    .line 3086
+    .line 3087
+    const/4 v14, 0x0
+
+    .line 3088
+    :try_start_c0f
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    .line 3089
+    .line 3090
+    const-string v1, "Collection contains no element matching the predicate."
+
+    .line 3091
+    .line 3092
+    invoke-direct {v0, v1}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
+
+    .line 3093
+    .line 3094
+    .line 3095
+    throw v0
+
+    .line 3096
+    :catch_c17
+    move-exception v0
+
+    .line 3097
+    goto/16 :goto_9ea
+
+    .line 3098
+    .line 3099
+    :cond_c1a
+    move-wide/from16 v24, p1
+
+    .line 3100
+    .line 3101
+    move-object v6, v2
+
+    .line 3102
+    move-object v11, v5
+
+    .line 3103
+    move-object/from16 v49, v7
+
+    .line 3104
+    .line 3105
+    move-object v5, v8
+
+    .line 3106
+    move-object/from16 v36, v13
+
+    .line 3107
+    .line 3108
+    move-object/from16 v44, v14
+
+    .line 3109
+    .line 3110
+    move-object/from16 v27, v26
+
+    .line 3111
+    .line 3112
+    move-object/from16 v28, v29
+
+    .line 3113
+    .line 3114
+    const/4 v14, 0x0
+
+    .line 3115
+    throw v0
+    :try_end_c2b
+    .catch Ljava/lang/Exception; {:try_start_c0f .. :try_end_c2b} :catch_c17
+
+    .line 3116
+    :catch_c2b
+    move-exception v0
+
+    .line 3117
+    move-wide/from16 v24, p1
+
+    .line 3118
+    .line 3119
+    move-object v6, v2
+
+    .line 3120
+    move-object v11, v5
+
+    .line 3121
+    move-object/from16 v49, v7
+
+    .line 3122
+    .line 3123
+    move-object v5, v8
+
+    .line 3124
+    move-object/from16 v36, v13
+
+    .line 3125
+    .line 3126
+    move-object/from16 v44, v14
+
+    .line 3127
+    .line 3128
+    move-object/from16 v27, v26
+
+    .line 3129
+    .line 3130
+    move-object/from16 v28, v29
+
+    .line 3131
+    .line 3132
+    const/4 v14, 0x0
+
+    .line 3133
+    goto/16 :goto_9ea
+
+    .line 3134
+    .line 3135
+    :goto_c3e
+    invoke-virtual {v11}, Ljava/net/DatagramSocket;->close()V
+
+    .line 3136
+    .line 3137
+    .line 3138
+    invoke-virtual/range {v44 .. v44}, Ljava/net/DatagramSocket;->close()V
+
+    .line 3139
+    .line 3140
+    .line 3141
+    iget-object v0, v6, Ly3;->Q:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 3142
+    .line 3143
+    iget-byte v2, v5, Lal;->b:B
+
+    .line 3144
+    .line 3145
+    invoke-static {v2}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 3146
+    .line 3147
+    .line 3148
+    move-result-object v2
+
+    .line 3149
+    invoke-static/range {v24 .. v25}, Log;->j(J)Ljava/lang/Long;
+
+    .line 3150
+    .line 3151
+    .line 3152
+    move-result-object v3
+
+    .line 3153
+    invoke-virtual {v0, v2, v3}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 3154
+    .line 3155
+    .line 3156
+    if-eqz v14, :cond_c8d
+
+    .line 3157
+    .line 3158
+    :try_start_c55
+    const-string v0, "TEARDOWN"
+
+    .line 3159
+    .line 3160
+    iget-byte v2, v5, Lal;->b:B
+
+    .line 3161
+    .line 3162
+    invoke-static {v2}, Log;->i(I)Ljava/lang/Integer;
+
+    .line 3163
+    .line 3164
+    .line 3165
+    move-result-object v2
+
+    .line 3166
+    move-object/from16 v4, v30
+
+    .line 3167
+    .line 3168
+    invoke-static {v4, v2}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 3169
+    .line 3170
+    .line 3171
+    move-result-object v2
+
+    .line 3172
+    invoke-static/range {v24 .. v25}, Log;->j(J)Ljava/lang/Long;
+
+    .line 3173
+    .line 3174
+    .line 3175
+    move-result-object v3
+
+    .line 3176
+    move-object/from16 v6, v28
+
+    .line 3177
+    .line 3178
+    invoke-static {v6, v3}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 3179
+    .line 3180
+    .line 3181
+    move-result-object v3
+
+    .line 3182
+    filled-new-array {v2, v3}, [Ly71;
+
+    .line 3183
+    .line 3184
+    .line 3185
+    move-result-object v2
+
+    .line 3186
+    invoke-static {v2}, Lhw0;->T([Ly71;)Ljava/util/Map;
+
+    .line 3187
+    .line 3188
+    .line 3189
+    move-result-object v2
+
+    .line 3190
+    invoke-static {v2}, Lug;->D(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 3191
+    .line 3192
+    .line 3193
+    move-result-object v2
+
+    .line 3194
+    move-object/from16 v3, v27
+
+    .line 3195
+    .line 3196
+    invoke-static {v3, v2}, Loc1;->P(Ljava/lang/Object;Ljava/lang/Object;)Ly71;
+
+    .line 3197
+    .line 3198
+    .line 3199
+    move-result-object v2
+
+    .line 3200
+    invoke-static {v2}, Lhw0;->S(Ly71;)Ljava/util/Map;
+
+    .line 3201
+    .line 3202
+    .line 3203
+    move-result-object v2
+
+    .line 3204
+    move-object/from16 v7, v49
+
+    .line 3205
+    .line 3206
+    invoke-virtual {v13, v0, v7, v2}, Lmi1;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljava/util/Map;
+    :try_end_c88
+    .catchall {:try_start_c55 .. :try_end_c88} :catchall_c89
+
+    .line 3207
+    .line 3208
+    .line 3209
+    goto :goto_c8d
+
+    .line 3210
+    :catchall_c89
+    move-exception v0
+
+    .line 3211
+    invoke-static {v0}, Lnd1;->g(Ljava/lang/Throwable;)Lyg1;
+
+    .line 3212
+    .line 3213
+    .line 3214
+    :cond_c8d
+    :goto_c8d
+    throw v1
+
+    .line 3215
+    :catchall_c8e
+    move-exception v0
+
+    .line 3216
+    move-object v11, v5
+
+    .line 3217
+    invoke-virtual {v11}, Ljava/net/DatagramSocket;->close()V
+
+    .line 3218
+    .line 3219
+    .line 3220
+    throw v0
+
+    .line 3221
+    :cond_c94
+    move-object v5, v8
+
+    .line 3222
+    sget-object v0, Lql1;->a:Lql1;
+
+    .line 3223
+    .line 3224
+    const/16 v1, 0x12
+
+    .line 3225
+    .line 3226
+    new-array v1, v1, [I
+
+    .line 3227
+    .line 3228
+    fill-array-data v1, :array_11aa
+
+    .line 3229
+    .line 3230
+    .line 3231
+    const v2, 0xb122
+
+    .line 3232
+    .line 3233
+    .line 3234
+    invoke-virtual {v0, v2, v1}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 3235
+    .line 3236
+    .line 3237
+    move-result-object v1
+
+    .line 3238
+    iget-byte v2, v5, Lal;->b:B
+
+    .line 3239
+    .line 3240
+    const/16 v3, 0x38
+
+    .line 3241
+    .line 3242
+    new-array v3, v3, [I
+
+    .line 3243
+    .line 3244
+    fill-array-data v3, :array_11d2
+
+    .line 3245
+    .line 3246
+    .line 3247
+    const/16 v4, 0x3b7f
+
+    .line 3248
+    .line 3249
+    invoke-virtual {v0, v4, v3}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 3250
+    .line 3251
+    .line 3252
+    move-result-object v0
+
+    .line 3253
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 3254
+    .line 3255
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 3256
+    .line 3257
+    .line 3258
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 3259
+    .line 3260
+    .line 3261
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 3262
+    .line 3263
+    .line 3264
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 3265
+    .line 3266
+    .line 3267
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 3268
+    .line 3269
+    .line 3270
+    move-result-object v0
+
+    .line 3271
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    .line 3272
+    .line 3273
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 3274
+    .line 3275
+    .line 3276
+    move-result-object v0
+
+    .line 3277
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 3278
+    .line 3279
+    .line 3280
+    throw v1
+
+    .line 3281
+    :cond_cd0
+    move-object/from16 v31, v24
+
+    .line 3282
+    .line 3283
+    const/16 v0, 0x3b
+
+    .line 3284
+    .line 3285
+    new-array v0, v0, [I
+
+    .line 3286
+    .line 3287
+    fill-array-data v0, :array_1246
+
+    .line 3288
+    .line 3289
+    .line 3290
+    invoke-virtual {v12, v11, v0}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 3291
+    .line 3292
+    .line 3293
+    move-result-object v0
+
+    .line 3294
+    iget-byte v1, v5, Lal;->b:B
+
+    .line 3295
+    .line 3296
+    filled-new-array/range {v18 .. v18}, [I
+
+    .line 3297
+    .line 3298
+    .line 3299
+    move-result-object v2
+
+    .line 3300
+    const v3, 0xd2d4
+
+    .line 3301
+    .line 3302
+    .line 3303
+    invoke-virtual {v12, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 3304
+    .line 3305
+    .line 3306
+    move-result-object v2
+
+    .line 3307
+    iget-object v3, v5, Lal;->c:Ljava/lang/String;
+
+    .line 3308
+    .line 3309
+    invoke-static {v0, v1, v2, v3}, La;->i(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+
+    .line 3310
+    .line 3311
+    .line 3312
+    return-object v31
+
+    .line 3313
+    :cond_cf0
+    move-object/from16 v31, v24
+
+    .line 3314
+    .line 3315
+    const v3, 0xd2d4
+
+    .line 3316
+    .line 3317
+    .line 3318
+    const/16 v0, 0x3b
+
+    .line 3319
+    .line 3320
+    new-array v0, v0, [I
+
+    .line 3321
+    .line 3322
+    fill-array-data v0, :array_12c0
+
+    .line 3323
+    .line 3324
+    .line 3325
+    invoke-virtual {v12, v11, v0}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 3326
+    .line 3327
+    .line 3328
+    move-result-object v0
+
+    .line 3329
+    iget-byte v1, v5, Lal;->b:B
+
+    .line 3330
+    .line 3331
+    filled-new-array/range {v18 .. v18}, [I
+
+    .line 3332
+    .line 3333
+    .line 3334
+    move-result-object v2
+
+    .line 3335
+    invoke-virtual {v12, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 3336
+    .line 3337
+    .line 3338
+    move-result-object v2
+
+    .line 3339
+    iget-object v3, v5, Lal;->c:Ljava/lang/String;
+
+    .line 3340
+    .line 3341
+    invoke-static {v0, v1, v2, v3}, La;->i(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+
+    .line 3342
+    .line 3343
+    .line 3344
+    return-object v31
+
+    .line 3345
+    :cond_d10
+    move-object/from16 v31, v24
+
+    .line 3346
+    .line 3347
+    const/16 v0, 0x12
+
+    .line 3348
+    .line 3349
+    new-array v0, v0, [I
+
+    .line 3350
+    .line 3351
+    fill-array-data v0, :array_133a
+
+    .line 3352
+    .line 3353
+    .line 3354
+    const/16 v1, 0x64a1
+
+    .line 3355
+    .line 3356
+    invoke-virtual {v12, v1, v0}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 3357
+    .line 3358
+    .line 3359
+    move-result-object v0
+
+    .line 3360
+    invoke-static {v0}, La;->h(Ljava/lang/Object;)V
+
+    .line 3361
+    .line 3362
+    .line 3363
+    return-object v31
+
+    .line 3364
+    :cond_d23
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 3365
+    .line 3366
+    const/16 v1, 0x43
+
+    .line 3367
+    .line 3368
+    new-array v1, v1, [I
+
+    .line 3369
+    .line 3370
+    fill-array-data v1, :array_1362
+
+    .line 3371
+    .line 3372
+    .line 3373
+    const v2, 0x9b71
+
+    .line 3374
+    .line 3375
+    .line 3376
+    invoke-virtual {v12, v2, v1}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 3377
+    .line 3378
+    .line 3379
+    move-result-object v1
+
+    .line 3380
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 3381
+    .line 3382
+    .line 3383
+    throw v0
+
+    .line 3384
+    :cond_d37
+    move-object/from16 v31, v24
+
+    .line 3385
+    .line 3386
+    const/16 v1, 0x1f
+
+    .line 3387
+    .line 3388
+    new-array v1, v1, [I
+
+    .line 3389
+    .line 3390
+    fill-array-data v1, :array_13ec
+
+    .line 3391
+    .line 3392
+    .line 3393
+    const v2, 0x816c
+
+    .line 3394
+    .line 3395
+    .line 3396
+    invoke-virtual {v12, v2, v1}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 3397
+    .line 3398
+    .line 3399
+    move-result-object v1
+
+    .line 3400
+    invoke-static {v0, v1}, La;->f(ILjava/lang/Object;)V
+
+    .line 3401
+    .line 3402
+    .line 3403
+    return-object v31
+
+    .line 3404
+    nop
+
+    :array_d4c
+    .array-data 4
+        0xf069
+        0xf05d
+        0xf04c
+        0xf041
+        0xf047
+        0xf008
+        0xf04b
+        0xf049
+        0xf05c
+        0xf04d
+        0xf04f
+        0xf047
+        0xf05a
+        0xf051
+        0xf015
+    .end array-data
+
+    :array_d6e
+    .array-data 4
+        0x59c0
+        0x5997
+        0x5989
+        0x5992
+        0x5985
+        0x598c
+        0x5985
+        0x5993
+        0x5993
+        0x59c0
+        0x5983
+        0x598f
+        0x5984
+        0x5985
+        0x5983
+        0x59c0
+        0x5983
+        0x5981
+        0x598e
+        0x5984
+        0x5989
+        0x5984
+        0x5981
+        0x5994
+        0x5985
+        0x59dd
+    .end array-data
+
+    :array_da6
+    .array-data 4
+        0x75da
+        0x75db
+        0x7594
+        0x75df
+        0x75da
+        0x75db
+        0x75c3
+        0x75da
+        0x7594
+        0x75d8
+        0x75db
+        0x75d7
+        0x75d5
+        0x75d8
+        0x759b
+        0x75c6
+        0x75d1
+        0x75d7
+        0x75d1
+        0x75dd
+        0x75c2
+        0x75d1
+        0x75c6
+        0x7594
+        0x75dd
+        0x75da
+        0x75c0
+        0x75d1
+        0x75c6
+        0x75c7
+        0x75d1
+        0x75d7
+        0x75c0
+        0x75dd
+        0x75db
+        0x75da
+    .end array-data
+
+    :array_df2
+    .array-data 4
+        0x7f1d
+        0x7f06
+        0x7f6e
+        0x7f49
+        0x7f4b
+        0x7f43
+        0x7f6d
+        0x7f4f
+        0x7f52
+        0x7f06
+        0x7f54
+        0x7f47
+        0x7f51
+        0x7f0b
+        0x7f67
+        0x7f73
+        0x7f06
+        0x7f56
+        0x7f54
+        0x7f49
+        0x7f40
+        0x7f4f
+        0x7f4a
+        0x7f43
+        0x7f1d
+        0x7f06
+        0x7f54
+        0x7f53
+        0x7f48
+        0x7f52
+        0x7f4f
+        0x7f4b
+        0x7f43
+        0x7f06
+        0x7f45
+        0x7f49
+        0x7f48
+        0x7f40
+        0x7f4f
+        0x7f41
+        0x7f53
+        0x7f54
+        0x7f47
+        0x7f52
+        0x7f4f
+        0x7f49
+        0x7f48
+        0x7f06
+        0x7f4b
+        0x7f53
+        0x7f55
+        0x7f52
+        0x7f06
+        0x7f4b
+        0x7f47
+        0x7f52
+        0x7f45
+        0x7f4e
+    .end array-data
+
+    :array_e6a
+    .array-data 4
+        0xa438
+        0xa419
+        0xa456
+        0xa41a
+        0xa419
+        0xa415
+        0xa417
+        0xa41a
+        0xa456
+        0xa413
+        0xa418
+        0xa415
+        0xa419
+        0xa412
+        0xa413
+        0xa404
+        0xa456
+        0xa419
+        0xa404
+        0xa456
+        0xa41f
+        0xa41b
+        0xa406
+        0xa41a
+        0xa413
+        0xa41b
+        0xa413
+        0xa418
+        0xa402
+        0xa413
+        0xa412
+        0xa456
+        0xa426
+        0xa435
+        0xa43b
+        0xa456
+        0xa406
+        0xa404
+        0xa419
+        0xa410
+        0xa41f
+        0xa41a
+        0xa413
+        0xa456
+        0xa410
+        0xa419
+        0xa404
+        0xa456
+        0xa417
+        0xa412
+        0xa400
+        0xa413
+        0xa404
+        0xa402
+        0xa41f
+        0xa405
+        0xa413
+        0xa412
+        0xa456
+    .end array-data
+
+    :array_ee4
+    .array-data 4
+        0x708f
+        0x70a3
+        0x70ab
+        0x70ac
+        0x7083
+        0x70b7
+        0x70a6
+        0x70ab
+        0x70ad
+        0x70e2
+        0x70ab
+        0x70ac
+        0x70b2
+        0x70b7
+        0x70b6
+        0x70e2
+        0x70b0
+        0x70a7
+        0x70b3
+        0x70b7
+        0x70ab
+        0x70b0
+        0x70a7
+        0x70b1
+        0x70e2
+        0x70a3
+        0x70e2
+        0x70b1
+        0x70aa
+        0x70a3
+        0x70b0
+        0x70a7
+        0x70a6
+        0x70e2
+        0x70a3
+        0x70a6
+        0x70b4
+        0x70a7
+        0x70b0
+        0x70b6
+        0x70ab
+        0x70b1
+        0x70a7
+        0x70a6
+        0x70e2
+        0x70ad
+        0x70b7
+        0x70b6
+        0x70b2
+        0x70b7
+        0x70b6
+        0x70e2
+        0x70a4
+        0x70ad
+        0x70b0
+        0x70af
+        0x70a3
+        0x70b6
+        0x70f9
+        0x70e2
+        0x70b7
+        0x70b1
+        0x70a7
+        0x70e2
+        0x70b1
+        0x70b6
+        0x70a3
+        0x70ac
+        0x70a6
+        0x70a3
+        0x70ae
+        0x70ad
+        0x70ac
+        0x70a7
+        0x70e2
+        0x70af
+        0x70ab
+        0x70a1
+        0x70b0
+        0x70ad
+        0x70b2
+        0x70aa
+        0x70ad
+        0x70ac
+        0x70a7
+        0x70e2
+        0x70b1
+        0x70a7
+        0x70b6
+        0x70b7
+        0x70b2
+    .end array-data
+
+    :array_f9e
+    .array-data 4
+        0x98c4
+        0x98e6
+        0x98f5
+        0x98d7
+        0x98eb
+        0x98e6
+        0x98fe
+        0x98a7
+        0x98e6
+        0x98f2
+        0x98e3
+        0x98ee
+        0x98e8
+        0x98a7
+        0x98d4
+        0x98c2
+        0x98d3
+        0x98d2
+        0x98d7
+        0x98a7
+        0x98e4
+        0x98e6
+        0x98f3
+        0x98e2
+        0x98e0
+        0x98e8
+        0x98f5
+        0x98fe
+        0x98ba
+    .end array-data
+
+    :array_fdc
+    .array-data 4
+        0xb60f
+        0xb65b
+        0xb656
+        0xb65f
+        0xb64a
+        0xb612
+    .end array-data
+
+    :array_fec
+    .array-data 4
+        0x6640
+        0x6603
+        0x660f
+        0x6604
+        0x6605
+        0x6603
+        0x665d
+    .end array-data
+
+    :array_ffe
+    .array-data 4
+        0xedcb
+        0xedd0
+        0xed82
+        0xed95
+        0xed93
+        0xed95
+        0xed99
+        0xed86
+        0xed95
+        0xed82
+        0xedd0
+        0xed82
+        0xed91
+        0xed87
+        0xeddd
+        0xedb1
+        0xeda5
+        0xedd0
+        0xed80
+        0xed82
+        0xed9f
+        0xed96
+        0xed99
+        0xed9c
+        0xed95
+    .end array-data
+
+    :array_1034
+    .array-data 4
+        0xad9
+        0xadc
+        0xac9
+        0xadc
+        0xaed
+        0xad2
+        0xacf
+        0xac9
+    .end array-data
+
+    :array_1048
+    .array-data 4
+        0x6d38
+        0x6d3f
+        0x6d39
+        0x6d2e
+        0x6d2a
+        0x6d26
+        0x6d08
+        0x6d24
+        0x6d25
+        0x6d25
+        0x6d2e
+        0x6d28
+        0x6d3f
+        0x6d22
+        0x6d24
+        0x6d25
+        0x6d02
+        0x6d0f
+    .end array-data
+
+    :array_1070
+    .array-data 4
+        0x6d38
+        0x6d3f
+        0x6d39
+        0x6d2e
+        0x6d2a
+        0x6d26
+        0x6d08
+        0x6d24
+        0x6d25
+        0x6d25
+        0x6d2e
+        0x6d28
+        0x6d3f
+        0x6d22
+        0x6d24
+        0x6d25
+        0x6d02
+        0x6d0f
+    .end array-data
+
+    :array_1098
+    .array-data 4
+        0x1bd3
+        0x1be7    # 1.001E-41f
+        0x1bf6
+        0x1bfb
+        0x1bfd
+        0x1bb2
+        0x1be1    # 1.0001E-41f
+        0x1be6    # 1.0008E-41f
+        0x1be0    # 1.0E-41f
+        0x1bf7
+        0x1bf3
+        0x1bff
+        0x1bb2
+        0x1bfb
+        0x1bf6
+        0x1bf7
+        0x1bfc
+        0x1be6    # 1.0008E-41f
+        0x1bfb
+        0x1be6    # 1.0008E-41f
+        0x1beb
+        0x1bb2
+        0x1bff
+        0x1bfb
+        0x1be1    # 1.0001E-41f
+        0x1bff
+        0x1bf3
+        0x1be6    # 1.0008E-41f
+        0x1bf1
+        0x1bfa
+    .end array-data
+
+    :array_10d8
+    .array-data 4
+        0xef2f
+        0xef3b
+        0xef2a
+        0xef27
+        0xef21
+        0xef1a
+        0xef37
+        0xef3e
+        0xef2b
+    .end array-data
+
+    :array_10ee
+    .array-data 4
+        0xee44
+        0xee70
+        0xee61
+        0xee6c
+        0xee6a
+        0xee25
+        0xee75
+        0xee70
+        0xee77
+        0xee75
+        0xee6a
+        0xee76
+        0xee60
+        0xee25
+        0xee68
+        0xee6c
+        0xee76
+        0xee68
+        0xee64
+        0xee71
+        0xee66
+        0xee6d
+    .end array-data
+
+    :array_111e
+    .array-data 4
+        0xf2c7
+        0xf2e3
+        0xf2f9
+        0xf2f9
+        0xf2e3
+        0xf2e4
+        0xf2ed
+        0xf2aa
+        0xf2eb
+        0xf2ff
+        0xf2ee
+        0xf2e3
+        0xf2e5
+        0xf2aa
+        0xf2ee
+        0xf2eb
+        0xf2fe
+        0xf2eb
+        0xf2da
+        0xf2e5
+        0xf2f8
+        0xf2fe
+    .end array-data
+
+    :array_114e
+    .array-data 4
+        0x13db
+        0x13fa
+        0x13b5
+        0x13e0
+        0x13fb
+        0x13fc
+        0x13e4
+        0x13e0
+        0x13f0
+        0x13b5
+        0x13f4
+        0x13e0
+        0x13f1
+        0x13fc
+        0x13fa
+        0x13b5
+        0x13c6
+        0x13d0
+        0x13c1
+        0x13c0
+        0x13c5
+        0x13b5
+        0x13e7
+        0x13f0
+        0x13e6
+        0x13e5
+        0x13fa
+        0x13fb
+        0x13e6
+        0x13f0
+        0x13b5
+        0x13f3
+        0x13fa
+        0x13e7
+        0x13b5
+        0x13f6
+        0x13f4
+        0x13e1
+        0x13f0
+        0x13f2
+        0x13fa
+        0x13e7
+        0x13ec
+        0x13a8
+    .end array-data
+
+    :array_11aa
+    .array-data 4
+        0xb163
+        0xb157
+        0xb146
+        0xb14b
+        0xb14d
+        0xb102
+        0xb151
+        0xb156
+        0xb150
+        0xb147
+        0xb143
+        0xb14f
+        0xb102
+        0xb156
+        0xb15b
+        0xb152
+        0xb147
+        0xb11f
+    .end array-data
+
+    :array_11d2
+    .array-data 4
+        0x3b5f
+        0x3b1e
+        0x3b13
+        0x3b0d
+        0x3b1a
+        0x3b1e
+        0x3b1b
+        0x3b06
+        0x3b5f
+        0x3b17
+        0x3b1e
+        0x3b0c
+        0x3b5f
+        0x3b1e
+        0x3b5f
+        0x3b0c
+        0x3b1a
+        0x3b0c
+        0x3b0c
+        0x3b16
+        0x3b10
+        0x3b11
+        0x3b44
+        0x3b5f
+        0x3b0f
+        0x3b0a
+        0x3b0d
+        0x3b0f
+        0x3b10
+        0x3b0c
+        0x3b1a
+        0x3b5f
+        0x3b0d
+        0x3b1a
+        0x3b1c
+        0x3b10
+        0x3b11
+        0x3b19
+        0x3b16
+        0x3b18
+        0x3b0a
+        0x3b0d
+        0x3b1e
+        0x3b0b
+        0x3b16
+        0x3b10
+        0x3b11
+        0x3b5f
+        0x3b0d
+        0x3b1a
+        0x3b0e
+        0x3b0a
+        0x3b16
+        0x3b0d
+        0x3b1a
+        0x3b1b
+    .end array-data
+
+    :array_1246
+    .array-data 4
+        0xa438
+        0xa419
+        0xa456
+        0xa41a
+        0xa419
+        0xa415
+        0xa417
+        0xa41a
+        0xa456
+        0xa413
+        0xa418
+        0xa415
+        0xa419
+        0xa412
+        0xa413
+        0xa404
+        0xa456
+        0xa419
+        0xa404
+        0xa456
+        0xa41f
+        0xa41b
+        0xa406
+        0xa41a
+        0xa413
+        0xa41b
+        0xa413
+        0xa418
+        0xa402
+        0xa413
+        0xa412
+        0xa456
+        0xa426
+        0xa435
+        0xa43b
+        0xa456
+        0xa406
+        0xa404
+        0xa419
+        0xa410
+        0xa41f
+        0xa41a
+        0xa413
+        0xa456
+        0xa410
+        0xa419
+        0xa404
+        0xa456
+        0xa417
+        0xa412
+        0xa400
+        0xa413
+        0xa404
+        0xa402
+        0xa41f
+        0xa405
+        0xa413
+        0xa412
+        0xa456
+    .end array-data
+
+    :array_12c0
+    .array-data 4
+        0xa438
+        0xa419
+        0xa456
+        0xa41a
+        0xa419
+        0xa415
+        0xa417
+        0xa41a
+        0xa456
+        0xa413
+        0xa418
+        0xa415
+        0xa419
+        0xa412
+        0xa413
+        0xa404
+        0xa456
+        0xa419
+        0xa404
+        0xa456
+        0xa41f
+        0xa41b
+        0xa406
+        0xa41a
+        0xa413
+        0xa41b
+        0xa413
+        0xa418
+        0xa402
+        0xa413
+        0xa412
+        0xa456
+        0xa426
+        0xa435
+        0xa43b
+        0xa456
+        0xa406
+        0xa404
+        0xa419
+        0xa410
+        0xa41f
+        0xa41a
+        0xa413
+        0xa456
+        0xa410
+        0xa419
+        0xa404
+        0xa456
+        0xa417
+        0xa412
+        0xa400
+        0xa413
+        0xa404
+        0xa402
+        0xa41f
+        0xa405
+        0xa413
+        0xa412
+        0xa456
+    .end array-data
+
+    :array_133a
+    .array-data 4
+        0x64ef
+        0x64ce
+        0x6481
+        0x64c2
+        0x64ce
+        0x64cf
+        0x64d5
+        0x64d3
+        0x64ce
+        0x64cd
+        0x6481
+        0x64d2
+        0x64c4
+        0x64d2
+        0x64d2
+        0x64c8
+        0x64ce
+        0x64cf
+    .end array-data
+
+    :array_1362
+    .array-data 4
+        0x9b30
+        0x9b04
+        0x9b15
+        0x9b18
+        0x9b1e
+        0x9b51
+        0x9b23
+        0x9b25
+        0x9b21
+        0x9b51
+        0x9b01
+        0x9b03
+        0x9b1e
+        0x9b17
+        0x9b18
+        0x9b1d
+        0x9b14
+        0x9b51
+        0x9b03
+        0x9b14
+        0x9b00
+        0x9b04
+        0x9b18
+        0x9b03
+        0x9b14
+        0x9b02
+        0x9b51
+        0x9b39
+        0x9b1e
+        0x9b1c
+        0x9b14
+        0x9b3a
+        0x9b18
+        0x9b05
+        0x9b4a
+        0x9b51
+        0x9b3c
+        0x9b37
+        0x9b18
+        0x9b22
+        0x9b30
+        0x9b21
+        0x9b51
+        0x9b10
+        0x9b04
+        0x9b15
+        0x9b18
+        0x9b1e
+        0x9b51
+        0x9b18
+        0x9b02
+        0x9b51
+        0x9b1f
+        0x9b1e
+        0x9b05
+        0x9b51
+        0x9b14
+        0x9b02
+        0x9b05
+        0x9b10
+        0x9b13
+        0x9b1d
+        0x9b18
+        0x9b02
+        0x9b19
+        0x9b14
+        0x9b15
+    .end array-data
+
+    :array_13ec
+    .array-data 4
+        0x8139
+        0x8102
+        0x8107
+        0x8102
+        0x8103
+        0x811b
+        0x8102
+        0x814c
+        0x812f
+        0x810d
+        0x811e
+        0x813b
+        0x8105
+        0x8118
+        0x8104
+        0x814c
+        0x810d
+        0x8119
+        0x8108
+        0x8105
+        0x8103
+        0x814c
+        0x810f
+        0x810d
+        0x8118
+        0x8109
+        0x810b
+        0x8103
+        0x811e
+        0x8115
+        0x8151
+    .end array-data
+.end method

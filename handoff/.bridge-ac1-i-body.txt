@@ -1,0 +1,195 @@
+    /* JADX WARN: Code duplicated, block: B:38:0x00e3 A[RETURN] */
+    /* JADX WARN: Code duplicated, block: B:39:0x00e4  */
+    /* JADX WARN: Code duplicated, block: B:42:0x00ff A[Catch: all -> 0x0040, TryCatch #0 {all -> 0x0040, blocks: (B:13:0x0036, B:40:0x00eb, B:42:0x00ff, B:44:0x0112, B:46:0x015f, B:47:0x0164, B:48:0x0165, B:49:0x017e), top: B:61:0x0036 }] */
+    /* JADX WARN: Code duplicated, block: B:44:0x0112 A[Catch: all -> 0x0040, TryCatch #0 {all -> 0x0040, blocks: (B:13:0x0036, B:40:0x00eb, B:42:0x00ff, B:44:0x0112, B:46:0x015f, B:47:0x0164, B:48:0x0165, B:49:0x017e), top: B:61:0x0036 }] */
+    /* JADX WARN: Code duplicated, block: B:46:0x015f A[Catch: all -> 0x0040, TryCatch #0 {all -> 0x0040, blocks: (B:13:0x0036, B:40:0x00eb, B:42:0x00ff, B:44:0x0112, B:46:0x015f, B:47:0x0164, B:48:0x0165, B:49:0x017e), top: B:61:0x0036 }] */
+    /* JADX WARN: Code duplicated, block: B:48:0x0165 A[Catch: all -> 0x0040, TryCatch #0 {all -> 0x0040, blocks: (B:13:0x0036, B:40:0x00eb, B:42:0x00ff, B:44:0x0112, B:46:0x015f, B:47:0x0164, B:48:0x0165, B:49:0x017e), top: B:61:0x0036 }] */
+    /* JADX WARN: Code duplicated, block: B:8:0x0018  */
+    /* JADX WARN: Instruction removed from duplicated block: B:44:0x0112, please report this as an issue */
+    /* JADX WARN: Type inference failed for: r10v10 */
+    /* JADX WARN: Type inference failed for: r10v3 */
+    /* JADX WARN: Type inference failed for: r10v4, types: [fv, java.lang.Throwable, ju] */
+    public Object i(DatagramSocket datagramSocket, InetAddress inetAddress, int i2, int i3, int i4, zk zkVar, byte[] bArr, he heVar, m3 m3Var, d3 d3Var, cg cgVar, e3 e3Var, ku kuVar) throws Throwable {
+        cl clVar;
+        int i5;
+        int i6;
+        byte[] bArr2;
+        el elVar;
+        el elVar2;
+        byte[] bArr3;
+        int i7;
+        ?? r10;
+        Object objQ0;
+        pv pvVar;
+        Object obj;
+        el elVar3;
+        cg cgVar2;
+        zk zkVar2;
+        ql1 ql1Var;
+        String strA;
+        ws wsVar;
+        if (kuVar instanceof cl) {
+            clVar = (cl) kuVar;
+            int i8 = clVar.p;
+            if ((i8 & Integer.MIN_VALUE) != 0) {
+                clVar.p = i8 - Integer.MIN_VALUE;
+            } else {
+                clVar = new cl(this, kuVar);
+            }
+        } else {
+            clVar = new cl(this, kuVar);
+        }
+        cl clVar2 = clVar;
+        Object obj2 = clVar2.n;
+        int i9 = clVar2.p;
+        if (i9 != 0) {
+            if (i9 != 1) {
+                a.r("call to 'resume' before 'invoke' with coroutine");
+                return null;
+            }
+            int i10 = clVar2.m;
+            elVar3 = clVar2.l;
+            elVar2 = clVar2.k;
+            cgVar2 = clVar2.j;
+            bArr3 = clVar2.i;
+            zk zkVar3 = clVar2.h;
+            try {
+                nd1.y(obj2);
+                obj = obj2;
+                zkVar2 = zkVar3;
+                i7 = i10;
+                r10 = 0;
+                elVar3.t = (ws) obj;
+                vg.W(elVar2.r, r10, new dl(elVar2, r10), 1);
+                if (!elVar2.c()) {
+                    throw new IllegalStateException(ql1.a.a(47233, 47300, 47343, 47330, 47342, 47333, 47332, 47347, 47265, 47335, 47328, 47336, 47341, 47332, 47333, 47265, 47333, 47348, 47347, 47336, 47343, 47334, 47265, 47346, 47349, 47328, 47347, 47349, 47348, 47345).toString());
+                }
+                ql1Var = ql1.a;
+                strA = ql1Var.a(16344, 16283, 16311, 16309, 16296, 16298, 16317, 16299, 16299, 16317, 16316, 16376, 16317, 16310, 16315, 16311, 16316, 16317, 16298, 16376, 16298, 16317, 16313, 16316, 16289, 16376, 16310, 16313, 16309, 16317, 16357);
+                wsVar = elVar2.t;
+                if (wsVar == null) {
+                    vk0.G("encoder");
+                    throw r10;
+                }
+                cgVar2.i(strA + wsVar.f + ql1Var.a(25259, 25227, 25288, 25290, 25311, 25294, 25292, 25284, 25305, 25298, 25238) + i7 + ql1Var.a(26208, 26176, 26115, 26127, 26116, 26117, 26115, 26205) + zkVar2.b + ql1Var.a(33272, 33219, 33240, 33174, 33181, 33164, 33167, 33175, 33162, 33171, 33240, 33177, 33179, 33179, 33181, 33160, 33164, 33177, 33174, 33179, 33181, 33240, 33160, 33181, 33174, 33180, 33169, 33174, 33183));
+                return elVar2;
+            } catch (Throwable th) {
+                th = th;
+                elVar2.close();
+                ud.m0(bArr3);
+                throw th;
+            }
+        }
+        nd1.y(obj2);
+        if (!pp1.D(yk.f, yk.g, yk.h).contains(zkVar.b)) {
+            a.v("Failed requirement.");
+            return null;
+        }
+        el elVar4 = new el(datagramSocket, inetAddress, i2, i3, i4, zkVar, bArr, heVar, m3Var, d3Var, cgVar, e3Var);
+        int iOrdinal = zkVar.b.ordinal();
+        try {
+            try {
+                try {
+                    if (iOrdinal != 1) {
+                        int i11 = zkVar.c;
+                        i5 = 96000;
+                        if (iOrdinal == 2 ? i11 <= 24000 : i11 <= 24000) {
+                            i6 = 48000;
+                        }
+                        p pVar = new p((Object) elVar4, (byte) 13);
+                        h hVar = new h(1, elVar4, el.class, "failed", "failed(Ljava/lang/Throwable;)V", 0, (byte) 6);
+                        elVar = elVar4;
+                        clVar2.h = zkVar;
+                        bArr2 = bArr;
+                        clVar2.i = bArr2;
+                        clVar2.j = cgVar;
+                        clVar2.k = elVar;
+                        clVar2.l = elVar;
+                        i7 = i3;
+                        clVar2.m = i7;
+                        clVar2.p = 1;
+                        lx lxVar = u00.a;
+                        r10 = 0;
+                        objQ0 = vg.q0(cx.g, new ps(zkVar, i6, pVar, hVar, null), clVar2);
+                        pvVar = pv.e;
+                        if (objQ0 == pvVar) {
+                            return pvVar;
+                        }
+                        obj = objQ0;
+                        elVar3 = elVar;
+                        elVar2 = elVar3;
+                        cgVar2 = cgVar;
+                        zkVar2 = zkVar;
+                        elVar3.t = (ws) obj;
+                        vg.W(elVar2.r, r10, new dl(elVar2, r10), 1);
+                        if (!elVar2.c()) {
+                            throw new IllegalStateException(ql1.a.a(47233, 47300, 47343, 47330, 47342, 47333, 47332, 47347, 47265, 47335, 47328, 47336, 47341, 47332, 47333, 47265, 47333, 47348, 47347, 47336, 47343, 47334, 47265, 47346, 47349, 47328, 47347, 47349, 47348, 47345).toString());
+                        }
+                        ql1Var = ql1.a;
+                        strA = ql1Var.a(16344, 16283, 16311, 16309, 16296, 16298, 16317, 16299, 16299, 16317, 16316, 16376, 16317, 16310, 16315, 16311, 16316, 16317, 16298, 16376, 16298, 16317, 16313, 16316, 16289, 16376, 16310, 16313, 16309, 16317, 16357);
+                        wsVar = elVar2.t;
+                        if (wsVar == null) {
+                            vk0.G("encoder");
+                            throw r10;
+                        }
+                        cgVar2.i(strA + wsVar.f + ql1Var.a(25259, 25227, 25288, 25290, 25311, 25294, 25292, 25284, 25305, 25298, 25238) + i7 + ql1Var.a(26208, 26176, 26115, 26127, 26116, 26117, 26115, 26205) + zkVar2.b + ql1Var.a(33272, 33219, 33240, 33174, 33181, 33164, 33167, 33175, 33162, 33171, 33240, 33177, 33179, 33179, 33181, 33160, 33164, 33177, 33174, 33179, 33181, 33240, 33160, 33181, 33174, 33180, 33169, 33174, 33183));
+                        return elVar2;
+                    }
+                    i5 = 192000;
+                    clVar2.i = bArr2;
+                    clVar2.j = cgVar;
+                    clVar2.k = elVar;
+                    clVar2.l = elVar;
+                    i7 = i3;
+                    clVar2.m = i7;
+                    clVar2.p = 1;
+                    lx lxVar2 = u00.a;
+                    r10 = 0;
+                    objQ0 = vg.q0(cx.g, new ps(zkVar, i6, pVar, hVar, null), clVar2);
+                    pvVar = pv.e;
+                    if (objQ0 == pvVar) {
+                        return pvVar;
+                    }
+                    obj = objQ0;
+                    elVar3 = elVar;
+                    elVar2 = elVar3;
+                    cgVar2 = cgVar;
+                    zkVar2 = zkVar;
+                    elVar3.t = (ws) obj;
+                    vg.W(elVar2.r, r10, new dl(elVar2, r10), 1);
+                    if (!elVar2.c()) {
+                        throw new IllegalStateException(ql1.a.a(47233, 47300, 47343, 47330, 47342, 47333, 47332, 47347, 47265, 47335, 47328, 47336, 47341, 47332, 47333, 47265, 47333, 47348, 47347, 47336, 47343, 47334, 47265, 47346, 47349, 47328, 47347, 47349, 47348, 47345).toString());
+                    }
+                    ql1Var = ql1.a;
+                    strA = ql1Var.a(16344, 16283, 16311, 16309, 16296, 16298, 16317, 16299, 16299, 16317, 16316, 16376, 16317, 16310, 16315, 16311, 16316, 16317, 16298, 16376, 16298, 16317, 16313, 16316, 16289, 16376, 16310, 16313, 16309, 16317, 16357);
+                    wsVar = elVar2.t;
+                    if (wsVar == null) {
+                        vk0.G("encoder");
+                        throw r10;
+                    }
+                    cgVar2.i(strA + wsVar.f + ql1Var.a(25259, 25227, 25288, 25290, 25311, 25294, 25292, 25284, 25305, 25298, 25238) + i7 + ql1Var.a(26208, 26176, 26115, 26127, 26116, 26117, 26115, 26205) + zkVar2.b + ql1Var.a(33272, 33219, 33240, 33174, 33181, 33164, 33167, 33175, 33162, 33171, 33240, 33177, 33179, 33179, 33181, 33160, 33164, 33177, 33174, 33179, 33181, 33240, 33160, 33181, 33174, 33180, 33169, 33174, 33183));
+                    return elVar2;
+                } catch (Throwable th2) {
+                    th = th2;
+                    elVar2 = elVar;
+                    bArr3 = bArr2;
+                    elVar2.close();
+                    ud.m0(bArr3);
+                    throw th;
+                }
+                clVar2.h = zkVar;
+                bArr2 = bArr;
+            } catch (Throwable th3) {
+                th = th3;
+                bArr2 = bArr;
+            }
+            p pVar2 = new p((Object) elVar4, (byte) 13);
+            h hVar2 = new h(1, elVar4, el.class, "failed", "failed(Ljava/lang/Throwable;)V", 0, (byte) 6);
+            elVar = elVar4;
+        } catch (Throwable th4) {
+            th = th4;
+            bArr2 = bArr;
+            elVar = elVar4;
+        }
+        i6 = i5;
+    }

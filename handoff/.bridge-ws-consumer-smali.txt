@@ -1,0 +1,3678 @@
+.method public final a(Lku;)Ljava/lang/Object;
+    .registers 49
+
+    .line 1
+    move-object/from16 v1, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v0, p1
+
+    .line 4
+    .line 5
+    const-string v2, "csd-"
+
+    .line 6
+    .line 7
+    instance-of v3, v0, Lvs;
+
+    .line 8
+    .line 9
+    if-eqz v3, :cond_19
+
+    .line 10
+    .line 11
+    move-object v3, v0
+
+    .line 12
+    check-cast v3, Lvs;
+
+    .line 13
+    .line 14
+    iget v4, v3, Lvs;->u:I
+
+    .line 15
+    .line 16
+    const/high16 v5, -0x80000000
+
+    .line 17
+    .line 18
+    and-int v6, v4, v5
+
+    .line 19
+    .line 20
+    if-eqz v6, :cond_19
+
+    .line 21
+    .line 22
+    sub-int/2addr v4, v5
+
+    .line 23
+    iput v4, v3, Lvs;->u:I
+
+    .line 24
+    .line 25
+    goto :goto_1e
+
+    .line 26
+    :cond_19
+    new-instance v3, Lvs;
+
+    .line 27
+    .line 28
+    invoke-direct {v3, v1, v0}, Lvs;-><init>(Lws;Lku;)V
+
+    .line 29
+    .line 30
+    .line 31
+    :goto_1e
+    iget-object v0, v3, Lvs;->s:Ljava/lang/Object;
+
+    .line 32
+    .line 33
+    iget v4, v3, Lvs;->u:I
+
+    .line 34
+    .line 35
+    sget-object v5, Lt52;->a:Lt52;
+
+    .line 36
+    .line 37
+    iget-object v6, v1, Lws;->g:Lzk;
+
+    .line 38
+    .line 39
+    iget-object v7, v1, Lws;->r:Liu;
+
+    .line 40
+    .line 41
+    iget-object v8, v1, Lws;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 42
+    .line 43
+    iget-object v9, v1, Lws;->m:Lpp;
+
+    .line 44
+    .line 45
+    iget-object v12, v1, Lws;->j:Lmj;
+
+    .line 46
+    .line 47
+    iget-object v13, v1, Lws;->e:Landroid/media/MediaCodec;
+
+    .line 48
+    .line 49
+    const/4 v10, 0x1
+
+    .line 50
+    if-eqz v4, :cond_a0
+
+    .line 51
+    .line 52
+    if-ne v4, v10, :cond_98
+
+    .line 53
+    .line 54
+    iget v4, v3, Lvs;->q:I
+
+    .line 55
+    .line 56
+    iget v11, v3, Lvs;->p:I
+
+    .line 57
+    .line 58
+    const/16 p1, 0x0
+
+    .line 59
+    .line 60
+    iget v14, v3, Lvs;->o:I
+
+    .line 61
+    .line 62
+    move/from16 v16, v11
+
+    .line 63
+    .line 64
+    iget-wide v10, v3, Lvs;->r:J
+
+    .line 65
+    .line 66
+    iget v15, v3, Lvs;->n:I
+
+    .line 67
+    .line 68
+    move/from16 v18, v4
+
+    .line 69
+    .line 70
+    iget-object v4, v3, Lvs;->m:[B
+
+    .line 71
+    .line 72
+    move-object/from16 v19, v0
+
+    .line 73
+    .line 74
+    iget-object v0, v3, Lvs;->l:Ls91;
+
+    .line 75
+    .line 76
+    move-object/from16 v20, v0
+
+    .line 77
+    .line 78
+    iget-object v0, v3, Lvs;->k:Landroid/media/MediaCodec$BufferInfo;
+
+    .line 79
+    .line 80
+    move-object/from16 v21, v4
+
+    .line 81
+    .line 82
+    iget-object v4, v3, Lvs;->j:Lyi0;
+
+    .line 83
+    .line 84
+    move-object/from16 v22, v0
+
+    .line 85
+    .line 86
+    iget-object v0, v3, Lvs;->i:Lce;
+
+    .line 87
+    .line 88
+    move-object/from16 v23, v0
+
+    .line 89
+    .line 90
+    iget-object v0, v3, Lvs;->h:Lt91;
+
+    .line 91
+    .line 92
+    :try_start_5b
+    invoke-static/range {v19 .. v19}, Lnd1;->y(Ljava/lang/Object;)V
+    :try_end_5e
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_5b .. :try_end_5e} :catch_8d
+    .catchall {:try_start_5b .. :try_end_5e} :catchall_82
+
+    .line 93
+    .line 94
+    .line 95
+    move-wide/from16 v26, v10
+
+    .line 96
+    .line 97
+    move v10, v14
+
+    .line 98
+    move v14, v15
+
+    .line 99
+    move-object/from16 v15, v21
+
+    .line 100
+    .line 101
+    move/from16 v21, v18
+
+    .line 102
+    .line 103
+    move-wide/from16 v18, v26
+
+    .line 104
+    .line 105
+    move-object/from16 v45, v2
+
+    .line 106
+    .line 107
+    move-object/from16 v42, v5
+
+    .line 108
+    .line 109
+    move-object/from16 v44, v6
+
+    .line 110
+    .line 111
+    move-object/from16 v26, v7
+
+    .line 112
+    .line 113
+    move-object/from16 v28, v8
+
+    .line 114
+    .line 115
+    move-object/from16 v29, v9
+
+    .line 116
+    .line 117
+    move-object/from16 v27, v12
+
+    .line 118
+    .line 119
+    move-object/from16 v7, v20
+
+    .line 120
+    .line 121
+    move-object/from16 v11, v22
+
+    .line 122
+    .line 123
+    move-object/from16 v20, v4
+
+    .line 124
+    .line 125
+    move/from16 v22, v16
+
+    .line 126
+    .line 127
+    move-object/from16 v4, v23
+
+    .line 128
+    .line 129
+    goto/16 :goto_4dc
+
+    .line 130
+    .line 131
+    :catchall_82
+    move-exception v0
+
+    .line 132
+    move-object v10, v4
+
+    .line 133
+    move-object v2, v5
+
+    .line 134
+    move-object v6, v7
+
+    .line 135
+    move-object v4, v8
+
+    .line 136
+    move-object v3, v9
+
+    .line 137
+    move-object v5, v12
+
+    .line 138
+    move-object/from16 v31, v21
+
+    .line 139
+    .line 140
+    goto/16 :goto_5a5
+
+    .line 141
+    .line 142
+    :catch_8d
+    move-exception v0
+
+    .line 143
+    move-object/from16 v20, v4
+
+    .line 144
+    .line 145
+    move-object v6, v7
+
+    .line 146
+    move-object v4, v8
+
+    .line 147
+    move-object v3, v9
+
+    .line 148
+    move-object v5, v12
+
+    .line 149
+    move-object/from16 v31, v21
+
+    .line 150
+    .line 151
+    goto/16 :goto_5d7
+
+    .line 152
+    .line 153
+    :cond_98
+    const/16 p1, 0x0
+
+    .line 154
+    .line 155
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 156
+    .line 157
+    invoke-static {v0}, La;->r(Ljava/lang/String;)V
+
+    .line 158
+    .line 159
+    .line 160
+    return-object p1
+
+    .line 161
+    :cond_a0
+    move-object/from16 v19, v0
+
+    .line 162
+    .line 163
+    const/16 p1, 0x0
+
+    .line 164
+    .line 165
+    invoke-static/range {v19 .. v19}, Lnd1;->y(Ljava/lang/Object;)V
+
+    .line 166
+    .line 167
+    .line 168
+    invoke-virtual {v6}, Lzk;->a()Lt91;
+
+    .line 169
+    .line 170
+    .line 171
+    move-result-object v0
+
+    .line 172
+    new-instance v4, Lce;
+
+    .line 173
+    .line 174
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    .line 175
+    .line 176
+    .line 177
+    iput-object v0, v4, Lce;->b:Ljava/lang/Object;
+
+    .line 178
+    .line 179
+    new-instance v10, Lyi0;
+
+    .line 180
+    .line 181
+    invoke-direct {v10}, Ljava/lang/Object;-><init>()V
+
+    .line 182
+    .line 183
+    .line 184
+    new-instance v11, Ljava/io/ByteArrayOutputStream;
+
+    .line 185
+    .line 186
+    invoke-direct {v11}, Ljava/io/ByteArrayOutputStream;-><init>()V
+
+    .line 187
+    .line 188
+    .line 189
+    iput-object v11, v10, Lyi0;->e:Ljava/lang/Object;
+
+    .line 190
+    .line 191
+    new-instance v11, Landroid/media/MediaCodec$BufferInfo;
+
+    .line 192
+    .line 193
+    invoke-direct {v11}, Landroid/media/MediaCodec$BufferInfo;-><init>()V
+
+    .line 194
+    .line 195
+    .line 196
+    const/4 v14, 0x0
+
+    .line 197
+    new-array v15, v14, [B
+
+    .line 198
+    .line 199
+    move-object/from16 v26, v7
+
+    .line 200
+    .line 201
+    move-object/from16 v20, v10
+
+    .line 202
+    .line 203
+    move v10, v14
+
+    .line 204
+    move/from16 v21, v10
+
+    .line 205
+    .line 206
+    move/from16 v22, v21
+
+    .line 207
+    .line 208
+    const-wide/16 v16, 0x0
+
+    .line 209
+    .line 210
+    move-object/from16 v7, p1
+
+    .line 211
+    .line 212
+    :goto_d3
+    if-nez v21, :cond_56b
+
+    .line 213
+    .line 214
+    move-object/from16 v27, v12
+
+    .line 215
+    .line 216
+    :try_start_d7
+    iget-object v12, v3, Lku;->f:Lfv;
+
+    .line 217
+    .line 218
+    invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_dc
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_d7 .. :try_end_dc} :catch_55e
+    .catchall {:try_start_d7 .. :try_end_dc} :catchall_544
+
+    .line 219
+    .line 220
+    .line 221
+    :try_start_dc
+    invoke-static {v12}, Lvg;->J(Lfv;)V
+
+    .line 222
+    .line 223
+    .line 224
+    array-length v12, v15
+    :try_end_e0
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_dc .. :try_end_e0} :catch_553
+    .catchall {:try_start_dc .. :try_end_e0} :catchall_544
+
+    .line 225
+    move-object/from16 v19, v15
+
+    .line 226
+    .line 227
+    const-string v15, "Required value was null."
+
+    .line 228
+    .line 229
+    if-ne v14, v12, :cond_17f
+
+    .line 230
+    .line 231
+    if-nez v10, :cond_17f
+
+    .line 232
+    .line 233
+    :try_start_e8
+    invoke-virtual/range {v27 .. v27}, Lmj;->q()Ljava/lang/Object;
+
+    .line 234
+    .line 235
+    .line 236
+    move-result-object v12
+
+    .line 237
+    move/from16 v23, v14
+
+    .line 238
+    .line 239
+    instance-of v14, v12, Lvm;
+
+    .line 240
+    .line 241
+    if-nez v14, :cond_f3
+
+    .line 242
+    .line 243
+    goto :goto_f5
+
+    .line 244
+    :cond_f3
+    move-object/from16 v12, p1
+
+    .line 245
+    .line 246
+    :goto_f5
+    check-cast v12, Lus;
+
+    .line 247
+    .line 248
+    if-eqz v12, :cond_17a
+
+    .line 249
+    .line 250
+    iget-object v14, v12, Lus;->a:[B
+
+    .line 251
+    .line 252
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
+
+    .line 253
+    .line 254
+    .line 255
+    move-result-wide v24
+    :try_end_ff
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_e8 .. :try_end_ff} :catch_174
+    .catchall {:try_start_e8 .. :try_end_ff} :catchall_16e
+
+    .line 256
+    move-object/from16 v28, v8
+
+    .line 257
+    .line 258
+    move-object/from16 v29, v9
+
+    .line 259
+    .line 260
+    :try_start_103
+    iget-wide v8, v12, Lus;->c:J
+
+    .line 261
+    .line 262
+    sub-long v8, v24, v8
+
+    .line 263
+    .line 264
+    const-wide/32 v30, 0x5f5e100
+
+    .line 265
+    .line 266
+    .line 267
+    cmp-long v8, v8, v30
+
+    .line 268
+    .line 269
+    if-lez v8, :cond_13b
+
+    .line 270
+    .line 271
+    iget-object v7, v1, Lws;->o:Ljava/util/concurrent/atomic/AtomicLong;
+
+    .line 272
+    .line 273
+    invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
+
+    .line 274
+    .line 275
+    .line 276
+    move-object/from16 v7, p1
+
+    .line 277
+    .line 278
+    move-wide/from16 v32, v16
+
+    .line 279
+    .line 280
+    move-object/from16 v9, v19
+
+    .line 281
+    .line 282
+    move/from16 v8, v23
+
+    .line 283
+    .line 284
+    :goto_11b
+    const/4 v12, 0x1
+
+    .line 285
+    goto/16 :goto_18c
+
+    .line 286
+    .line 287
+    :catchall_11e
+    move-exception v0
+
+    .line 288
+    :goto_11f
+    move-object v2, v5
+
+    .line 289
+    move-object/from16 v31, v19
+
+    .line 290
+    .line 291
+    :goto_122
+    move-object/from16 v10, v20
+
+    .line 292
+    .line 293
+    move-object/from16 v6, v26
+
+    .line 294
+    .line 295
+    move-object/from16 v5, v27
+
+    .line 296
+    .line 297
+    move-object/from16 v4, v28
+
+    .line 298
+    .line 299
+    move-object/from16 v3, v29
+
+    .line 300
+    .line 301
+    goto/16 :goto_5a5
+
+    .line 302
+    .line 303
+    :catch_12e
+    move-exception v0
+
+    .line 304
+    :goto_12f
+    move-object/from16 v31, v19
+
+    .line 305
+    .line 306
+    :goto_131
+    move-object/from16 v6, v26
+
+    .line 307
+    .line 308
+    move-object/from16 v5, v27
+
+    .line 309
+    .line 310
+    move-object/from16 v4, v28
+
+    .line 311
+    .line 312
+    move-object/from16 v3, v29
+
+    .line 313
+    .line 314
+    goto/16 :goto_5d7
+
+    .line 315
+    .line 316
+    :cond_13b
+    iget-object v8, v12, Lus;->b:Lt91;
+
+    .line 317
+    .line 318
+    if-eqz v8, :cond_168
+
+    .line 319
+    .line 320
+    if-eqz v7, :cond_144
+
+    .line 321
+    .line 322
+    iget-object v9, v7, Ls91;->a:Lt91;
+
+    .line 323
+    .line 324
+    goto :goto_146
+
+    .line 325
+    :cond_144
+    move-object/from16 v9, p1
+
+    .line 326
+    .line 327
+    :goto_146
+    invoke-static {v9, v8}, Lvk0;->o(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 328
+    .line 329
+    .line 330
+    move-result v9
+
+    .line 331
+    if-eqz v9, :cond_152
+
+    .line 332
+    .line 333
+    sub-long v16, v24, v16
+
+    .line 334
+    .line 335
+    cmp-long v9, v16, v30
+
+    .line 336
+    .line 337
+    if-lez v9, :cond_157
+
+    .line 338
+    .line 339
+    :cond_152
+    new-instance v7, Ls91;
+
+    .line 340
+    .line 341
+    invoke-direct {v7, v8, v0}, Ls91;-><init>(Lt91;Lt91;)V
+
+    .line 342
+    .line 343
+    .line 344
+    :cond_157
+    if-eqz v7, :cond_162
+
+    .line 345
+    .line 346
+    invoke-virtual {v7, v14}, Ls91;->a([B)[B
+
+    .line 347
+    .line 348
+    .line 349
+    move-result-object v8
+
+    .line 350
+    move-object v9, v8
+
+    .line 351
+    move-wide/from16 v32, v24
+
+    .line 352
+    .line 353
+    const/4 v8, 0x0
+
+    .line 354
+    goto :goto_11b
+
+    .line 355
+    :cond_162
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 356
+    .line 357
+    invoke-direct {v0, v15}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 358
+    .line 359
+    .line 360
+    throw v0
+
+    .line 361
+    :cond_168
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 362
+    .line 363
+    invoke-direct {v0, v15}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 364
+    .line 365
+    .line 366
+    throw v0
+    :try_end_16e
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_103 .. :try_end_16e} :catch_12e
+    .catchall {:try_start_103 .. :try_end_16e} :catchall_11e
+
+    .line 367
+    :catchall_16e
+    move-exception v0
+
+    .line 368
+    move-object/from16 v28, v8
+
+    .line 369
+    .line 370
+    move-object/from16 v29, v9
+
+    .line 371
+    .line 372
+    goto :goto_11f
+
+    .line 373
+    :catch_174
+    move-exception v0
+
+    .line 374
+    move-object/from16 v28, v8
+
+    .line 375
+    .line 376
+    move-object/from16 v29, v9
+
+    .line 377
+    .line 378
+    goto :goto_12f
+
+    .line 379
+    :cond_17a
+    move-object/from16 v28, v8
+
+    .line 380
+    .line 381
+    move-object/from16 v29, v9
+
+    .line 382
+    .line 383
+    goto :goto_185
+
+    .line 384
+    :cond_17f
+    move-object/from16 v28, v8
+
+    .line 385
+    .line 386
+    move-object/from16 v29, v9
+
+    .line 387
+    .line 388
+    move/from16 v23, v14
+
+    .line 389
+    .line 390
+    :goto_185
+    move-wide/from16 v32, v16
+
+    .line 391
+    .line 392
+    move-object/from16 v9, v19
+
+    .line 393
+    .line 394
+    move/from16 v8, v23
+
+    .line 395
+    .line 396
+    const/4 v12, 0x0
+
+    .line 397
+    :goto_18c
+    :try_start_18c
+    array-length v14, v9
+
+    .line 398
+    if-lt v8, v14, :cond_193
+
+    .line 399
+    .line 400
+    if-eqz v10, :cond_19a
+
+    .line 401
+    .line 402
+    if-nez v22, :cond_19a
+
+    .line 403
+    .line 404
+    :cond_193
+    move/from16 v17, v12
+
+    .line 405
+    .line 406
+    move-object/from16 v16, v15
+
+    .line 407
+    .line 408
+    const-wide/16 v14, 0x0
+
+    .line 409
+    .line 410
+    goto :goto_1a3
+
+    .line 411
+    :cond_19a
+    move/from16 v23, v8
+
+    .line 412
+    .line 413
+    move-object/from16 v31, v9
+
+    .line 414
+    .line 415
+    move/from16 v17, v12
+
+    .line 416
+    .line 417
+    move-object v12, v15
+
+    .line 418
+    goto/16 :goto_272
+
+    .line 419
+    .line 420
+    :goto_1a3
+    invoke-virtual {v13, v14, v15}, Landroid/media/MediaCodec;->dequeueInputBuffer(J)I
+
+    .line 421
+    .line 422
+    .line 423
+    move-result v12
+    :try_end_1a7
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_18c .. :try_end_1a7} :catch_53c
+    .catchall {:try_start_18c .. :try_end_1a7} :catchall_535
+
+    .line 424
+    if-ltz v12, :cond_26c
+
+    .line 425
+    .line 426
+    :try_start_1a9
+    invoke-virtual {v13, v12}, Landroid/media/MediaCodec;->getInputBuffer(I)Ljava/nio/ByteBuffer;
+
+    .line 427
+    .line 428
+    .line 429
+    move-result-object v14
+
+    .line 430
+    if-eqz v14, :cond_262
+
+    .line 431
+    .line 432
+    invoke-virtual {v14}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
+
+    .line 433
+    .line 434
+    .line 435
+    iget v15, v0, Lt91;->b:I
+
+    .line 436
+    .line 437
+    mul-int/lit8 v15, v15, 0x2
+
+    .line 438
+    .line 439
+    move/from16 v19, v12
+
+    .line 440
+    .line 441
+    array-length v12, v9
+
+    .line 442
+    sub-int/2addr v12, v8
+
+    .line 443
+    invoke-virtual {v14}, Ljava/nio/Buffer;->remaining()I
+
+    .line 444
+    .line 445
+    .line 446
+    move-result v17
+
+    .line 447
+    div-int v17, v17, v15
+
+    .line 448
+    .line 449
+    mul-int v15, v15, v17
+
+    .line 450
+    .line 451
+    invoke-static {v12, v15}, Ljava/lang/Math;->min(II)I
+
+    .line 452
+    .line 453
+    .line 454
+    move-result v12
+
+    .line 455
+    array-length v15, v9
+    :try_end_1c7
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_1a9 .. :try_end_1c7} :catch_1ec
+    .catchall {:try_start_1a9 .. :try_end_1c7} :catchall_25e
+
+    .line 456
+    if-ge v8, v15, :cond_1f1
+
+    .line 457
+    .line 458
+    if-lez v12, :cond_1cc
+
+    .line 459
+    .line 460
+    goto :goto_1f1
+
+    .line 461
+    :cond_1cc
+    :try_start_1cc
+    sget-object v0, Lql1;->a:Lql1;
+
+    .line 462
+    .line 463
+    const/16 v2, 0x27
+
+    .line 464
+    .line 465
+    new-array v2, v2, [I
+
+    .line 466
+    .line 467
+    fill-array-data v2, :array_5fc
+
+    .line 468
+    .line 469
+    .line 470
+    const v3, 0xb653
+
+    .line 471
+    .line 472
+    .line 473
+    invoke-virtual {v0, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 474
+    .line 475
+    .line 476
+    move-result-object v0
+
+    .line 477
+    new-instance v2, Ljava/lang/IllegalStateException;
+
+    .line 478
+    .line 479
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 480
+    .line 481
+    .line 482
+    move-result-object v0
+
+    .line 483
+    invoke-direct {v2, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 484
+    .line 485
+    .line 486
+    throw v2
+
+    .line 487
+    :catchall_1e6
+    move-exception v0
+
+    .line 488
+    move-object v2, v5
+
+    .line 489
+    move-object/from16 v31, v9
+
+    .line 490
+    .line 491
+    goto/16 :goto_122
+
+    .line 492
+    .line 493
+    :catch_1ec
+    move-exception v0
+
+    .line 494
+    move-object/from16 v31, v9
+
+    .line 495
+    .line 496
+    goto/16 :goto_131
+
+    .line 497
+    .line 498
+    :cond_1f1
+    :goto_1f1
+    if-lez v12, :cond_211
+
+    .line 499
+    .line 500
+    invoke-virtual {v14, v9, v8, v12}, Ljava/nio/ByteBuffer;->put([BII)Ljava/nio/ByteBuffer;
+
+    .line 501
+    .line 502
+    .line 503
+    const/4 v14, 0x0
+
+    .line 504
+    invoke-virtual {v4, v12}, Lce;->a(I)J
+
+    .line 505
+    .line 506
+    .line 507
+    move-result-wide v17
+
+    .line 508
+    move v15, v14
+
+    .line 509
+    move/from16 v14, v19
+
+    .line 510
+    .line 511
+    const/16 v19, 0x0
+
+    .line 512
+    .line 513
+    move/from16 v23, v15
+
+    .line 514
+    .line 515
+    const/4 v15, 0x0
+
+    .line 516
+    move-object/from16 v46, v16
+
+    .line 517
+    .line 518
+    move/from16 v16, v12
+
+    .line 519
+    .line 520
+    move-object/from16 v12, v46
+
+    .line 521
+    .line 522
+    invoke-virtual/range {v13 .. v19}, Landroid/media/MediaCodec;->queueInputBuffer(IIIJI)V
+    :try_end_20c
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_1cc .. :try_end_20c} :catch_1ec
+    .catchall {:try_start_1cc .. :try_end_20c} :catchall_1e6
+
+    .line 523
+    .line 524
+    .line 525
+    add-int v8, v8, v16
+
+    .line 526
+    .line 527
+    move-object/from16 v31, v9
+
+    .line 528
+    .line 529
+    goto :goto_23e
+
+    .line 530
+    :cond_211
+    move-object v15, v13
+
+    .line 531
+    move-object/from16 v12, v16
+
+    .line 532
+    .line 533
+    :try_start_214
+    iget-wide v13, v4, Lce;->a:J
+    :try_end_216
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_214 .. :try_end_216} :catch_258
+    .catchall {:try_start_214 .. :try_end_216} :catchall_253
+
+    .line 534
+    .line 535
+    move/from16 v23, v8
+
+    .line 536
+    .line 537
+    move-object/from16 v31, v9
+
+    .line 538
+    .line 539
+    const-wide/32 v8, 0xf4240
+
+    .line 540
+    .line 541
+    .line 542
+    :try_start_21d
+    invoke-static {v13, v14, v8, v9}, Ljava/lang/Math;->multiplyExact(JJ)J
+
+    .line 543
+    .line 544
+    .line 545
+    move-result-wide v8
+
+    .line 546
+    iget-object v13, v4, Lce;->b:Ljava/lang/Object;
+
+    .line 547
+    .line 548
+    check-cast v13, Lt91;
+
+    .line 549
+    .line 550
+    iget v13, v13, Lt91;->a:I
+
+    .line 551
+    .line 552
+    int-to-long v13, v13
+
+    .line 553
+    div-long/2addr v8, v13
+
+    .line 554
+    const-wide/16 v13, 0x0
+
+    .line 555
+    .line 556
+    invoke-static {v13, v14, v8, v9}, Ljava/lang/Math;->addExact(JJ)J
+
+    .line 557
+    .line 558
+    .line 559
+    move-result-wide v17
+    :try_end_22f
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_21d .. :try_end_22f} :catch_251
+    .catchall {:try_start_21d .. :try_end_22f} :catchall_24f
+
+    .line 560
+    move/from16 v14, v19
+
+    .line 561
+    .line 562
+    const/16 v19, 0x4
+
+    .line 563
+    .line 564
+    move-object v13, v15
+
+    .line 565
+    const/4 v15, 0x0
+
+    .line 566
+    const/16 v16, 0x0
+
+    .line 567
+    .line 568
+    :try_start_237
+    invoke-virtual/range {v13 .. v19}, Landroid/media/MediaCodec;->queueInputBuffer(IIIJI)V
+
+    .line 569
+    .line 570
+    .line 571
+    move/from16 v8, v23
+
+    .line 572
+    .line 573
+    const/16 v22, 0x1
+
+    .line 574
+    .line 575
+    :goto_23e
+    move v14, v8
+
+    .line 576
+    move/from16 v18, v21
+
+    .line 577
+    .line 578
+    move/from16 v16, v22
+
+    .line 579
+    .line 580
+    :goto_243
+    const-wide/16 v8, 0x0
+
+    .line 581
+    .line 582
+    const/16 v17, 0x1
+
+    .line 583
+    .line 584
+    goto :goto_27a
+
+    .line 585
+    :catchall_248
+    move-exception v0
+
+    .line 586
+    :goto_249
+    move-object v2, v5
+
+    .line 587
+    goto/16 :goto_122
+
+    .line 588
+    .line 589
+    :catch_24c
+    move-exception v0
+
+    .line 590
+    goto/16 :goto_131
+
+    .line 591
+    .line 592
+    :catchall_24f
+    move-exception v0
+
+    .line 593
+    goto :goto_256
+
+    .line 594
+    :catch_251
+    move-exception v0
+
+    .line 595
+    goto :goto_25b
+
+    .line 596
+    :catchall_253
+    move-exception v0
+
+    .line 597
+    move-object/from16 v31, v9
+
+    .line 598
+    .line 599
+    :goto_256
+    move-object v13, v15
+
+    .line 600
+    goto :goto_249
+
+    .line 601
+    :catch_258
+    move-exception v0
+
+    .line 602
+    move-object/from16 v31, v9
+
+    .line 603
+    .line 604
+    :goto_25b
+    move-object v13, v15
+
+    .line 605
+    goto/16 :goto_131
+
+    .line 606
+    .line 607
+    :catchall_25e
+    move-exception v0
+
+    .line 608
+    move-object/from16 v31, v9
+
+    .line 609
+    .line 610
+    goto :goto_249
+
+    .line 611
+    :cond_262
+    move-object/from16 v31, v9
+
+    .line 612
+    .line 613
+    move-object/from16 v12, v16
+
+    .line 614
+    .line 615
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 616
+    .line 617
+    invoke-direct {v0, v12}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 618
+    .line 619
+    .line 620
+    throw v0
+    :try_end_26c
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_237 .. :try_end_26c} :catch_24c
+    .catchall {:try_start_237 .. :try_end_26c} :catchall_248
+
+    .line 621
+    :cond_26c
+    move/from16 v23, v8
+
+    .line 622
+    .line 623
+    move-object/from16 v31, v9
+
+    .line 624
+    .line 625
+    move-object/from16 v12, v16
+
+    .line 626
+    .line 627
+    :goto_272
+    move/from16 v18, v21
+
+    .line 628
+    .line 629
+    move/from16 v16, v22
+
+    .line 630
+    .line 631
+    move/from16 v14, v23
+
+    .line 632
+    .line 633
+    const-wide/16 v8, 0x0
+
+    .line 634
+    .line 635
+    :goto_27a
+    :try_start_27a
+    invoke-virtual {v13, v11, v8, v9}, Landroid/media/MediaCodec;->dequeueOutputBuffer(Landroid/media/MediaCodec$BufferInfo;J)I
+
+    .line 636
+    .line 637
+    .line 638
+    move-result v15
+    :try_end_27e
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_27a .. :try_end_27e} :catch_52e
+    .catchall {:try_start_27a .. :try_end_27e} :catchall_528
+
+    .line 639
+    const/4 v8, -0x1
+
+    .line 640
+    if-eq v15, v8, :cond_495
+
+    .line 641
+    .line 642
+    const/4 v8, -0x2
+
+    .line 643
+    iget-object v9, v1, Lws;->h:Lp;
+
+    .line 644
+    .line 645
+    if-ne v15, v8, :cond_3b4
+
+    .line 646
+    .line 647
+    :try_start_286
+    invoke-virtual {v13}, Landroid/media/MediaCodec;->getOutputFormat()Landroid/media/MediaFormat;
+
+    .line 648
+    .line 649
+    .line 650
+    move-result-object v8
+
+    .line 651
+    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 652
+    .line 653
+    .line 654
+    const-string v15, "sample-rate"
+
+    .line 655
+    .line 656
+    invoke-virtual {v8, v15}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
+
+    .line 657
+    .line 658
+    .line 659
+    move-result v15
+    :try_end_293
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_286 .. :try_end_293} :catch_24c
+    .catchall {:try_start_286 .. :try_end_293} :catchall_3af
+
+    .line 660
+    move-object/from16 v42, v5
+
+    .line 661
+    .line 662
+    :try_start_295
+    const-string v5, "channel-count"
+
+    .line 663
+    .line 664
+    invoke-virtual {v8, v5}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
+
+    .line 665
+    .line 666
+    .line 667
+    move-result v5
+
+    .line 668
+    move/from16 v43, v10
+
+    .line 669
+    .line 670
+    iget v10, v6, Lzk;->c:I
+
+    .line 671
+    .line 672
+    if-ne v15, v10, :cond_396
+
+    .line 673
+    .line 674
+    iget-byte v10, v6, Lzk;->d:B
+
+    .line 675
+    .line 676
+    if-ne v5, v10, :cond_396
+
+    .line 677
+    .line 678
+    new-instance v10, Lzv0;
+
+    .line 679
+    .line 680
+    move/from16 v37, v5
+
+    .line 681
+    .line 682
+    const/16 v5, 0x8
+
+    .line 683
+    .line 684
+    invoke-direct {v10, v5}, Lzv0;-><init>(I)V
+
+    .line 685
+    .line 686
+    .line 687
+    move-object/from16 v44, v6
+
+    .line 688
+    .line 689
+    const/4 v5, 0x0
+
+    .line 690
+    :goto_2b1
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 691
+    .line 692
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 693
+    .line 694
+    .line 695
+    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 696
+    .line 697
+    .line 698
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 699
+    .line 700
+    .line 701
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 702
+    .line 703
+    .line 704
+    move-result-object v6
+
+    .line 705
+    invoke-virtual {v8, v6}, Landroid/media/MediaFormat;->containsKey(Ljava/lang/String;)Z
+
+    .line 706
+    .line 707
+    .line 708
+    move-result v6
+
+    .line 709
+    if-eqz v6, :cond_31e
+
+    .line 710
+    .line 711
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 712
+    .line 713
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 714
+    .line 715
+    .line 716
+    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 717
+    .line 718
+    .line 719
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 720
+    .line 721
+    .line 722
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 723
+    .line 724
+    .line 725
+    move-result-object v6
+
+    .line 726
+    invoke-virtual {v8, v6}, Landroid/media/MediaFormat;->getByteBuffer(Ljava/lang/String;)Ljava/nio/ByteBuffer;
+
+    .line 727
+    .line 728
+    .line 729
+    move-result-object v6
+
+    .line 730
+    if-eqz v6, :cond_313
+
+    .line 731
+    .line 732
+    invoke-virtual {v6}, Ljava/nio/ByteBuffer;->duplicate()Ljava/nio/ByteBuffer;
+
+    .line 733
+    .line 734
+    .line 735
+    move-result-object v6
+
+    .line 736
+    if-eqz v6, :cond_313
+
+    .line 737
+    .line 738
+    move/from16 v36, v15
+
+    .line 739
+    .line 740
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    .line 741
+    .line 742
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 743
+    .line 744
+    .line 745
+    invoke-virtual {v15, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 746
+    .line 747
+    .line 748
+    invoke-virtual {v15, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 749
+    .line 750
+    .line 751
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 752
+    .line 753
+    .line 754
+    move-result-object v15
+
+    .line 755
+    move-object/from16 v45, v2
+
+    .line 756
+    .line 757
+    invoke-virtual {v6}, Ljava/nio/Buffer;->remaining()I
+
+    .line 758
+    .line 759
+    .line 760
+    move-result v2
+
+    .line 761
+    new-array v2, v2, [B
+
+    .line 762
+    .line 763
+    invoke-virtual {v6, v2}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
+
+    .line 764
+    .line 765
+    .line 766
+    invoke-virtual {v10, v15, v2}, Lzv0;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 767
+    .line 768
+    .line 769
+    move-result-object v2
+
+    .line 770
+    check-cast v2, [B
+
+    .line 771
+    .line 772
+    goto :goto_317
+
+    .line 773
+    :catchall_304
+    move-exception v0
+
+    .line 774
+    :goto_305
+    move-object/from16 v10, v20
+
+    .line 775
+    .line 776
+    :goto_307
+    move-object/from16 v6, v26
+
+    .line 777
+    .line 778
+    move-object/from16 v5, v27
+
+    .line 779
+    .line 780
+    move-object/from16 v4, v28
+
+    .line 781
+    .line 782
+    move-object/from16 v3, v29
+
+    .line 783
+    .line 784
+    move-object/from16 v2, v42
+
+    .line 785
+    .line 786
+    goto/16 :goto_5a5
+
+    .line 787
+    .line 788
+    :cond_313
+    move-object/from16 v45, v2
+
+    .line 789
+    .line 790
+    move/from16 v36, v15
+
+    .line 791
+    .line 792
+    :goto_317
+    add-int/lit8 v5, v5, 0x1
+
+    .line 793
+    .line 794
+    move/from16 v15, v36
+
+    .line 795
+    .line 796
+    move-object/from16 v2, v45
+
+    .line 797
+    .line 798
+    goto :goto_2b1
+
+    .line 799
+    :cond_31e
+    move-object/from16 v45, v2
+
+    .line 800
+    .line 801
+    move/from16 v36, v15
+
+    .line 802
+    .line 803
+    invoke-virtual {v10}, Lzv0;->b()V
+
+    .line 804
+    .line 805
+    .line 806
+    const/4 v2, 0x1
+
+    .line 807
+    iput-boolean v2, v10, Lzv0;->q:Z
+
+    .line 808
+    .line 809
+    iget v2, v10, Lzv0;->m:I
+
+    .line 810
+    .line 811
+    if-lez v2, :cond_32f
+
+    .line 812
+    .line 813
+    :goto_32c
+    move-object/from16 v39, v10
+
+    .line 814
+    .line 815
+    goto :goto_335
+
+    .line 816
+    :cond_32f
+    sget-object v10, Lzv0;->r:Lzv0;
+
+    .line 817
+    .line 818
+    invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 819
+    .line 820
+    .line 821
+    goto :goto_32c
+
+    .line 822
+    :goto_335
+    new-instance v34, Lss;
+
+    .line 823
+    .line 824
+    const-string v2, "mime"
+
+    .line 825
+    .line 826
+    invoke-virtual {v8, v2}, Landroid/media/MediaFormat;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 827
+    .line 828
+    .line 829
+    move-result-object v35
+
+    .line 830
+    if-eqz v35, :cond_390
+
+    .line 831
+    .line 832
+    const-string v2, "aac-profile"
+
+    .line 833
+    .line 834
+    invoke-virtual {v8, v2}, Landroid/media/MediaFormat;->containsKey(Ljava/lang/String;)Z
+
+    .line 835
+    .line 836
+    .line 837
+    move-result v5
+
+    .line 838
+    if-eqz v5, :cond_352
+
+    .line 839
+    .line 840
+    invoke-virtual {v8, v2}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
+
+    .line 841
+    .line 842
+    .line 843
+    move-result v2
+
+    .line 844
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 845
+    .line 846
+    .line 847
+    move-result-object v2
+
+    .line 848
+    move-object/from16 v38, v2
+
+    .line 849
+    .line 850
+    goto :goto_354
+
+    .line 851
+    :cond_352
+    const/16 v38, 0x0
+
+    .line 852
+    .line 853
+    :goto_354
+    const-string v2, "encoder-delay"
+
+    .line 854
+    .line 855
+    invoke-virtual {v8, v2}, Landroid/media/MediaFormat;->containsKey(Ljava/lang/String;)Z
+
+    .line 856
+    .line 857
+    .line 858
+    move-result v5
+
+    .line 859
+    if-eqz v5, :cond_367
+
+    .line 860
+    .line 861
+    invoke-virtual {v8, v2}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
+
+    .line 862
+    .line 863
+    .line 864
+    move-result v2
+
+    .line 865
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 866
+    .line 867
+    .line 868
+    move-result-object v2
+
+    .line 869
+    move-object/from16 v40, v2
+
+    .line 870
+    .line 871
+    goto :goto_369
+
+    .line 872
+    :cond_367
+    const/16 v40, 0x0
+
+    .line 873
+    .line 874
+    :goto_369
+    const-string v2, "encoder-padding"
+
+    .line 875
+    .line 876
+    invoke-virtual {v8, v2}, Landroid/media/MediaFormat;->containsKey(Ljava/lang/String;)Z
+
+    .line 877
+    .line 878
+    .line 879
+    move-result v5
+
+    .line 880
+    if-eqz v5, :cond_37c
+
+    .line 881
+    .line 882
+    invoke-virtual {v8, v2}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;)I
+
+    .line 883
+    .line 884
+    .line 885
+    move-result v2
+
+    .line 886
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 887
+    .line 888
+    .line 889
+    move-result-object v2
+
+    .line 890
+    move-object/from16 v41, v2
+
+    .line 891
+    .line 892
+    goto :goto_37e
+
+    .line 893
+    :cond_37c
+    const/16 v41, 0x0
+
+    .line 894
+    .line 895
+    :goto_37e
+    invoke-direct/range {v34 .. v41}, Lss;-><init>(Ljava/lang/String;IILjava/lang/Integer;Lzv0;Ljava/lang/Integer;Ljava/lang/Integer;)V
+
+    .line 896
+    .line 897
+    .line 898
+    move-object/from16 v2, v34
+
+    .line 899
+    .line 900
+    invoke-virtual {v9, v2}, Lp;->i(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 901
+    .line 902
+    .line 903
+    :goto_386
+    move-object/from16 v5, v42
+
+    .line 904
+    .line 905
+    move/from16 v10, v43
+
+    .line 906
+    .line 907
+    move-object/from16 v6, v44
+
+    .line 908
+    .line 909
+    move-object/from16 v2, v45
+
+    .line 910
+    .line 911
+    goto/16 :goto_243
+
+    .line 912
+    .line 913
+    :cond_390
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 914
+    .line 915
+    invoke-direct {v0, v12}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 916
+    .line 917
+    .line 918
+    throw v0
+
+    .line 919
+    :cond_396
+    sget-object v0, Lql1;->a:Lql1;
+
+    .line 920
+    .line 921
+    const/16 v2, 0x26
+
+    .line 922
+    .line 923
+    new-array v2, v2, [I
+
+    .line 924
+    .line 925
+    fill-array-data v2, :array_64e
+
+    .line 926
+    .line 927
+    .line 928
+    const/16 v3, 0x1493
+
+    .line 929
+    .line 930
+    invoke-virtual {v0, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 931
+    .line 932
+    .line 933
+    move-result-object v0
+
+    .line 934
+    new-instance v2, Ljava/lang/IllegalStateException;
+
+    .line 935
+    .line 936
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 937
+    .line 938
+    .line 939
+    move-result-object v0
+
+    .line 940
+    invoke-direct {v2, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 941
+    .line 942
+    .line 943
+    throw v2
+    :try_end_3af
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_295 .. :try_end_3af} :catch_24c
+    .catchall {:try_start_295 .. :try_end_3af} :catchall_304
+
+    .line 944
+    :catchall_3af
+    move-exception v0
+
+    .line 945
+    move-object/from16 v42, v5
+
+    .line 946
+    .line 947
+    goto/16 :goto_305
+
+    .line 948
+    .line 949
+    :cond_3b4
+    move-object/from16 v45, v2
+
+    .line 950
+    .line 951
+    move-object/from16 v42, v5
+
+    .line 952
+    .line 953
+    move-object/from16 v44, v6
+
+    .line 954
+    .line 955
+    move/from16 v43, v10
+
+    .line 956
+    .line 957
+    if-ltz v15, :cond_48d
+
+    .line 958
+    .line 959
+    :try_start_3be
+    iget v2, v11, Landroid/media/MediaCodec$BufferInfo;->size:I
+
+    .line 960
+    .line 961
+    if-nez v2, :cond_3cc
+
+    .line 962
+    .line 963
+    const/4 v2, 0x0
+
+    .line 964
+    new-array v5, v2, [B
+
+    .line 965
+    .line 966
+    goto :goto_3ea
+
+    .line 967
+    :catchall_3c6
+    move-exception v0
+
+    .line 968
+    move-object/from16 v10, v20
+
+    .line 969
+    .line 970
+    :goto_3c9
+    const/4 v2, 0x0
+
+    .line 971
+    goto/16 :goto_489
+
+    .line 972
+    .line 973
+    :cond_3cc
+    invoke-virtual {v13, v15}, Landroid/media/MediaCodec;->getOutputBuffer(I)Ljava/nio/ByteBuffer;
+
+    .line 974
+    .line 975
+    .line 976
+    move-result-object v2
+
+    .line 977
+    if-eqz v2, :cond_481
+
+    .line 978
+    .line 979
+    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->duplicate()Ljava/nio/ByteBuffer;
+
+    .line 980
+    .line 981
+    .line 982
+    move-result-object v2
+
+    .line 983
+    iget v5, v11, Landroid/media/MediaCodec$BufferInfo;->offset:I
+
+    .line 984
+    .line 985
+    invoke-virtual {v2, v5}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+
+    .line 986
+    .line 987
+    .line 988
+    iget v5, v11, Landroid/media/MediaCodec$BufferInfo;->offset:I
+
+    .line 989
+    .line 990
+    iget v6, v11, Landroid/media/MediaCodec$BufferInfo;->size:I
+
+    .line 991
+    .line 992
+    add-int/2addr v5, v6
+
+    .line 993
+    invoke-virtual {v2, v5}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
+
+    .line 994
+    .line 995
+    .line 996
+    iget v5, v11, Landroid/media/MediaCodec$BufferInfo;->size:I
+
+    .line 997
+    .line 998
+    new-array v5, v5, [B
+
+    .line 999
+    .line 1000
+    invoke-virtual {v2, v5}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
+
+    .line 1001
+    .line 1002
+    .line 1003
+    :goto_3ea
+    iget v2, v11, Landroid/media/MediaCodec$BufferInfo;->flags:I
+
+    .line 1004
+    .line 1005
+    and-int/lit8 v6, v2, 0x2
+
+    .line 1006
+    .line 1007
+    if-eqz v6, :cond_3f2
+
+    .line 1008
+    .line 1009
+    const/4 v6, 0x1
+
+    .line 1010
+    goto :goto_3f3
+
+    .line 1011
+    :cond_3f2
+    const/4 v6, 0x0
+
+    .line 1012
+    :goto_3f3
+    and-int/lit8 v8, v2, 0x4
+
+    .line 1013
+    .line 1014
+    if-eqz v8, :cond_3fa
+
+    .line 1015
+    .line 1016
+    const/16 v25, 0x1
+
+    .line 1017
+    .line 1018
+    goto :goto_3fc
+
+    .line 1019
+    :cond_3fa
+    const/16 v25, 0x0
+
+    .line 1020
+    .line 1021
+    :goto_3fc
+    if-eqz v6, :cond_42b
+
+    .line 1022
+    .line 1023
+    array-length v2, v5
+
+    .line 1024
+    if-nez v2, :cond_402
+
+    .line 1025
+    .line 1026
+    goto :goto_40a
+
+    .line 1027
+    :cond_402
+    new-instance v2, Lrs;
+
+    .line 1028
+    .line 1029
+    invoke-direct {v2, v5}, Lrs;-><init>([B)V
+
+    .line 1030
+    .line 1031
+    .line 1032
+    invoke-virtual {v9, v2}, Lp;->i(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1033
+    .line 1034
+    .line 1035
+    :goto_40a
+    if-nez v25, :cond_411
+
+    .line 1036
+    .line 1037
+    move-object/from16 v19, v7
+
+    .line 1038
+    .line 1039
+    move-object/from16 v10, v20
+
+    .line 1040
+    .line 1041
+    goto :goto_46b
+
+    .line 1042
+    :cond_411
+    sget-object v0, Lql1;->a:Lql1;
+
+    .line 1043
+    .line 1044
+    const/16 v2, 0x2b
+
+    .line 1045
+    .line 1046
+    new-array v2, v2, [I
+
+    .line 1047
+    .line 1048
+    fill-array-data v2, :array_69e
+
+    .line 1049
+    .line 1050
+    .line 1051
+    const v3, 0xeb47
+
+    .line 1052
+    .line 1053
+    .line 1054
+    invoke-virtual {v0, v3, v2}, Lql1;->a(I[I)Ljava/lang/String;
+
+    .line 1055
+    .line 1056
+    .line 1057
+    move-result-object v0
+
+    .line 1058
+    new-instance v2, Ljava/lang/IllegalStateException;
+
+    .line 1059
+    .line 1060
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 1061
+    .line 1062
+    .line 1063
+    move-result-object v0
+
+    .line 1064
+    invoke-direct {v2, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 1065
+    .line 1066
+    .line 1067
+    throw v2
+
+    .line 1068
+    :cond_42b
+    move-object/from16 v21, v5
+
+    .line 1069
+    .line 1070
+    iget-wide v5, v11, Landroid/media/MediaCodec$BufferInfo;->presentationTimeUs:J
+
+    .line 1071
+    .line 1072
+    and-int/lit8 v2, v2, 0x8
+
+    .line 1073
+    .line 1074
+    if-eqz v2, :cond_438
+
+    .line 1075
+    .line 1076
+    const/16 v24, 0x1
+
+    .line 1077
+    .line 1078
+    :goto_435
+    move-wide/from16 v22, v5
+
+    .line 1079
+    .line 1080
+    goto :goto_43b
+
+    .line 1081
+    :cond_438
+    const/16 v24, 0x0
+
+    .line 1082
+    .line 1083
+    goto :goto_435
+
+    .line 1084
+    :goto_43b
+    invoke-virtual/range {v20 .. v25}, Lyi0;->m([BJZZ)Lbe;
+
+    .line 1085
+    .line 1086
+    .line 1087
+    move-result-object v2
+    :try_end_43f
+    .catchall {:try_start_3be .. :try_end_43f} :catchall_3c6
+
+    .line 1088
+    move-object/from16 v10, v20
+
+    .line 1089
+    .line 1090
+    if-eqz v2, :cond_469
+
+    .line 1091
+    .line 1092
+    :try_start_443
+    iget-object v5, v2, Lbe;->a:[B
+
+    .line 1093
+    .line 1094
+    array-length v6, v5
+
+    .line 1095
+    if-nez v6, :cond_44b
+
+    .line 1096
+    .line 1097
+    move-object/from16 v19, v7
+
+    .line 1098
+    .line 1099
+    goto :goto_459
+
+    .line 1100
+    :cond_44b
+    iget-object v6, v1, Lws;->p:Ljava/util/concurrent/atomic/AtomicLong;
+
+    .line 1101
+    .line 1102
+    invoke-virtual {v6}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
+
+    .line 1103
+    .line 1104
+    .line 1105
+    iget-object v6, v1, Lws;->q:Ljava/util/concurrent/atomic/AtomicLong;
+
+    .line 1106
+    .line 1107
+    array-length v8, v5
+
+    .line 1108
+    move-object/from16 v19, v7
+
+    .line 1109
+    .line 1110
+    int-to-long v7, v8
+
+    .line 1111
+    invoke-virtual {v6, v7, v8}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
+
+    .line 1112
+    .line 1113
+    .line 1114
+    :goto_459
+    new-instance v6, Lqs;
+
+    .line 1115
+    .line 1116
+    iget-wide v7, v2, Lbe;->b:J
+
+    .line 1117
+    .line 1118
+    iget-boolean v2, v2, Lbe;->c:Z
+
+    .line 1119
+    .line 1120
+    invoke-direct {v6, v5, v7, v8, v2}, Lqs;-><init>([BJZ)V
+
+    .line 1121
+    .line 1122
+    .line 1123
+    invoke-virtual {v9, v6}, Lp;->i(Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_465
+    .catchall {:try_start_443 .. :try_end_465} :catchall_466
+
+    .line 1124
+    .line 1125
+    .line 1126
+    goto :goto_46b
+
+    .line 1127
+    :catchall_466
+    move-exception v0
+
+    .line 1128
+    goto/16 :goto_3c9
+
+    .line 1129
+    .line 1130
+    :cond_469
+    move-object/from16 v19, v7
+
+    .line 1131
+    .line 1132
+    :goto_46b
+    if-eqz v25, :cond_46f
+
+    .line 1133
+    .line 1134
+    const/16 v18, 0x1
+
+    .line 1135
+    .line 1136
+    :cond_46f
+    const/4 v2, 0x0
+
+    .line 1137
+    :try_start_470
+    invoke-virtual {v13, v15, v2}, Landroid/media/MediaCodec;->releaseOutputBuffer(IZ)V
+    :try_end_473
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_470 .. :try_end_473} :catch_47c
+    .catchall {:try_start_470 .. :try_end_473} :catchall_479
+
+    .line 1138
+    .line 1139
+    .line 1140
+    move-object/from16 v20, v10
+
+    .line 1141
+    .line 1142
+    move-object/from16 v7, v19
+
+    .line 1143
+    .line 1144
+    goto/16 :goto_386
+
+    .line 1145
+    .line 1146
+    :catchall_479
+    move-exception v0
+
+    .line 1147
+    goto/16 :goto_307
+
+    .line 1148
+    .line 1149
+    :catch_47c
+    move-exception v0
+
+    .line 1150
+    :goto_47d
+    move-object/from16 v20, v10
+
+    .line 1151
+    .line 1152
+    goto/16 :goto_131
+
+    .line 1153
+    .line 1154
+    :cond_481
+    move-object/from16 v10, v20
+
+    .line 1155
+    .line 1156
+    :try_start_483
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 1157
+    .line 1158
+    invoke-direct {v0, v12}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 1159
+    .line 1160
+    .line 1161
+    throw v0
+    :try_end_489
+    .catchall {:try_start_483 .. :try_end_489} :catchall_466
+
+    .line 1162
+    :goto_489
+    :try_start_489
+    invoke-virtual {v13, v15, v2}, Landroid/media/MediaCodec;->releaseOutputBuffer(IZ)V
+
+    .line 1163
+    .line 1164
+    .line 1165
+    throw v0
+    :try_end_48d
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_489 .. :try_end_48d} :catch_47c
+    .catchall {:try_start_489 .. :try_end_48d} :catchall_479
+
+    .line 1166
+    :cond_48d
+    const/16 v17, 0x1
+
+    .line 1167
+    .line 1168
+    :goto_48f
+    move-object/from16 v19, v7
+
+    .line 1169
+    .line 1170
+    move-object/from16 v10, v20
+
+    .line 1171
+    .line 1172
+    const/4 v2, 0x0
+
+    .line 1173
+    goto :goto_49e
+
+    .line 1174
+    :cond_495
+    move-object/from16 v45, v2
+
+    .line 1175
+    .line 1176
+    move-object/from16 v42, v5
+
+    .line 1177
+    .line 1178
+    move-object/from16 v44, v6
+
+    .line 1179
+    .line 1180
+    move/from16 v43, v10
+
+    .line 1181
+    .line 1182
+    goto :goto_48f
+
+    .line 1183
+    :goto_49e
+    if-nez v17, :cond_501
+
+    .line 1184
+    .line 1185
+    :try_start_4a0
+    iput-object v0, v3, Lvs;->h:Lt91;
+
+    .line 1186
+    .line 1187
+    iput-object v4, v3, Lvs;->i:Lce;
+
+    .line 1188
+    .line 1189
+    iput-object v10, v3, Lvs;->j:Lyi0;
+
+    .line 1190
+    .line 1191
+    iput-object v11, v3, Lvs;->k:Landroid/media/MediaCodec$BufferInfo;
+
+    .line 1192
+    .line 1193
+    move-object/from16 v7, v19
+
+    .line 1194
+    .line 1195
+    iput-object v7, v3, Lvs;->l:Ls91;
+    :try_end_4ac
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_4a0 .. :try_end_4ac} :catch_4fc
+    .catchall {:try_start_4a0 .. :try_end_4ac} :catchall_4f7
+
+    .line 1196
+    .line 1197
+    move-object/from16 v8, v31
+
+    .line 1198
+    .line 1199
+    :try_start_4ae
+    iput-object v8, v3, Lvs;->m:[B
+
+    .line 1200
+    .line 1201
+    iput v14, v3, Lvs;->n:I
+
+    .line 1202
+    .line 1203
+    move-wide/from16 v5, v32
+
+    .line 1204
+    .line 1205
+    iput-wide v5, v3, Lvs;->r:J
+
+    .line 1206
+    .line 1207
+    move/from16 v9, v43
+
+    .line 1208
+    .line 1209
+    iput v9, v3, Lvs;->o:I
+
+    .line 1210
+    .line 1211
+    move/from16 v12, v16
+
+    .line 1212
+    .line 1213
+    iput v12, v3, Lvs;->p:I
+
+    .line 1214
+    .line 1215
+    move/from16 v15, v18
+
+    .line 1216
+    .line 1217
+    iput v15, v3, Lvs;->q:I
+
+    .line 1218
+    .line 1219
+    const/4 v2, 0x1
+
+    .line 1220
+    iput v2, v3, Lvs;->u:I
+
+    .line 1221
+    .line 1222
+    move-object v2, v4
+
+    .line 1223
+    move-wide/from16 v18, v5
+
+    .line 1224
+    .line 1225
+    const-wide/16 v4, 0x2
+
+    .line 1226
+    .line 1227
+    invoke-static {v4, v5, v3}, Lug;->r(JLju;)Ljava/lang/Object;
+
+    .line 1228
+    .line 1229
+    .line 1230
+    move-result-object v4
+    :try_end_4ce
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_4ae .. :try_end_4ce} :catch_4f3
+    .catchall {:try_start_4ae .. :try_end_4ce} :catchall_4ee
+
+    .line 1231
+    sget-object v5, Lpv;->e:Lpv;
+
+    .line 1232
+    .line 1233
+    if-ne v4, v5, :cond_4d3
+
+    .line 1234
+    .line 1235
+    return-object v5
+
+    .line 1236
+    :cond_4d3
+    move-object v4, v2
+
+    .line 1237
+    move-object/from16 v20, v10
+
+    .line 1238
+    .line 1239
+    move/from16 v22, v12
+
+    .line 1240
+    .line 1241
+    move/from16 v21, v15
+
+    .line 1242
+    .line 1243
+    move-object v15, v8
+
+    .line 1244
+    move v10, v9
+
+    .line 1245
+    :goto_4dc
+    move-wide/from16 v16, v18
+
+    .line 1246
+    .line 1247
+    move-object/from16 v12, v27
+
+    .line 1248
+    .line 1249
+    move-object/from16 v8, v28
+
+    .line 1250
+    .line 1251
+    move-object/from16 v9, v29
+
+    .line 1252
+    .line 1253
+    move-object/from16 v5, v42
+
+    .line 1254
+    .line 1255
+    move-object/from16 v6, v44
+
+    .line 1256
+    .line 1257
+    move-object/from16 v2, v45
+
+    .line 1258
+    .line 1259
+    const/16 p1, 0x0
+
+    .line 1260
+    .line 1261
+    goto/16 :goto_d3
+
+    .line 1262
+    .line 1263
+    :catchall_4ee
+    move-exception v0
+
+    .line 1264
+    :goto_4ef
+    move-object/from16 v31, v8
+
+    .line 1265
+    .line 1266
+    goto/16 :goto_307
+
+    .line 1267
+    .line 1268
+    :catch_4f3
+    move-exception v0
+
+    .line 1269
+    move-object/from16 v31, v8
+
+    .line 1270
+    .line 1271
+    goto :goto_47d
+
+    .line 1272
+    :catchall_4f7
+    move-exception v0
+
+    .line 1273
+    :goto_4f8
+    move-object/from16 v8, v31
+
+    .line 1274
+    .line 1275
+    goto/16 :goto_307
+
+    .line 1276
+    .line 1277
+    :catch_4fc
+    move-exception v0
+
+    .line 1278
+    move-object/from16 v8, v31
+
+    .line 1279
+    .line 1280
+    goto/16 :goto_47d
+
+    .line 1281
+    .line 1282
+    :cond_501
+    move-object v2, v4
+
+    .line 1283
+    move/from16 v12, v16
+
+    .line 1284
+    .line 1285
+    move/from16 v15, v18
+
+    .line 1286
+    .line 1287
+    move-object/from16 v7, v19
+
+    .line 1288
+    .line 1289
+    move-object/from16 v8, v31
+
+    .line 1290
+    .line 1291
+    move-wide/from16 v18, v32
+
+    .line 1292
+    .line 1293
+    move/from16 v9, v43
+
+    .line 1294
+    .line 1295
+    move-object/from16 v20, v10
+
+    .line 1296
+    .line 1297
+    move/from16 v22, v12
+
+    .line 1298
+    .line 1299
+    move/from16 v21, v15
+
+    .line 1300
+    .line 1301
+    move-wide/from16 v16, v18
+
+    .line 1302
+    .line 1303
+    move-object/from16 v12, v27
+
+    .line 1304
+    .line 1305
+    move-object/from16 v5, v42
+
+    .line 1306
+    .line 1307
+    move-object/from16 v6, v44
+
+    .line 1308
+    .line 1309
+    move-object/from16 v2, v45
+
+    .line 1310
+    .line 1311
+    const/16 p1, 0x0
+
+    .line 1312
+    .line 1313
+    move-object v15, v8
+
+    .line 1314
+    move v10, v9
+
+    .line 1315
+    move-object/from16 v8, v28
+
+    .line 1316
+    .line 1317
+    move-object/from16 v9, v29
+
+    .line 1318
+    .line 1319
+    goto/16 :goto_d3
+
+    .line 1320
+    .line 1321
+    :catchall_528
+    move-exception v0
+
+    .line 1322
+    move-object/from16 v42, v5
+
+    .line 1323
+    .line 1324
+    move-object/from16 v10, v20
+
+    .line 1325
+    .line 1326
+    goto :goto_4f8
+
+    .line 1327
+    :catch_52e
+    move-exception v0
+
+    .line 1328
+    move-object/from16 v10, v20
+
+    .line 1329
+    .line 1330
+    move-object/from16 v8, v31
+
+    .line 1331
+    .line 1332
+    goto/16 :goto_131
+
+    .line 1333
+    .line 1334
+    :catchall_535
+    move-exception v0
+
+    .line 1335
+    move-object/from16 v42, v5
+
+    .line 1336
+    .line 1337
+    move-object v8, v9
+
+    .line 1338
+    move-object/from16 v10, v20
+
+    .line 1339
+    .line 1340
+    goto :goto_4ef
+
+    .line 1341
+    :catch_53c
+    move-exception v0
+
+    .line 1342
+    move-object v8, v9
+
+    .line 1343
+    move-object/from16 v10, v20
+
+    .line 1344
+    .line 1345
+    move-object/from16 v31, v8
+
+    .line 1346
+    .line 1347
+    goto/16 :goto_131
+
+    .line 1348
+    .line 1349
+    :catchall_544
+    move-exception v0
+
+    .line 1350
+    move-object/from16 v42, v5
+
+    .line 1351
+    .line 1352
+    move-object/from16 v28, v8
+
+    .line 1353
+    .line 1354
+    move-object/from16 v29, v9
+
+    .line 1355
+    .line 1356
+    move-object/from16 v19, v15
+
+    .line 1357
+    .line 1358
+    move-object/from16 v10, v20
+
+    .line 1359
+    .line 1360
+    move-object/from16 v31, v19
+
+    .line 1361
+    .line 1362
+    goto/16 :goto_307
+
+    .line 1363
+    .line 1364
+    :catch_553
+    move-exception v0
+
+    .line 1365
+    move-object/from16 v28, v8
+
+    .line 1366
+    .line 1367
+    move-object/from16 v29, v9
+
+    .line 1368
+    .line 1369
+    move-object/from16 v19, v15
+
+    .line 1370
+    .line 1371
+    move-object/from16 v10, v20
+
+    .line 1372
+    .line 1373
+    goto/16 :goto_12f
+
+    .line 1374
+    .line 1375
+    :catch_55e
+    move-exception v0
+
+    .line 1376
+    move-object/from16 v28, v8
+
+    .line 1377
+    .line 1378
+    move-object/from16 v29, v9
+
+    .line 1379
+    .line 1380
+    move-object/from16 v19, v15
+
+    .line 1381
+    .line 1382
+    move-object/from16 v10, v20
+
+    .line 1383
+    .line 1384
+    move-object/from16 v20, v10
+
+    .line 1385
+    .line 1386
+    goto/16 :goto_12f
+
+    .line 1387
+    .line 1388
+    :cond_56b
+    move-object v2, v5
+
+    .line 1389
+    move-object/from16 v28, v8
+
+    .line 1390
+    .line 1391
+    move-object v3, v9
+
+    .line 1392
+    move-object/from16 v27, v12
+
+    .line 1393
+    .line 1394
+    move-object/from16 v19, v15
+
+    .line 1395
+    .line 1396
+    move-object/from16 v10, v20
+
+    .line 1397
+    .line 1398
+    :try_start_575
+    invoke-virtual {v3, v2}, Lul0;->U(Ljava/lang/Object;)Z
+    :try_end_578
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_575 .. :try_end_578} :catch_5cc
+    .catchall {:try_start_575 .. :try_end_578} :catchall_59c
+
+    .line 1399
+    .line 1400
+    .line 1401
+    move-object/from16 v4, v28
+
+    .line 1402
+    .line 1403
+    const/4 v1, 0x1
+
+    .line 1404
+    invoke-virtual {v4, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 1405
+    .line 1406
+    .line 1407
+    move-object/from16 v5, v27
+
+    .line 1408
+    .line 1409
+    const/4 v1, 0x0
+
+    .line 1410
+    invoke-interface {v5, v1}, Lkm;->a(Ljava/util/concurrent/CancellationException;)V
+
+    .line 1411
+    .line 1412
+    .line 1413
+    iget-object v0, v10, Lyi0;->e:Ljava/lang/Object;
+
+    .line 1414
+    .line 1415
+    check-cast v0, Ljava/io/ByteArrayOutputStream;
+
+    .line 1416
+    .line 1417
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->reset()V
+
+    .line 1418
+    .line 1419
+    .line 1420
+    iput-object v1, v10, Lyi0;->f:Ljava/lang/Object;
+
+    .line 1421
+    .line 1422
+    invoke-static/range {v19 .. v19}, Lud;->m0([B)V
+
+    .line 1423
+    .line 1424
+    .line 1425
+    :try_start_590
+    invoke-virtual {v13}, Landroid/media/MediaCodec;->stop()V
+    :try_end_593
+    .catchall {:try_start_590 .. :try_end_593} :catchall_593
+
+    .line 1426
+    .line 1427
+    .line 1428
+    :catchall_593
+    :try_start_593
+    invoke-virtual {v13}, Landroid/media/MediaCodec;->release()V
+    :try_end_596
+    .catchall {:try_start_593 .. :try_end_596} :catchall_596
+
+    .line 1429
+    .line 1430
+    .line 1431
+    :catchall_596
+    move-object/from16 v6, v26
+
+    .line 1432
+    .line 1433
+    :catchall_598
+    :goto_598
+    invoke-static {v6, v1}, Lnh;->j(Lov;Ljava/util/concurrent/CancellationException;)V
+
+    .line 1434
+    .line 1435
+    .line 1436
+    goto :goto_5c8
+
+    .line 1437
+    :catchall_59c
+    move-exception v0
+
+    .line 1438
+    move-object/from16 v6, v26
+
+    .line 1439
+    .line 1440
+    move-object/from16 v5, v27
+
+    .line 1441
+    .line 1442
+    move-object/from16 v4, v28
+
+    .line 1443
+    .line 1444
+    move-object/from16 v31, v19
+
+    .line 1445
+    .line 1446
+    :goto_5a5
+    :try_start_5a5
+    invoke-virtual {v3, v0}, Lpp;->i0(Ljava/lang/Throwable;)Z
+    :try_end_5a8
+    .catchall {:try_start_5a5 .. :try_end_5a8} :catchall_5c9
+
+    .line 1447
+    .line 1448
+    .line 1449
+    :try_start_5a8
+    iget-object v1, v1, Lws;->i:Lh;
+
+    .line 1450
+    .line 1451
+    invoke-virtual {v1, v0}, Lh;->i(Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_5ad
+    .catchall {:try_start_5a8 .. :try_end_5ad} :catchall_5ad
+
+    .line 1452
+    .line 1453
+    .line 1454
+    :catchall_5ad
+    const/4 v1, 0x1
+
+    .line 1455
+    invoke-virtual {v4, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 1456
+    .line 1457
+    .line 1458
+    const/4 v1, 0x0
+
+    .line 1459
+    invoke-interface {v5, v1}, Lkm;->a(Ljava/util/concurrent/CancellationException;)V
+
+    .line 1460
+    .line 1461
+    .line 1462
+    iget-object v0, v10, Lyi0;->e:Ljava/lang/Object;
+
+    .line 1463
+    .line 1464
+    check-cast v0, Ljava/io/ByteArrayOutputStream;
+
+    .line 1465
+    .line 1466
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->reset()V
+
+    .line 1467
+    .line 1468
+    .line 1469
+    iput-object v1, v10, Lyi0;->f:Ljava/lang/Object;
+
+    .line 1470
+    .line 1471
+    invoke-static/range {v31 .. v31}, Lud;->m0([B)V
+
+    .line 1472
+    .line 1473
+    .line 1474
+    :try_start_5c1
+    invoke-virtual {v13}, Landroid/media/MediaCodec;->stop()V
+    :try_end_5c4
+    .catchall {:try_start_5c1 .. :try_end_5c4} :catchall_5c4
+
+    .line 1475
+    .line 1476
+    .line 1477
+    :catchall_5c4
+    :try_start_5c4
+    invoke-virtual {v13}, Landroid/media/MediaCodec;->release()V
+    :try_end_5c7
+    .catchall {:try_start_5c4 .. :try_end_5c7} :catchall_598
+
+    .line 1478
+    .line 1479
+    .line 1480
+    goto :goto_598
+
+    .line 1481
+    :goto_5c8
+    return-object v2
+
+    .line 1482
+    :catchall_5c9
+    move-exception v0
+
+    .line 1483
+    :goto_5ca
+    const/4 v1, 0x1
+
+    .line 1484
+    goto :goto_5df
+
+    .line 1485
+    :catch_5cc
+    move-exception v0
+
+    .line 1486
+    move-object/from16 v6, v26
+
+    .line 1487
+    .line 1488
+    move-object/from16 v5, v27
+
+    .line 1489
+    .line 1490
+    move-object/from16 v4, v28
+
+    .line 1491
+    .line 1492
+    move-object/from16 v20, v10
+
+    .line 1493
+    .line 1494
+    move-object/from16 v31, v19
+
+    .line 1495
+    .line 1496
+    :goto_5d7
+    :try_start_5d7
+    invoke-virtual {v3, v0}, Lul0;->D(Ljava/util/concurrent/CancellationException;)V
+
+    .line 1497
+    .line 1498
+    .line 1499
+    throw v0
+    :try_end_5db
+    .catchall {:try_start_5d7 .. :try_end_5db} :catchall_5db
+
+    .line 1500
+    :catchall_5db
+    move-exception v0
+
+    .line 1501
+    move-object/from16 v10, v20
+
+    .line 1502
+    .line 1503
+    goto :goto_5ca
+
+    .line 1504
+    :goto_5df
+    invoke-virtual {v4, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 1505
+    .line 1506
+    .line 1507
+    const/4 v1, 0x0
+
+    .line 1508
+    invoke-interface {v5, v1}, Lkm;->a(Ljava/util/concurrent/CancellationException;)V
+
+    .line 1509
+    .line 1510
+    .line 1511
+    iget-object v2, v10, Lyi0;->e:Ljava/lang/Object;
+
+    .line 1512
+    .line 1513
+    check-cast v2, Ljava/io/ByteArrayOutputStream;
+
+    .line 1514
+    .line 1515
+    invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->reset()V
+
+    .line 1516
+    .line 1517
+    .line 1518
+    iput-object v1, v10, Lyi0;->f:Ljava/lang/Object;
+
+    .line 1519
+    .line 1520
+    invoke-static/range {v31 .. v31}, Lud;->m0([B)V
+
+    .line 1521
+    .line 1522
+    .line 1523
+    :try_start_5f2
+    invoke-virtual {v13}, Landroid/media/MediaCodec;->stop()V
+    :try_end_5f5
+    .catchall {:try_start_5f2 .. :try_end_5f5} :catchall_5f5
+
+    .line 1524
+    .line 1525
+    .line 1526
+    :catchall_5f5
+    :try_start_5f5
+    invoke-virtual {v13}, Landroid/media/MediaCodec;->release()V
+    :try_end_5f8
+    .catchall {:try_start_5f5 .. :try_end_5f8} :catchall_5f8
+
+    .line 1527
+    .line 1528
+    .line 1529
+    :catchall_5f8
+    invoke-static {v6, v1}, Lnh;->j(Lov;Ljava/util/concurrent/CancellationException;)V
+
+    .line 1530
+    .line 1531
+    .line 1532
+    throw v0
+
+    .line 1533
+    :array_5fc
+    .array-data 4
+        0xb616
+        0xb63d
+        0xb630
+        0xb63c
+        0xb637
+        0xb636
+        0xb621
+        0xb673
+        0xb63a
+        0xb63d
+        0xb623
+        0xb626
+        0xb627
+        0xb673
+        0xb630
+        0xb632
+        0xb63d
+        0xb63d
+        0xb63c
+        0xb627
+        0xb673
+        0xb63b
+        0xb63c
+        0xb63f
+        0xb637
+        0xb673
+        0xb63c
+        0xb63d
+        0xb636
+        0xb673
+        0xb603
+        0xb610
+        0xb61e
+        0xb673
+        0xb635
+        0xb621
+        0xb632
+        0xb63e
+        0xb636
+    .end array-data
+
+    .line 1534
+    .line 1535
+    .line 1536
+    .line 1537
+    .line 1538
+    .line 1539
+    .line 1540
+    .line 1541
+    .line 1542
+    .line 1543
+    .line 1544
+    .line 1545
+    .line 1546
+    .line 1547
+    .line 1548
+    .line 1549
+    .line 1550
+    .line 1551
+    .line 1552
+    .line 1553
+    .line 1554
+    .line 1555
+    .line 1556
+    .line 1557
+    .line 1558
+    .line 1559
+    .line 1560
+    .line 1561
+    .line 1562
+    .line 1563
+    .line 1564
+    .line 1565
+    .line 1566
+    .line 1567
+    .line 1568
+    .line 1569
+    .line 1570
+    .line 1571
+    .line 1572
+    .line 1573
+    .line 1574
+    .line 1575
+    .line 1576
+    .line 1577
+    .line 1578
+    .line 1579
+    .line 1580
+    .line 1581
+    .line 1582
+    .line 1583
+    .line 1584
+    .line 1585
+    .line 1586
+    .line 1587
+    .line 1588
+    .line 1589
+    .line 1590
+    .line 1591
+    .line 1592
+    .line 1593
+    .line 1594
+    .line 1595
+    .line 1596
+    .line 1597
+    .line 1598
+    .line 1599
+    .line 1600
+    .line 1601
+    .line 1602
+    .line 1603
+    .line 1604
+    .line 1605
+    .line 1606
+    .line 1607
+    .line 1608
+    .line 1609
+    .line 1610
+    .line 1611
+    .line 1612
+    .line 1613
+    .line 1614
+    .line 1615
+    :array_64e
+    .array-data 4
+        0x14d6
+        0x14fd
+        0x14f0
+        0x14fc
+        0x14f7
+        0x14f6
+        0x14e1
+        0x14b3
+        0x14f0
+        0x14fb
+        0x14f2
+        0x14fd
+        0x14f4
+        0x14f6
+        0x14f7
+        0x14b3
+        0x14e1
+        0x14f6
+        0x14e2
+        0x14e6
+        0x14f6
+        0x14e0
+        0x14e7
+        0x14f6
+        0x14f7
+        0x14b3
+        0x14f2
+        0x14e6
+        0x14f7
+        0x14fa
+        0x14fc
+        0x14b3
+        0x14f5
+        0x14fc
+        0x14e1
+        0x14fe
+        0x14f2
+        0x14e7
+    .end array-data
+
+    .line 1616
+    .line 1617
+    .line 1618
+    .line 1619
+    .line 1620
+    .line 1621
+    .line 1622
+    .line 1623
+    .line 1624
+    .line 1625
+    .line 1626
+    .line 1627
+    .line 1628
+    .line 1629
+    .line 1630
+    .line 1631
+    .line 1632
+    .line 1633
+    .line 1634
+    .line 1635
+    .line 1636
+    .line 1637
+    .line 1638
+    .line 1639
+    .line 1640
+    .line 1641
+    .line 1642
+    .line 1643
+    .line 1644
+    .line 1645
+    .line 1646
+    .line 1647
+    .line 1648
+    .line 1649
+    .line 1650
+    .line 1651
+    .line 1652
+    .line 1653
+    .line 1654
+    .line 1655
+    .line 1656
+    .line 1657
+    .line 1658
+    .line 1659
+    .line 1660
+    .line 1661
+    .line 1662
+    .line 1663
+    .line 1664
+    .line 1665
+    .line 1666
+    .line 1667
+    .line 1668
+    .line 1669
+    .line 1670
+    .line 1671
+    .line 1672
+    .line 1673
+    .line 1674
+    .line 1675
+    .line 1676
+    .line 1677
+    .line 1678
+    :array_69e
+    .array-data 4
+        0xeb04
+        0xeb28
+        0xeb29
+        0xeb21
+        0xeb2e
+        0xeb20
+        0xeb6a
+        0xeb28
+        0xeb29
+        0xeb2b
+        0xeb3e
+        0xeb67
+        0xeb02
+        0xeb08
+        0xeb14
+        0xeb67
+        0xeb2e
+        0xeb34
+        0xeb67
+        0xeb29
+        0xeb28
+        0xeb33
+        0xeb67
+        0xeb26
+        0xeb29
+        0xeb67
+        0xeb26
+        0xeb32
+        0xeb23
+        0xeb2e
+        0xeb28
+        0xeb67
+        0xeb26
+        0xeb24
+        0xeb24
+        0xeb22
+        0xeb34
+        0xeb34
+        0xeb67
+        0xeb32
+        0xeb29
+        0xeb2e
+        0xeb33
+    .end array-data
+.end method
