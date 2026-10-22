@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_fdaa3c8ce85198b8c27cc902abb650eff0c1989014fabf5b1dd1bdeeb3d2fa71",
+  "subject": {
+    "name": "CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "digest": {
+      "sha256": "ec213a90b9900d2d54b379ca8abf9c39b1556b86afec3e82a259c2bf9cee5bed"
+    },
+    "local_path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "class_name": "defpackage.ol",
+    "method_name": "onAudioStreamReady"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-nK2Ti5/target.apk",
+      "class_count": 3016,
+      "resource_count": 110,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":1073741824,\"java_version\":\"25.0.4.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-nK2Ti5/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-nK2Ti5/target.apk\",\"class_count\":3016,\"raw_class_count\":3016,\"resource_count\":110,\"load_duration_ms\":1369,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "defpackage.ol" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[],\"name\":\"ol\",\"full_name\":\"defpackage.ol\",\"field_count\":1,\"fields\":[{\"def_pos\":0,\"name\":\"a\",\"type\":\"xl\"}],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lxl;)V\",\"signature\":\"\\u003cinit\\u003e(xl): void\",\"def_pos\":0},{\"name\":\"onAudioStateChange\",\"is_constructor\":false,\"dex_descriptor\":\"(II)V\",\"signature\":\"onAudioStateChange(int, int): void\",\"def_pos\":0},{\"name\":\"onAudioStreamReady\",\"is_constructor\":false,\"dex_descriptor\":\"([BIIII)V\",\"signature\":\"onAudioStreamReady(byte[], int, int, int, int): void\",\"def_pos\":0}],\"method_count\":3,\"inner_class_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "defpackage.ol",
+          "method_name": "onAudioStreamReady",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"body\":\"    @Override // com.baidu.carlife.mixing.aidl.ISystemAudioCallback\\n    public final void onAudioStreamReady(byte[] bArr, int i, int i2, int i3, int i4) {\\n        int length;\\n        boolean z;\\n        Long l;\\n        xl xlVar \\u003d this.a;\\n        bp1 bp1Var \\u003d xlVar.f;\\n        if (xlVar.a()) {\\n            if (bArr \\u003d\\u003d null || 1 \\u003e i || i \\u003e\\u003d 4 || 8000 \\u003e i2 || i2 \\u003e\\u003d 192001 || 1 \\u003e i3 || i3 \\u003e\\u003d 3 || i4 !\\u003d 2 || 1 \\u003e (length \\u003d bArr.length) || length \\u003e\\u003d 32769 || bArr.length % (i3 * 2) !\\u003d 0) {\\n                bp1Var.a(\\\"invalid-pcm\\\", 0);\\n                return;\\n            }\\n            if (bp1Var.a.get()) {\\n                return;\\n            }\\n            bp1Var.f.addAndGet(bArr.length);\\n            mj mjVar \\u003d bp1Var.g.i;\\n            int length2 \\u003d bArr.length;\\n            int length3 \\u003d bArr.length;\\n            int i5 \\u003d 0;\\n            while (true) {\\n                if (i5 \\u003e\\u003d length3) {\\n                    z \\u003d false;\\n                    break;\\n                } else {\\n                    if (bArr[i5] !\\u003d 0) {\\n                        z \\u003d true;\\n                        break;\\n                    }\\n                    i5++;\\n                }\\n            }\\n            mjVar.t(new bo1(z, i, i2, i3, length2));\\n            t91 t91Var \\u003d new t91(i2, i3, i4);\\n            List\\u003czd\\u003e list \\u003d (List) bp1Var.h.get();\\n            if (bp1Var.i.add(i + \\\"/\\\" + i2 + \\\"/\\\" + i3 + \\\"/\\\" + i4)) {\\n                Map map \\u003d ae.a;\\n                list.getClass();\\n                ArrayList arrayList \\u003d new ArrayList();\\n                for (zd zdVar : list) {\\n                    Map map2 \\u003d ae.a;\\n                    LinkedHashMap linkedHashMap \\u003d new LinkedHashMap();\\n                    for (Map.Entry entry : map2.entrySet()) {\\n                        long jLongValue \\u003d ((Number) entry.getKey()).longValue();\\n                        if (vk0.o((t91) entry.getValue(), t91Var) \\u0026\\u0026 (l \\u003d zdVar.d) !\\u003d null \\u0026\\u0026 (jLongValue \\u0026 l.longValue()) !\\u003d 0) {\\n                            linkedHashMap.put(entry.getKey(), entry.getValue());\\n                        }\\n                    }\\n                    ArrayList arrayList2 \\u003d new ArrayList(linkedHashMap.size());\\n                    for (Map.Entry entry2 : linkedHashMap.entrySet()) {\\n                        arrayList2.add(new yd(zdVar, ((Number) entry2.getKey()).longValue(), (t91) entry2.getValue()));\\n                    }\\n                    no.b0(arrayList2, arrayList);\\n                }\\n                ni niVar \\u003d ni.a;\\n                String str \\u003d bp1Var.b;\\n                ql1 ql1Var \\u003d ql1.a;\\n                niVar.c(str, ql1Var.a(61480, 61545, 61533, 61516, 61505, 61511, 61448, 61515, 61513, 61532, 61517, 61519, 61511, 61530, 61521, 61461) + i + ql1Var.a(62882, 62850, 62962, 62945, 62959, 62850) + i2 + ql1Var.a(28855, 28823, 28927, 28877, 28823, 28884, 28895, 28886, 28889, 28889, 28882, 28891, 28868, 28810) + i3 + ql1Var.a(63314, 63346, 63266, 63294, 63283, 63275, 63280, 63283, 63281, 63289, 63346, 63295, 63283, 63270, 63281, 63290, 63287, 63265, 63343) + arrayList.size() + ql1Var.a(45785, 45794, 45817, 45738, 45741, 45739, 45756, 45752, 45748, 45817, 45737, 45740, 45739, 45737, 45750, 45738, 45756, 45817, 45752, 45751, 45757, 45817, 45707, 45709, 45705, 45817, 45737, 45739, 45750, 45759, 45744, 45749, 45756, 45817, 45738, 45741, 45744, 45749, 45749, 45817, 45739, 45756, 45736, 45740, 45744, 45739, 45756, 45817, 45743, 45756, 45739, 45744, 45759, 45744, 45754, 45752, 45741, 45744, 45750, 45751));\\n            }\\n            ob0 ob0Var \\u003d (ob0) bp1Var.j.get();\\n            if (ob0Var \\u003d\\u003d null || !((Boolean) ob0Var.f(Integer.valueOf(i), bArr, t91Var)).booleanValue()) {\\n                bp1Var.k.l(bArr, i, t91Var);\\n            }\\n        }\\n    }\",\"overload_count\":1,\"method_name\":\"onAudioStreamReady\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"ol.onAudioStreamReady\",\"class_name\":\"defpackage.ol\",\"overload_index\":0}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 1024
+    },
+    "class_name": "defpackage.ol",
+    "method": {
+      "name": "onAudioStreamReady",
+      "reported_signature": "onAudioStreamReady(byte[], int, int, int, int): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": "([BIIII)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.baidu.carlife.mixing.aidl.ISystemAudioCallback\n    public final void onAudioStreamReady(byte[] bArr, int i, int i2, int i3, int i4) {\n        int length;\n        boolean z;\n        Long l;\n        xl xlVar = this.a;\n        bp1 bp1Var = xlVar.f;\n        if (xlVar.a()) {\n            if (bArr == null || 1 > i || i >= 4 || 8000 > i2 || i2 >= 192001 || 1 > i3 || i3 >= 3 || i4 != 2 || 1 > (length = bArr.length) || length >= 32769 || bArr.length % (i3 * 2) != 0) {\n                bp1Var.a(\"invalid-pcm\", 0);\n                return;\n            }\n            if (bp1Var.a.get()) {\n                return;\n            }\n            bp1Var.f.addAndGet(bArr.length);\n            mj mjVar = bp1Var.g.i;\n            int length2 = bArr.length;\n            int length3 = bArr.length;\n            int i5 = 0;\n            while (true) {\n                if (i5 >= length3) {\n                    z = false;\n                    break;\n                } else {\n                    if (bArr[i5] != 0) {\n                        z = true;\n                        break;\n                    }\n                    i5++;\n                }\n            }\n            mjVar.t(new bo1(z, i, i2, i3, length2));\n            t91 t91Var = new t91(i2, i3, i4);\n            List<zd> list = (List) bp1Var.h.get();\n            if (bp1Var.i.add(i + \"/\" + i2 + \"/\" + i3 + \"/\" + i4)) {\n                Map map = ae.a;\n                list.getClass();\n                ArrayList arrayList = new ArrayList();\n                for (zd zdVar : list) {\n                    Map map2 = ae.a;\n                    LinkedHashMap linkedHashMap = new LinkedHashMap();\n                    for (Map.Entry entry : map2.entrySet()) {\n                        long jLongValue = ((Number) entry.getKey()).longValue();\n                        if (vk0.o((t91) entry.getValue(), t91Var) && (l = zdVar.d) != null && (jLongValue & l.longValue()) != 0) {\n                            linkedHashMap.put(entry.getKey(), entry.getValue());\n                        }\n                    }\n                    ArrayList arrayList2 = new ArrayList(linkedHashMap.size());\n                    for (Map.Entry entry2 : linkedHashMap.entrySet()) {\n                        arrayList2.add(new yd(zdVar, ((Number) entry2.getKey()).longValue(), (t91) entry2.getValue()));\n                    }\n                    no.b0(arrayList2, arrayList);\n                }\n                ni niVar = ni.a;\n                String str = bp1Var.b;\n                ql1 ql1Var = ql1.a;\n                niVar.c(str, ql1Var.a(61480, 61545, 61533, 61516, 61505, 61511, 61448, 61515, 61513, 61532, 61517, 61519, 61511, 61530, 61521, 61461) + i + ql1Var.a(62882, 62850, 62962, 62945, 62959, 62850) + i2 + ql1Var.a(28855, 28823, 28927, 28877, 28823, 28884, 28895, 28886, 28889, 28889, 28882, 28891, 28868, 28810) + i3 + ql1Var.a(63314, 63346, 63266, 63294, 63283, 63275, 63280, 63283, 63281, 63289, 63346, 63295, 63283, 63270, 63281, 63290, 63287, 63265, 63343) + arrayList.size() + ql1Var.a(45785, 45794, 45817, 45738, 45741, 45739, 45756, 45752, 45748, 45817, 45737, 45740, 45739, 45737, 45750, 45738, 45756, 45817, 45752, 45751, 45757, 45817, 45707, 45709, 45705, 45817, 45737, 45739, 45750, 45759, 45744, 45749, 45756, 45817, 45738, 45741, 45744, 45749, 45749, 45817, 45739, 45756, 45736, 45740, 45744, 45739, 45756, 45817, 45743, 45756, 45739, 45744, 45759, 45744, 45754, 45752, 45741, 45744, 45750, 45751));\n            }\n            ob0 ob0Var = (ob0) bp1Var.j.get();\n            if (ob0Var == null || !((Boolean) ob0Var.f(Integer.valueOf(i), bArr, t91Var)).booleanValue()) {\n                bp1Var.k.l(bArr, i, t91Var);\n            }\n        }\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

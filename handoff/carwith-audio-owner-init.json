@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_bda1ebb60fc3afdfc0799b9c6de4518eb9a410556e9b14318a4a8135322cc96f",
+  "subject": {
+    "name": "com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk",
+    "digest": {
+      "sha256": "66aa970c4b0bf92ea814b7c87b26be8900ac0bc02b5426e30045194a19f817cc"
+    },
+    "local_path": "/workspace/com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "/workspace/com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk",
+    "class_name": "vg.d",
+    "method_name": "<init>"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-yPdwjq/target.apk",
+      "class_count": 14798,
+      "resource_count": 4975,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"25.0.4.1\",\"max_heap_bytes\":2147483648,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-yPdwjq/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-yPdwjq/target.apk\",\"class_count\":14798,\"raw_class_count\":14798,\"resource_count\":4975,\"load_duration_ms\":10405,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "vg.d" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"field_count\":6,\"full_name\":\"vg.d\",\"name\":\"d\",\"inner_classes\":[\"vg.d.a\",\"vg.d.b\",\"vg.d.c\"],\"inner_class_count\":3,\"method_count\":13,\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(android.content.Context): void\",\"dex_descriptor\":\"(Landroid/content/Context;)V\",\"is_constructor\":true},{\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(vg.d): void\",\"dex_descriptor\":\"(Lvg/d;)V\",\"is_constructor\":false},{\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(vg.d, g2.b): void\",\"dex_descriptor\":\"(Lvg/d;Lg2/b;)V\",\"is_constructor\":false},{\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(vg.d): void\",\"dex_descriptor\":\"(Lvg/d;)V\",\"is_constructor\":false},{\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(vg.d): void\",\"dex_descriptor\":\"(Lvg/d;)V\",\"is_constructor\":false},{\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(vg.d): java.util.concurrent.atomic.AtomicBoolean\",\"dex_descriptor\":\"(Lvg/d;)Ljava/util/concurrent/atomic/AtomicBoolean;\",\"is_constructor\":false},{\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(vg.d): java.util.concurrent.atomic.AtomicBoolean\",\"dex_descriptor\":\"(Lvg/d;)Ljava/util/concurrent/atomic/AtomicBoolean;\",\"is_constructor\":false},{\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(vg.d): vg.d$c\",\"dex_descriptor\":\"(Lvg/d;)Lvg/d$c;\",\"is_constructor\":false},{\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false},{\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false},{\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(g2.b): void\",\"dex_descriptor\":\"(Lg2/b;)V\",\"is_constructor\":false},{\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false},{\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(): void\",\"dex_descriptor\":\"()V\",\"is_constructor\":false}],\"fields\":[{\"def_pos\":0,\"type\":\"android.content.Context\",\"name\":\"f35591a\"},{\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"f35592b\"},{\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"f35593c\"},{\"def_pos\":0,\"type\":\"vg.d$c\",\"name\":\"f35594d\"},{\"def_pos\":0,\"type\":\"c2.c\",\"name\":\"f35595e\"},{\"def_pos\":0,\"type\":\"androidx.lifecycle.Observer\\u003cg2.b\\u003e\",\"name\":\"f35596f\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "vg.d",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"vg.d\",\"full_name\":\"vg.d.\\u003cinit\\u003e\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"\\u003cinit\\u003e\",\"overload_count\":1,\"body\":\"    public d(Context context) {\\n        AtomicBoolean atomicBoolean \\u003d new AtomicBoolean(false);\\n        this.f35592b \\u003d atomicBoolean;\\n        AtomicBoolean atomicBoolean2 \\u003d new AtomicBoolean(false);\\n        this.f35593c \\u003d atomicBoolean2;\\n        this.f35594d \\u003d new c();\\n        this.f35595e \\u003d new a();\\n        Observer\\u003cg2.b\\u003e observer \\u003d new Observer() { // from class: vg.a\\n            @Override // androidx.lifecycle.Observer\\n            public final void onChanged(Object obj) {\\n                this.f35588a.j((g2.b) obj);\\n            }\\n        };\\n        this.f35596f \\u003d observer;\\n        this.f35591a \\u003d context;\\n        g1.a.f().g(this.f35591a);\\n        g1.a.f().l(this.f35594d);\\n        if (c2.a.n().w()) {\\n            vb.a.c(\\\"audio_record_start_event\\\", g2.a.class).c(new b());\\n        } else {\\n            c2.a.n().P(true);\\n            atomicBoolean.set(true);\\n            atomicBoolean2.set(true);\\n            vb.a.c(\\\"media_audio_record_start_event\\\", g2.b.class).a(observer);\\n            p2.d(new Runnable() { // from class: vg.b\\n                @Override // java.lang.Runnable\\n                public final void run() {\\n                    this.f35589a.k();\\n                }\\n            });\\n        }\\n        f.i().b(this.f35595e);\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "vg.d",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(android.content.Context): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": "(Landroid/content/Context;)V"
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public d(Context context) {\n        AtomicBoolean atomicBoolean = new AtomicBoolean(false);\n        this.f35592b = atomicBoolean;\n        AtomicBoolean atomicBoolean2 = new AtomicBoolean(false);\n        this.f35593c = atomicBoolean2;\n        this.f35594d = new c();\n        this.f35595e = new a();\n        Observer<g2.b> observer = new Observer() { // from class: vg.a\n            @Override // androidx.lifecycle.Observer\n            public final void onChanged(Object obj) {\n                this.f35588a.j((g2.b) obj);\n            }\n        };\n        this.f35596f = observer;\n        this.f35591a = context;\n        g1.a.f().g(this.f35591a);\n        g1.a.f().l(this.f35594d);\n        if (c2.a.n().w()) {\n            vb.a.c(\"audio_record_start_event\", g2.a.class).c(new b());\n        } else {\n            c2.a.n().P(true);\n            atomicBoolean.set(true);\n            atomicBoolean2.set(true);\n            vb.a.c(\"media_audio_record_start_event\", g2.b.class).a(observer);\n            p2.d(new Runnable() { // from class: vg.b\n                @Override // java.lang.Runnable\n                public final void run() {\n                    this.f35589a.k();\n                }\n            });\n        }\n        f.i().b(this.f35595e);\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

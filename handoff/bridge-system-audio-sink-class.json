@@ -1,0 +1,203 @@
+{
+  "evidence_id": "ev_f1951d8a655e17a4c3c61745ba52aa8a38624cc07498187513dc8b79aae158ee",
+  "subject": {
+    "name": "CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "digest": {
+      "sha256": "ec213a90b9900d2d54b379ca8abf9c39b1556b86afec3e82a259c2bf9cee5bed"
+    },
+    "local_path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "/workspace/CarWith 与 Carplay Bridge_574d7d22-11_20261017_153037.apk",
+    "class_name": "defpackage.bf0"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-JygMJM/target.apk",
+      "class_count": 3016,
+      "resource_count": 110,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":1073741824,\"java_version\":\"25.0.4.1\",\"available_processors\":2,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-JygMJM/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-JygMJM/target.apk\",\"class_count\":3016,\"raw_class_count\":3016,\"resource_count\":110,\"load_duration_ms\":1363,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "defpackage.bf0" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"dex_descriptor\":\"(Lcg;)V\",\"signature\":\"\\u003cinit\\u003e(cg): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"dex_descriptor\":\"(Lg21;Lku;)Ljava/lang/Object;\",\"signature\":\"a(g21, ku): java.lang.Object\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"dex_descriptor\":\"(Lml;Lt91;Lku;)Ljava/lang/Object;\",\"signature\":\"b(ml, t91, ku): java.lang.Object\"},{\"def_pos\":0,\"name\":\"close\",\"is_constructor\":false,\"dex_descriptor\":\"()V\",\"signature\":\"close(): void\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"dex_descriptor\":\"(Lxl;)V\",\"signature\":\"d(xl): void\"},{\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"dex_descriptor\":\"()Ljava/util/Set;\",\"signature\":\"g(): java.util.Set\"},{\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"dex_descriptor\":\"([BLt91;Lku;)Ljava/lang/Object;\",\"signature\":\"i(byte[], t91, ku): java.lang.Object\"},{\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"dex_descriptor\":\"()Lve0;\",\"signature\":\"j(): ve0\"},{\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"dex_descriptor\":\"([BILt91;)V\",\"signature\":\"l(byte[], int, t91): void\"}],\"method_count\":9,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"bf0\",\"full_name\":\"defpackage.bf0\",\"field_count\":13,\"fields\":[{\"type\":\"cg\",\"def_pos\":0,\"name\":\"e\"},{\"type\":\"java.util.concurrent.atomic.AtomicReference\",\"def_pos\":0,\"name\":\"f\"},{\"type\":\"java.util.concurrent.atomic.AtomicReference\",\"def_pos\":0,\"name\":\"g\"},{\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"def_pos\":0,\"name\":\"h\"},{\"type\":\"java.util.concurrent.atomic.AtomicLong\",\"def_pos\":0,\"name\":\"i\"},{\"type\":\"java.util.concurrent.atomic.AtomicLong\",\"def_pos\":0,\"name\":\"j\"},{\"type\":\"java.util.concurrent.atomic.AtomicLong\",\"def_pos\":0,\"name\":\"k\"},{\"type\":\"java.util.concurrent.atomic.AtomicLong\",\"def_pos\":0,\"name\":\"l\"},{\"type\":\"e11\",\"def_pos\":0,\"name\":\"m\"},{\"type\":\"iu\",\"def_pos\":0,\"name\":\"n\"},{\"type\":\"java.util.LinkedHashMap\",\"def_pos\":0,\"name\":\"o\"},{\"type\":\"java.util.LinkedHashMap\",\"def_pos\":0,\"name\":\"p\"},{\"type\":\"xl\",\"def_pos\":0,\"name\":\"q\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 1024
+    },
+    "class_name": "defpackage.bf0",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(cg): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(Lcg;)V"
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(g21, ku): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lg21;Lku;)Ljava/lang/Object;"
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(ml, t91, ku): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lml;Lt91;Lku;)Ljava/lang/Object;"
+      },
+      {
+        "name": "close",
+        "reported_signature": "close(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(xl): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lxl;)V"
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): java.util.Set",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Set;"
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(byte[], t91, ku): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "([BLt91;Lku;)Ljava/lang/Object;"
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(): ve0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lve0;"
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(byte[], int, t91): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "([BILt91;)V"
+      }
+    ],
+    "fields": [
+      { "name": "e", "reported_type": "cg" },
+      {
+        "name": "f",
+        "reported_type": "java.util.concurrent.atomic.AtomicReference"
+      },
+      {
+        "name": "g",
+        "reported_type": "java.util.concurrent.atomic.AtomicReference"
+      },
+      {
+        "name": "h",
+        "reported_type": "java.util.concurrent.atomic.AtomicBoolean"
+      },
+      {
+        "name": "i",
+        "reported_type": "java.util.concurrent.atomic.AtomicLong"
+      },
+      {
+        "name": "j",
+        "reported_type": "java.util.concurrent.atomic.AtomicLong"
+      },
+      {
+        "name": "k",
+        "reported_type": "java.util.concurrent.atomic.AtomicLong"
+      },
+      {
+        "name": "l",
+        "reported_type": "java.util.concurrent.atomic.AtomicLong"
+      },
+      { "name": "m", "reported_type": "e11" },
+      { "name": "n", "reported_type": "iu" },
+      { "name": "o", "reported_type": "java.util.LinkedHashMap" },
+      { "name": "p", "reported_type": "java.util.LinkedHashMap" },
+      { "name": "q", "reported_type": "xl" }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

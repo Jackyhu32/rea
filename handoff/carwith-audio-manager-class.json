@@ -1,0 +1,782 @@
+{
+  "evidence_id": "ev_0b4488c4df81c0a6d39a5b418a1689b38d43780e91ae8e12c7345108d9d3af55",
+  "subject": {
+    "name": "com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk",
+    "digest": {
+      "sha256": "66aa970c4b0bf92ea814b7c87b26be8900ac0bc02b5426e30045194a19f817cc"
+    },
+    "local_path": "/workspace/com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "/workspace/com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk",
+    "class_name": "com.carwith.audio.g"
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-ppxIXz/target.apk",
+      "class_count": 14798,
+      "resource_count": 4975,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"25.0.4.1\",\"max_heap_bytes\":2147483648,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-ppxIXz/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-ppxIXz/target.apk\",\"class_count\":14798,\"raw_class_count\":14798,\"resource_count\":4975,\"load_duration_ms\":11431,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "com.carwith.audio.g" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"A\"},{\"def_pos\":0,\"type\":\"int\",\"name\":\"B\"},{\"def_pos\":0,\"type\":\"android.content.BroadcastReceiver\",\"name\":\"C\"},{\"def_pos\":0,\"type\":\"androidx.lifecycle.Observer\\u003cjava.lang.String\\u003e\",\"name\":\"D\"},{\"def_pos\":0,\"type\":\"androidx.lifecycle.Observer\\u003cjava.lang.Boolean\\u003e\",\"name\":\"E\"},{\"def_pos\":0,\"type\":\"android.bluetooth.BluetoothProfile$ServiceListener\",\"name\":\"F\"},{\"def_pos\":0,\"type\":\"androidx.lifecycle.Observer\\u003cjava.lang.String\\u003e\",\"name\":\"G\"},{\"def_pos\":0,\"type\":\"java.lang.Class\",\"name\":\"H\"},{\"def_pos\":0,\"type\":\"java.lang.Class\",\"name\":\"I\"},{\"def_pos\":0,\"type\":\"int\",\"name\":\"J\"},{\"def_pos\":0,\"type\":\"int\",\"name\":\"K\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"L\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"M\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"N\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"O\"},{\"def_pos\":0,\"type\":\"android.media.AudioManager\",\"name\":\"P\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"f3386a\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"f3387b\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"f3388c\"},{\"def_pos\":0,\"type\":\"java.lang.reflect.Method\",\"name\":\"f3389d\"},{\"def_pos\":0,\"type\":\"android.content.Context\",\"name\":\"f3390e\"},{\"def_pos\":0,\"type\":\"android.bluetooth.BluetoothAdapter\",\"name\":\"f3391f\"},{\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"f3392g\"},{\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"f3393h\"},{\"def_pos\":0,\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"f3394i\"},{\"def_pos\":0,\"type\":\"android.bluetooth.BluetoothHeadset\",\"name\":\"f3395j\"},{\"def_pos\":0,\"type\":\"com.carwith.audio.g$c\",\"name\":\"f3396k\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"f3397l\"},{\"def_pos\":0,\"type\":\"android.bluetooth.BluetoothA2dp\",\"name\":\"f3398m\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"f3399n\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"f3400o\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"f3401p\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"f3402q\"},{\"def_pos\":0,\"type\":\"java.util.Set\\u003candroid.bluetooth.BluetoothDevice\\u003e\",\"name\":\"f3403r\"},{\"def_pos\":0,\"type\":\"java.util.Set\\u003candroid.bluetooth.BluetoothDevice\\u003e\",\"name\":\"f3404s\"},{\"def_pos\":0,\"type\":\"java.util.Set\\u003candroid.bluetooth.BluetoothDevice\\u003e\",\"name\":\"f3405t\"},{\"def_pos\":0,\"type\":\"java.util.concurrent.ExecutorService\",\"name\":\"f3406u\"},{\"def_pos\":0,\"type\":\"android.bluetooth.BluetoothDevice\",\"name\":\"f3407v\"},{\"def_pos\":0,\"type\":\"boolean\",\"name\":\"f3408w\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"f3409x\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"f3410y\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"f3411z\"}],\"field_count\":42,\"full_name\":\"com.carwith.audio.g\",\"name\":\"g\",\"inner_classes\":[\"com.carwith.audio.g.a\",\"com.carwith.audio.g.b\",\"com.carwith.audio.g.c\"],\"inner_class_count\":3,\"method_count\":84,\"methods\":[{\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(android.content.Context): void\",\"dex_descriptor\":\"(Landroid/content/Context;)V\"},{\"is_constructor\":false,\"name\":\"A\",\"def_pos\":0,\"signature\":\"A(com.carwith.audio.g): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)V\"},{\"is_constructor\":false,\"name\":\"A0\",\"def_pos\":0,\"signature\":\"A0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"B\",\"def_pos\":0,\"signature\":\"B(boolean): boolean\",\"dex_descriptor\":\"(Z)Z\"},{\"is_constructor\":false,\"name\":\"B0\",\"def_pos\":0,\"signature\":\"B0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"C\",\"def_pos\":0,\"signature\":\"C(boolean): boolean\",\"dex_descriptor\":\"(Z)Z\"},{\"is_constructor\":false,\"name\":\"C0\",\"def_pos\":0,\"signature\":\"C0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"D\",\"def_pos\":0,\"signature\":\"D(com.carwith.audio.g): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)V\"},{\"is_constructor\":false,\"name\":\"D0\",\"def_pos\":0,\"signature\":\"D0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"E\",\"def_pos\":0,\"signature\":\"E(): int\",\"dex_descriptor\":\"()I\"},{\"is_constructor\":false,\"name\":\"F\",\"def_pos\":0,\"signature\":\"F(): int\",\"dex_descriptor\":\"()I\"},{\"is_constructor\":false,\"name\":\"G\",\"def_pos\":0,\"signature\":\"G(boolean): boolean\",\"dex_descriptor\":\"(Z)Z\"},{\"is_constructor\":false,\"name\":\"H\",\"def_pos\":0,\"signature\":\"H(com.carwith.audio.g): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)V\"},{\"is_constructor\":false,\"name\":\"I\",\"def_pos\":0,\"signature\":\"I(): int\",\"dex_descriptor\":\"()I\"},{\"is_constructor\":false,\"name\":\"J\",\"def_pos\":0,\"signature\":\"J(): int\",\"dex_descriptor\":\"()I\"},{\"is_constructor\":false,\"name\":\"K\",\"def_pos\":0,\"signature\":\"K(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"L\",\"def_pos\":0,\"signature\":\"L(android.bluetooth.BluetoothDevice): boolean\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;)Z\"},{\"is_constructor\":false,\"name\":\"M\",\"def_pos\":0,\"signature\":\"M(android.bluetooth.BluetoothDevice): void\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;)V\"},{\"is_constructor\":false,\"name\":\"N\",\"def_pos\":0,\"signature\":\"N(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"O\",\"def_pos\":0,\"signature\":\"O(): boolean\",\"dex_descriptor\":\"()Z\"},{\"is_constructor\":false,\"name\":\"P\",\"def_pos\":0,\"signature\":\"P(): java.util.Set\\u003candroid.bluetooth.BluetoothDevice\\u003e\",\"dex_descriptor\":\"()Ljava/util/Set;\"},{\"is_constructor\":false,\"name\":\"Q\",\"def_pos\":0,\"signature\":\"Q(): java.util.Set\\u003candroid.bluetooth.BluetoothDevice\\u003e\",\"dex_descriptor\":\"()Ljava/util/Set;\"},{\"is_constructor\":false,\"name\":\"R\",\"def_pos\":0,\"signature\":\"R(): java.lang.String\",\"dex_descriptor\":\"()Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"S\",\"def_pos\":0,\"signature\":\"S(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"T\",\"def_pos\":0,\"signature\":\"T(): android.content.IntentFilter\",\"dex_descriptor\":\"()Landroid/content/IntentFilter;\"},{\"is_constructor\":false,\"name\":\"U\",\"def_pos\":0,\"signature\":\"U(int): void\",\"dex_descriptor\":\"(I)V\"},{\"is_constructor\":false,\"name\":\"V\",\"def_pos\":0,\"signature\":\"V(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"W\",\"def_pos\":0,\"signature\":\"W(android.bluetooth.BluetoothDevice, int): boolean\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;I)Z\"},{\"is_constructor\":false,\"name\":\"X\",\"def_pos\":0,\"signature\":\"X(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"is_constructor\":false,\"name\":\"Y\",\"def_pos\":0,\"signature\":\"Y(android.bluetooth.BluetoothDevice): boolean\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;)Z\"},{\"is_constructor\":false,\"name\":\"Z\",\"def_pos\":0,\"signature\":\"Z(android.bluetooth.BluetoothDevice): boolean\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;)Z\"},{\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(com.carwith.audio.g, java.lang.Boolean): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;Ljava/lang/Boolean;)V\"},{\"is_constructor\":false,\"name\":\"a0\",\"def_pos\":0,\"signature\":\"a0(java.lang.String): boolean\",\"dex_descriptor\":\"(Ljava/lang/String;)Z\"},{\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(com.carwith.audio.g): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)V\"},{\"is_constructor\":false,\"name\":\"b0\",\"def_pos\":0,\"signature\":\"b0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(com.carwith.audio.g, java.lang.String): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;Ljava/lang/String;)V\"},{\"is_constructor\":false,\"name\":\"c0\",\"def_pos\":0,\"signature\":\"c0(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(com.carwith.audio.g, java.lang.String): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;Ljava/lang/String;)V\"},{\"is_constructor\":false,\"name\":\"d0\",\"def_pos\":0,\"signature\":\"d0(java.lang.Boolean): void\",\"dex_descriptor\":\"(Ljava/lang/Boolean;)V\"},{\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(com.carwith.audio.g): android.content.Context\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Landroid/content/Context;\"},{\"is_constructor\":false,\"name\":\"e0\",\"def_pos\":0,\"signature\":\"e0(java.lang.String): void\",\"dex_descriptor\":\"(Ljava/lang/String;)V\"},{\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(com.carwith.audio.g, android.bluetooth.BluetoothDevice, int): boolean\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;Landroid/bluetooth/BluetoothDevice;I)Z\"},{\"is_constructor\":false,\"name\":\"f0\",\"def_pos\":0,\"signature\":\"f0(): boolean\",\"dex_descriptor\":\"()Z\"},{\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(boolean): boolean\",\"dex_descriptor\":\"(Z)Z\"},{\"is_constructor\":false,\"name\":\"g0\",\"def_pos\":0,\"signature\":\"g0(int, java.lang.String): boolean\",\"dex_descriptor\":\"(ILjava/lang/String;)Z\"},{\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(com.carwith.audio.g): java.lang.String\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"h0\",\"def_pos\":0,\"signature\":\"h0(android.bluetooth.BluetoothDevice): java.lang.String\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(com.carwith.audio.g): java.lang.String\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"i0\",\"def_pos\":0,\"signature\":\"i0(java.util.Set\\u003candroid.bluetooth.BluetoothDevice\\u003e): java.lang.String\",\"dex_descriptor\":\"(Ljava/util/Set;)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(com.carwith.audio.g): java.lang.String\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"j0\",\"def_pos\":0,\"signature\":\"j0(java.lang.String): java.lang.String\",\"dex_descriptor\":\"(Ljava/lang/String;)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(com.carwith.audio.g): java.lang.String\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"k0\",\"def_pos\":0,\"signature\":\"k0(java.lang.String, int): java.lang.String\",\"dex_descriptor\":\"(Ljava/lang/String;I)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(com.carwith.audio.g): java.lang.String\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"l0\",\"def_pos\":0,\"signature\":\"l0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(com.carwith.audio.g): android.bluetooth.BluetoothAdapter\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Landroid/bluetooth/BluetoothAdapter;\"},{\"is_constructor\":false,\"name\":\"m0\",\"def_pos\":0,\"signature\":\"m0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(com.carwith.audio.g): android.bluetooth.BluetoothProfile$ServiceListener\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Landroid/bluetooth/BluetoothProfile$ServiceListener;\"},{\"is_constructor\":false,\"name\":\"n0\",\"def_pos\":0,\"signature\":\"n0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"o\",\"def_pos\":0,\"signature\":\"o(com.carwith.audio.g): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)V\"},{\"is_constructor\":false,\"name\":\"o0\",\"def_pos\":0,\"signature\":\"o0(android.bluetooth.BluetoothDevice): boolean\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;)Z\"},{\"is_constructor\":false,\"name\":\"p\",\"def_pos\":0,\"signature\":\"p(com.carwith.audio.g): android.bluetooth.BluetoothA2dp\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Landroid/bluetooth/BluetoothA2dp;\"},{\"is_constructor\":false,\"name\":\"p0\",\"def_pos\":0,\"signature\":\"p0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"q\",\"def_pos\":0,\"signature\":\"q(com.carwith.audio.g, android.bluetooth.BluetoothA2dp): android.bluetooth.BluetoothA2dp\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;Landroid/bluetooth/BluetoothA2dp;)Landroid/bluetooth/BluetoothA2dp;\"},{\"is_constructor\":false,\"name\":\"q0\",\"def_pos\":0,\"signature\":\"q0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"r\",\"def_pos\":0,\"signature\":\"r(com.carwith.audio.g, java.lang.String): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;Ljava/lang/String;)V\"},{\"is_constructor\":false,\"name\":\"r0\",\"def_pos\":0,\"signature\":\"r0(java.lang.Runnable): void\",\"dex_descriptor\":\"(Ljava/lang/Runnable;)V\"},{\"is_constructor\":false,\"name\":\"s\",\"def_pos\":0,\"signature\":\"s(com.carwith.audio.g): java.util.Set\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Ljava/util/Set;\"},{\"is_constructor\":false,\"name\":\"s0\",\"def_pos\":0,\"signature\":\"s0(int): boolean\",\"dex_descriptor\":\"(I)Z\"},{\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(com.carwith.audio.g, java.util.Set): java.lang.String\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;Ljava/util/Set;)Ljava/lang/String;\"},{\"is_constructor\":false,\"name\":\"t0\",\"def_pos\":0,\"signature\":\"t0(com.carwith.audio.g$c): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g$c;)V\"},{\"is_constructor\":false,\"name\":\"u\",\"def_pos\":0,\"signature\":\"u(com.carwith.audio.g): boolean\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Z\"},{\"is_constructor\":false,\"name\":\"u0\",\"def_pos\":0,\"signature\":\"u0(): void\",\"dex_descriptor\":\"()V\"},{\"is_constructor\":false,\"name\":\"v\",\"def_pos\":0,\"signature\":\"v(com.carwith.audio.g, android.bluetooth.BluetoothDevice): boolean\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;Landroid/bluetooth/BluetoothDevice;)Z\"},{\"is_constructor\":false,\"name\":\"v0\",\"def_pos\":0,\"signature\":\"v0(android.bluetooth.BluetoothDevice, int): boolean\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;I)Z\"},{\"is_constructor\":false,\"name\":\"w\",\"def_pos\":0,\"signature\":\"w(com.carwith.audio.g): boolean\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Z\"},{\"is_constructor\":false,\"name\":\"w0\",\"def_pos\":0,\"signature\":\"w0(android.bluetooth.BluetoothDevice): boolean\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;)Z\"},{\"is_constructor\":false,\"name\":\"x\",\"def_pos\":0,\"signature\":\"x(com.carwith.audio.g): android.bluetooth.BluetoothHeadset\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)Landroid/bluetooth/BluetoothHeadset;\"},{\"is_constructor\":false,\"name\":\"x0\",\"def_pos\":0,\"signature\":\"x0(): boolean\",\"dex_descriptor\":\"()Z\"},{\"is_constructor\":false,\"name\":\"y\",\"def_pos\":0,\"signature\":\"y(com.carwith.audio.g, android.bluetooth.BluetoothHeadset): android.bluetooth.BluetoothHeadset\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;Landroid/bluetooth/BluetoothHeadset;)Landroid/bluetooth/BluetoothHeadset;\"},{\"is_constructor\":false,\"name\":\"y0\",\"def_pos\":0,\"signature\":\"y0(android.bluetooth.BluetoothDevice): boolean\",\"dex_descriptor\":\"(Landroid/bluetooth/BluetoothDevice;)Z\"},{\"is_constructor\":false,\"name\":\"z\",\"def_pos\":0,\"signature\":\"z(com.carwith.audio.g): void\",\"dex_descriptor\":\"(Lcom/carwith/audio/g;)V\"},{\"is_constructor\":false,\"name\":\"z0\",\"def_pos\":0,\"signature\":\"z0(): void\",\"dex_descriptor\":\"()V\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "com.carwith.audio.g",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(Landroid/content/Context;)V"
+      },
+      {
+        "name": "A",
+        "reported_signature": "A(com.carwith.audio.g): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)V"
+      },
+      {
+        "name": "A0",
+        "reported_signature": "A0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(boolean): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)Z"
+      },
+      {
+        "name": "B0",
+        "reported_signature": "B0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(boolean): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)Z"
+      },
+      {
+        "name": "C0",
+        "reported_signature": "C0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(com.carwith.audio.g): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)V"
+      },
+      {
+        "name": "D0",
+        "reported_signature": "D0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "E",
+        "reported_signature": "E(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "F",
+        "reported_signature": "F(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "G",
+        "reported_signature": "G(boolean): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)Z"
+      },
+      {
+        "name": "H",
+        "reported_signature": "H(com.carwith.audio.g): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)V"
+      },
+      {
+        "name": "I",
+        "reported_signature": "I(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "J",
+        "reported_signature": "J(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "K",
+        "reported_signature": "K(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "L",
+        "reported_signature": "L(android.bluetooth.BluetoothDevice): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;)Z"
+      },
+      {
+        "name": "M",
+        "reported_signature": "M(android.bluetooth.BluetoothDevice): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;)V"
+      },
+      {
+        "name": "N",
+        "reported_signature": "N(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "O",
+        "reported_signature": "O(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "P",
+        "reported_signature": "P(): java.util.Set<android.bluetooth.BluetoothDevice>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Set;"
+      },
+      {
+        "name": "Q",
+        "reported_signature": "Q(): java.util.Set<android.bluetooth.BluetoothDevice>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Set;"
+      },
+      {
+        "name": "R",
+        "reported_signature": "R(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "S",
+        "reported_signature": "S(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "T",
+        "reported_signature": "T(): android.content.IntentFilter",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Landroid/content/IntentFilter;"
+      },
+      {
+        "name": "U",
+        "reported_signature": "U(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)V"
+      },
+      {
+        "name": "V",
+        "reported_signature": "V(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "W",
+        "reported_signature": "W(android.bluetooth.BluetoothDevice, int): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;I)Z"
+      },
+      {
+        "name": "X",
+        "reported_signature": "X(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "Y",
+        "reported_signature": "Y(android.bluetooth.BluetoothDevice): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;)Z"
+      },
+      {
+        "name": "Z",
+        "reported_signature": "Z(android.bluetooth.BluetoothDevice): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;)Z"
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(com.carwith.audio.g, java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;Ljava/lang/Boolean;)V"
+      },
+      {
+        "name": "a0",
+        "reported_signature": "a0(java.lang.String): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)Z"
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(com.carwith.audio.g): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)V"
+      },
+      {
+        "name": "b0",
+        "reported_signature": "b0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(com.carwith.audio.g, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;Ljava/lang/String;)V"
+      },
+      {
+        "name": "c0",
+        "reported_signature": "c0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(com.carwith.audio.g, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;Ljava/lang/String;)V"
+      },
+      {
+        "name": "d0",
+        "reported_signature": "d0(java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Boolean;)V"
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(com.carwith.audio.g): android.content.Context",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Landroid/content/Context;"
+      },
+      {
+        "name": "e0",
+        "reported_signature": "e0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(com.carwith.audio.g, android.bluetooth.BluetoothDevice, int): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;Landroid/bluetooth/BluetoothDevice;I)Z"
+      },
+      {
+        "name": "f0",
+        "reported_signature": "f0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(boolean): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)Z"
+      },
+      {
+        "name": "g0",
+        "reported_signature": "g0(int, java.lang.String): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(ILjava/lang/String;)Z"
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(com.carwith.audio.g): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Ljava/lang/String;"
+      },
+      {
+        "name": "h0",
+        "reported_signature": "h0(android.bluetooth.BluetoothDevice): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;"
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(com.carwith.audio.g): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Ljava/lang/String;"
+      },
+      {
+        "name": "i0",
+        "reported_signature": "i0(java.util.Set<android.bluetooth.BluetoothDevice>): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/Set;)Ljava/lang/String;"
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(com.carwith.audio.g): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Ljava/lang/String;"
+      },
+      {
+        "name": "j0",
+        "reported_signature": "j0(java.lang.String): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(com.carwith.audio.g): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Ljava/lang/String;"
+      },
+      {
+        "name": "k0",
+        "reported_signature": "k0(java.lang.String, int): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;I)Ljava/lang/String;"
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(com.carwith.audio.g): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Ljava/lang/String;"
+      },
+      {
+        "name": "l0",
+        "reported_signature": "l0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(com.carwith.audio.g): android.bluetooth.BluetoothAdapter",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Landroid/bluetooth/BluetoothAdapter;"
+      },
+      {
+        "name": "m0",
+        "reported_signature": "m0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(com.carwith.audio.g): android.bluetooth.BluetoothProfile$ServiceListener",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Landroid/bluetooth/BluetoothProfile$ServiceListener;"
+      },
+      {
+        "name": "n0",
+        "reported_signature": "n0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(com.carwith.audio.g): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)V"
+      },
+      {
+        "name": "o0",
+        "reported_signature": "o0(android.bluetooth.BluetoothDevice): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;)Z"
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(com.carwith.audio.g): android.bluetooth.BluetoothA2dp",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Landroid/bluetooth/BluetoothA2dp;"
+      },
+      {
+        "name": "p0",
+        "reported_signature": "p0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(com.carwith.audio.g, android.bluetooth.BluetoothA2dp): android.bluetooth.BluetoothA2dp",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;Landroid/bluetooth/BluetoothA2dp;)Landroid/bluetooth/BluetoothA2dp;"
+      },
+      {
+        "name": "q0",
+        "reported_signature": "q0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(com.carwith.audio.g, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;Ljava/lang/String;)V"
+      },
+      {
+        "name": "r0",
+        "reported_signature": "r0(java.lang.Runnable): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Runnable;)V"
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(com.carwith.audio.g): java.util.Set",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Ljava/util/Set;"
+      },
+      {
+        "name": "s0",
+        "reported_signature": "s0(int): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)Z"
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(com.carwith.audio.g, java.util.Set): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;Ljava/util/Set;)Ljava/lang/String;"
+      },
+      {
+        "name": "t0",
+        "reported_signature": "t0(com.carwith.audio.g$c): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g$c;)V"
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(com.carwith.audio.g): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Z"
+      },
+      {
+        "name": "u0",
+        "reported_signature": "u0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(com.carwith.audio.g, android.bluetooth.BluetoothDevice): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;Landroid/bluetooth/BluetoothDevice;)Z"
+      },
+      {
+        "name": "v0",
+        "reported_signature": "v0(android.bluetooth.BluetoothDevice, int): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;I)Z"
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(com.carwith.audio.g): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Z"
+      },
+      {
+        "name": "w0",
+        "reported_signature": "w0(android.bluetooth.BluetoothDevice): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;)Z"
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(com.carwith.audio.g): android.bluetooth.BluetoothHeadset",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)Landroid/bluetooth/BluetoothHeadset;"
+      },
+      {
+        "name": "x0",
+        "reported_signature": "x0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(com.carwith.audio.g, android.bluetooth.BluetoothHeadset): android.bluetooth.BluetoothHeadset",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;Landroid/bluetooth/BluetoothHeadset;)Landroid/bluetooth/BluetoothHeadset;"
+      },
+      {
+        "name": "y0",
+        "reported_signature": "y0(android.bluetooth.BluetoothDevice): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/bluetooth/BluetoothDevice;)Z"
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(com.carwith.audio.g): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/carwith/audio/g;)V"
+      },
+      {
+        "name": "z0",
+        "reported_signature": "z0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      }
+    ],
+    "fields": [
+      { "name": "A", "reported_type": "java.lang.String" },
+      { "name": "B", "reported_type": "int" },
+      { "name": "C", "reported_type": "android.content.BroadcastReceiver" },
+      {
+        "name": "D",
+        "reported_type": "androidx.lifecycle.Observer<java.lang.String>"
+      },
+      {
+        "name": "E",
+        "reported_type": "androidx.lifecycle.Observer<java.lang.Boolean>"
+      },
+      {
+        "name": "F",
+        "reported_type": "android.bluetooth.BluetoothProfile$ServiceListener"
+      },
+      {
+        "name": "G",
+        "reported_type": "androidx.lifecycle.Observer<java.lang.String>"
+      },
+      { "name": "H", "reported_type": "java.lang.Class" },
+      { "name": "I", "reported_type": "java.lang.Class" },
+      { "name": "J", "reported_type": "int" },
+      { "name": "K", "reported_type": "int" },
+      { "name": "L", "reported_type": "boolean" },
+      { "name": "M", "reported_type": "boolean" },
+      { "name": "N", "reported_type": "boolean" },
+      { "name": "O", "reported_type": "boolean" },
+      { "name": "P", "reported_type": "android.media.AudioManager" },
+      { "name": "f3386a", "reported_type": "java.lang.String" },
+      { "name": "f3387b", "reported_type": "java.lang.String" },
+      { "name": "f3388c", "reported_type": "java.lang.String" },
+      { "name": "f3389d", "reported_type": "java.lang.reflect.Method" },
+      { "name": "f3390e", "reported_type": "android.content.Context" },
+      {
+        "name": "f3391f",
+        "reported_type": "android.bluetooth.BluetoothAdapter"
+      },
+      {
+        "name": "f3392g",
+        "reported_type": "java.util.concurrent.atomic.AtomicBoolean"
+      },
+      {
+        "name": "f3393h",
+        "reported_type": "java.util.concurrent.atomic.AtomicBoolean"
+      },
+      {
+        "name": "f3394i",
+        "reported_type": "java.util.concurrent.atomic.AtomicBoolean"
+      },
+      {
+        "name": "f3395j",
+        "reported_type": "android.bluetooth.BluetoothHeadset"
+      },
+      { "name": "f3396k", "reported_type": "com.carwith.audio.g$c" },
+      { "name": "f3397l", "reported_type": "boolean" },
+      { "name": "f3398m", "reported_type": "android.bluetooth.BluetoothA2dp" },
+      { "name": "f3399n", "reported_type": "boolean" },
+      { "name": "f3400o", "reported_type": "boolean" },
+      { "name": "f3401p", "reported_type": "boolean" },
+      { "name": "f3402q", "reported_type": "boolean" },
+      {
+        "name": "f3403r",
+        "reported_type": "java.util.Set<android.bluetooth.BluetoothDevice>"
+      },
+      {
+        "name": "f3404s",
+        "reported_type": "java.util.Set<android.bluetooth.BluetoothDevice>"
+      },
+      {
+        "name": "f3405t",
+        "reported_type": "java.util.Set<android.bluetooth.BluetoothDevice>"
+      },
+      {
+        "name": "f3406u",
+        "reported_type": "java.util.concurrent.ExecutorService"
+      },
+      {
+        "name": "f3407v",
+        "reported_type": "android.bluetooth.BluetoothDevice"
+      },
+      { "name": "f3408w", "reported_type": "boolean" },
+      { "name": "f3409x", "reported_type": "java.lang.String" },
+      { "name": "f3410y", "reported_type": "java.lang.String" },
+      { "name": "f3411z", "reported_type": "java.lang.String" }
+    ],
+    "inner_classes": [
+      "com.carwith.audio.g.a",
+      "com.carwith.audio.g.b",
+      "com.carwith.audio.g.c"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}

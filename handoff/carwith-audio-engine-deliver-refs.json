@@ -1,0 +1,176 @@
+{
+  "evidence_id": "ev_b16a2d12be1740240a1d27e061990da2c9d1fb90e6a0fb34432bfa22181f88a3",
+  "subject": {
+    "name": "com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk",
+    "digest": {
+      "sha256": "66aa970c4b0bf92ea814b7c87b26be8900ac0bc02b5426e30045194a19f817cc"
+    },
+    "local_path": "/workspace/com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": { "id": "jadx", "name": "JADX headless", "version": "0.7.1" },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "trace_android_references",
+  "parameters": {
+    "path": "/workspace/com.miui.carlink_4.0.21-20260929_MemeOSUpdates.com.apk",
+    "class_name": "g1.a",
+    "method_name": "k",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": { "name": "rea-jadx-bridge", "version": "1" },
+    "bridge_sha256": "40c6972bc7e1689e09979b64ba49ba04b9c05e49976b838315d63d6415e762ba",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-AaWn5S/target.apk",
+      "class_count": 14798,
+      "resource_count": 4975,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":2,\"java_version\":\"25.0.4.1\",\"max_heap_bytes\":2147483648,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-AaWn5S/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-AaWn5S/target.apk\",\"class_count\":14798,\"raw_class_count\":14798,\"resource_count\":4975,\"load_duration_ms\":11070,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": { "class_name": "g1.a" },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f21800d\",\"def_pos\":0,\"type\":\"g1.a\"},{\"name\":\"f21801e\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"f21802f\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"f21803g\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"f21804h\",\"def_pos\":0,\"type\":\"int[]\"},{\"name\":\"f21805a\",\"def_pos\":0,\"type\":\"android.content.Context\"},{\"name\":\"f21806b\",\"def_pos\":0,\"type\":\"ll.a\"},{\"name\":\"f21807c\",\"def_pos\":0,\"type\":\"java.util.List\\u003cg1.b\\u003e\"}],\"field_count\":8,\"full_name\":\"g1.a\",\"name\":\"a\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":22,\"methods\":[{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(): void\"},{\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(): boolean\"},{\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(): boolean\"},{\"dex_descriptor\":\"()Z\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(): boolean\"},{\"dex_descriptor\":\"()Landroid/content/Context;\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(): android.content.Context\"},{\"dex_descriptor\":\"()Lg1/a;\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(): g1.a\"},{\"dex_descriptor\":\"(Landroid/content/Context;)V\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(android.content.Context): void\"},{\"dex_descriptor\":\"(I)V\",\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(int): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(): void\"},{\"dex_descriptor\":\"(II)V\",\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(int, int): void\"},{\"dex_descriptor\":\"([BIIII)V\",\"is_constructor\":false,\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(byte[], int, int, int, int): void\"},{\"dex_descriptor\":\"(Lg1/b;)V\",\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(g1.b): void\"},{\"dex_descriptor\":\"(I)V\",\"is_constructor\":false,\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(int): void\"},{\"dex_descriptor\":\"(I)V\",\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(int): void\"},{\"dex_descriptor\":\"(I)V\",\"is_constructor\":false,\"name\":\"o\",\"def_pos\":0,\"signature\":\"o(int): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"p\",\"def_pos\":0,\"signature\":\"p(): void\"},{\"dex_descriptor\":\"(I)V\",\"is_constructor\":false,\"name\":\"q\",\"def_pos\":0,\"signature\":\"q(int): void\"},{\"dex_descriptor\":\"()V\",\"is_constructor\":false,\"name\":\"r\",\"def_pos\":0,\"signature\":\"r(): void\"},{\"dex_descriptor\":\"(I)V\",\"is_constructor\":false,\"name\":\"s\",\"def_pos\":0,\"signature\":\"s(int): void\"},{\"dex_descriptor\":\"(Lg1/b;)V\",\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(g1.b): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_xrefs_to_method",
+        "input": {
+          "class_name": "g1.a",
+          "method_name": "k",
+          "overload_index": 0,
+          "limit": 2147483647,
+          "resolve_line": false
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"items\":[{\"kind\":\"method\",\"name\":\"a\",\"full_name\":\"f1.c.a\",\"containing_class\":\"f1.c\",\"top_class\":\"f1.c\",\"def_pos\":0,\"direct_invokes\":[{\"dex_code_unit_offset\":19,\"dex_method_index\":44445,\"source_raw_method_id\":\"f1.c.a([BI)V\",\"dex_entry\":\"classes.dex\",\"opcode\":\"INVOKE_VIRTUAL_RANGE\"},{\"dex_code_unit_offset\":40,\"dex_method_index\":44445,\"source_raw_method_id\":\"f1.c.a([BI)V\",\"dex_entry\":\"classes.dex\",\"opcode\":\"INVOKE_VIRTUAL_RANGE\"}],\"direct_invokes_exhaustive\":true},{\"kind\":\"method\",\"name\":\"d\",\"full_name\":\"k1.b.g.d\",\"containing_class\":\"k1.b.g\",\"top_class\":\"k1.b\",\"def_pos\":0,\"direct_invokes\":[{\"dex_code_unit_offset\":25,\"dex_method_index\":44445,\"source_raw_method_id\":\"k1.b$g.d([B)V\",\"dex_entry\":\"classes.dex\",\"opcode\":\"INVOKE_VIRTUAL_RANGE\"}],\"direct_invokes_exhaustive\":true}],\"total\":2,\"resolve_line\":false,\"target\":\"g1.a.k\",\"count\":2,\"overload_index\":0,\"reported_signature\":\"k(byte[], int, int, int, int): void\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 2048
+    },
+    "class_name": "g1.a",
+    "method_name": "k",
+    "overload_index": 0,
+    "reported_signature": "k(byte[], int, int, int, int): void",
+    "dex_descriptor": "([BIIII)V",
+    "total": 2,
+    "references": [
+      {
+        "kind": "method",
+        "name": "a",
+        "reported_full_name": "f1.c.a",
+        "containing_class": "f1.c",
+        "top_class": "f1.c",
+        "source_line": null,
+        "dex_offset": null,
+        "direct_invokes_exhaustive": true,
+        "direct_invokes": [
+          {
+            "dex_entry": "classes.dex",
+            "source_raw_method_id": "f1.c.a([BI)V",
+            "dex_code_unit_offset": 19,
+            "dex_method_index": 44445,
+            "opcode": "INVOKE_VIRTUAL_RANGE"
+          },
+          {
+            "dex_entry": "classes.dex",
+            "source_raw_method_id": "f1.c.a([BI)V",
+            "dex_code_unit_offset": 40,
+            "dex_method_index": 44445,
+            "opcode": "INVOKE_VIRTUAL_RANGE"
+          }
+        ]
+      },
+      {
+        "kind": "method",
+        "name": "d",
+        "reported_full_name": "k1.b.g.d",
+        "containing_class": "k1.b.g",
+        "top_class": "k1.b",
+        "source_line": null,
+        "dex_offset": null,
+        "direct_invokes_exhaustive": true,
+        "direct_invokes": [
+          {
+            "dex_entry": "classes.dex",
+            "source_raw_method_id": "k1.b$g.d([B)V",
+            "dex_code_unit_offset": 25,
+            "dex_method_index": 44445,
+            "opcode": "INVOKE_VIRTUAL_RANGE"
+          }
+        ]
+      }
+    ],
+    "coverage": "complete",
+    "reference_unit": "using_node"
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "relationship_coverage": null,
+  "locations": [],
+  "evidence_links": []
+}
